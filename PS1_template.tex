@@ -117,11 +117,6 @@
 \end{enumerate}
 \begin{mySol}
 此处用于写解答(中英文均可)
-~\\
-~\\
-~\\
-~\\
-~\\
 
 \begin{enumerate}
 	
@@ -209,25 +204,34 @@ f_Y(y) =
 \end{equation}
 \begin{myProof}
 此处用于写证明(中英文均可)
-~\\
-~\\
-~\\
-~\\
-~\\
-令$g(\mathbf{x}) = f(\mathbf{x}) - \frac{\lambda}{2}\lVert \mathbf{x}\rVert^2$。要证明$(2.1)$和$(2.2)$等价，先证明$(2.1)$和
+
+令$g(\mathbf{x}) = f(\mathbf{x}) - \frac{\lambda}{2}\lVert \mathbf{x}\rVert^2$。要证明$(2.1)$和$(2.2)$等价，先证明$(2.2)$和
 \begin{equation}
 \begin{aligned}
-g(\mathbf{y}) \geq g(\mathbf{x}) + \nabla g(\mathbf{x})^\mathrm{T}(\mathbf{y}-\mathbf{x})
+g(\mathbf{y})\ is\ convex
 \end{aligned}
 \end{equation}
 等价。\\
 因为
 \begin{equation}
 \begin{aligned}
-&g(\mathbf{y}) \geq g(\mathbf{x}) + \nabla g(\mathbf{x})^\mathrm{T}(\mathbf{y}-\mathbf{x})\\
-\Leftrightarrow &f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y}\rVert^2 \geq f(\mathbf{x}) - \frac{\lambda}{2}\lVert \mathbf{x}\rVert^2 + (\nabla f(\mathbf{x})^\mathrm{T} - \lambda\mathbf{x}^\mathrm{T})(\mathbf{y} - \mathbf{x})
+&g(\mathbf{y})\ is\ convex \\
+\Leftrightarrow &g(\mathbf{y}) \geq g(\mathbf{x}) + \nabla g(\mathbf{x})^\mathrm{T}(\mathbf{y}-\mathbf{x})\\
+\Leftrightarrow &f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y}\rVert^2 \geq f(\mathbf{x}) - \frac{\lambda}{2}\lVert \mathbf{x}\rVert^2 + (\nabla f(\mathbf{x})^\mathrm{T} - \lambda\mathbf{x}^\mathrm{T})(\mathbf{y} - \mathbf{x})\\
+\Leftrightarrow &f(\mathbf{y}) \geq f(\mathbf{x}) + \nabla f(\mathbf{x})^\mathrm{T}(\mathbf{y} - \mathbf{x}) + \frac{\lambda}{2}\lVert \mathbf{y} \rVert^2 - \frac{\lambda}{2}\lVert \mathbf{x} \rVert^2 - \lambda \mathbf{x}^\mathrm{T}(\mathbf{y}-\mathbf{x})\\
+\Leftrightarrow & f(\mathbf{y}) \geq f(\mathbf{x}) + \nabla f(\mathbf{x})^\mathrm{T}(\mathbf{y} - \mathbf{x}) + \frac{\lambda}{2}\lVert \mathbf{y}-\mathbf{x} \rVert^2
 \end{aligned}
 \end{equation}
+可得$(2.2)$与$(2.3)$等价，下面证明$(2.1)$与$(2.3)$等价
+\begin{equation}
+\begin{aligned}
+&g(\mathbf{y})\ is\ convex \\
+\Leftrightarrow & g((1-\alpha)\mathbf{x} + \alpha\mathbf{y}) \leq (1-\alpha)g(\mathbf{x}) + \alpha g(\mathbf{y})\\
+\Leftrightarrow & f((1-\alpha)\mathbf{x} + \alpha\mathbf{y}) - \frac{\lambda}{2}\lVert (1-\alpha)\mathbf{x} + \alpha\mathbf{y} \rVert^2 \leq (1-\alpha)(f(\mathbf{x})-\frac{\lambda}{2}\lVert \mathbf{x} \rVert^2) + \alpha(f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y} \rVert^2)\\
+\Leftrightarrow & f((1-\alpha)\mathbf{x} + \alpha\mathbf{y})\leq (1-\alpha)f(\mathbf{x}) + \alpha f(\mathbf{y}) - \frac{\lambda}{2}\alpha(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2
+\end{aligned}
+\end{equation}
+得证，在函数$f$可微的情况下，式~\eqref{eq-sc-1}与下式~\eqref{eq-sc-2}等价。
 \qed
 \end{myProof}
 
