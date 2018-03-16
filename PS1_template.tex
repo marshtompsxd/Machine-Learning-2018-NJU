@@ -237,34 +237,39 @@ g(\mathbf{y})\ is\ convex
 
 
 \newpage
-\section{[20pts] Double Stochastic Matrix}
-随机矩阵(stochastic matrix)和双随机矩阵(double stochastic matrix)在机器学习中经常出现，尤其是在有限马尔科夫过程理论中，也经常出现在于运筹学、经济学、交通运输等不同领域的建模中。下面给出定义，
+\section{[20pts] Doubly Stochastic Matrix}
+随机矩阵(stochastic matrix)和双随机矩阵(doubly stochastic matrix)在机器学习中经常出现，尤其是在有限马尔科夫过程理论中，也经常出现在于运筹学、经济学、交通运输等不同领域的建模中。下面给出定义，
 \begin{def-box}[随机矩阵]
 设矩阵$\mathbf{X}=[x_{ij}]\in \mathbb{R}^{d\times d}$是非负矩阵，如果$\mathbf{X}$满足
 \begin{equation}
-	\label{eq-sto-matrix}
-	\sum_{j=1}^d x_{ij} = 1,\quad i=1,2,\cdots,d.
+\label{eq-sto-matrix}
+\sum_{j=1}^d x_{ij} = 1,\quad i=1,2,\cdots,d.
 \end{equation}
 则称矩阵$\mathbf{X}$为随机矩阵(stochastic matrix)。如果$\mathbf{X}$还满足
 \begin{equation}
-	\label{eq-double-sto-matrix}
-	\sum_{i=1}^d x_{ij} = 1,\quad j=1,2,\cdots,d.
+\label{eq-double-sto-matrix}
+\sum_{i=1}^d x_{ij} = 1,\quad j=1,2,\cdots,d.
 \end{equation}
 则称矩阵$\mathbf{X}$为双随机矩阵(double stochastic matrix)。
 \end{def-box}
 对于双随机矩阵$\mathbf{X} \in \mathbb{R}^{d\times d}$，试证明
 \begin{enumerate}[ {(}1{)}]
-\item \textbf{[10pts]} 矩阵$\mathbf{X}$的\href{https://en.wikipedia.org/wiki/Entropy_(information_theory)}{信息熵 (entropy)}满足$H(\mathbf{X}) \leq 2\log d$.
-\item \textbf{[10pts]} 矩阵$\mathbf{X}$的\href{https://en.wikipedia.org/wiki/Spectral_radius}{谱半径 (spectral radius
-)}$\rho(\mathbf{X})$等于1，且是$\mathbf{X}$的特征值;(提示：你可能会需要\href{https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem}{Perron–Frobenius定理}，可以基于此进行证明。)
+\item \textbf{[10pts]} 矩阵$\mathbf{X}$的\href{https://en.wikipedia.org/wiki/Entropy_(information_theory)}{信息熵 (entropy)}满足$H(\mathbf{X}) \leq d\log d$.
+\item \textbf{[10pts]} 矩阵$\mathbf{X}$的\href{https://en.wikipedia.org/wiki/Spectral_radius}{谱半径 (spectral radius)}$\rho(\mathbf{X})$等于1，且是$\mathbf{X}$的特征值;(提示：你可能会需要\href{https://en.wikipedia.org/wiki/Perron%E2%80%93Frobenius_theorem}{Perron–Frobenius定理}，可以基于此进行证明。)
 \end{enumerate}
 \begin{myProof}
 此处用于写证明(中英文均可)
-~\\
-~\\
-~\\
-~\\
-~\\
+
+\begin{enumerate}
+\item 
+因为$H(\mathbf{X})=\sum_{i=1}^{d}\sum_{j=1}^{d}x_{ij}\log \frac{1}{x_{ij}}$，所以要证明$\sum_{i=1}^{d}\sum_{j=1}^{d}x_{ij}\log \frac{1}{x_{ij}} \leq d\log d$。证明如下：\\
+首先证明$\sum_{j=1}^{d}x_{ij}\log\frac{1}{x_{ij}}\leq \log d$，观察到$f(x) = x\log \frac{1}{x}\ is\ concave\ function$，所以有$\sum_{j=1}^{d}f(x_{ij}) \leq df(\frac{\sum_{j=1}^{d}x_{ij}}{d})$，又因为$(3.1)$，所以进一步有$\sum_{j=1}^{d}f(x_{ij}) \leq d\frac{1}{d}\log \frac{d}{1} = \log d$，因此可得$H(\mathbf{X})=\sum_{i=1}^{d}\sum_{j=1}^{d}x_{ij}\log \frac{1}{x_{ij}} \leq d\log d$。
+
+\item 
+首先易得$1$是$\mathbf{X}$的特征值之一，对应的特征向量$\mathbf{v}$是全一向量：因为$\mathbf{X}\mathbf{v} = 1\mathbf{v}$。\\
+根据Inequalities for Perron–Frobenius eigenvalue：对任意矩阵$\mathbf{A}$的特征值$\lambda$，一定有$\vert\lambda\vert\leq\max\limits_{i}\sum_{j}\vert\mathbf{A}_{ij}\vert$。又因为$\mathbf{X}$是双随机矩阵所以对于其任意特征值$\lambda$都有$\vert\lambda\vert\leq 1$，又因为$1$是$\mathbf{X}$的特征值之一，所以可得$\rho(\mathbf{X}) = \max\left\{|\lambda_1|,...,|\lambda_d|\right\} = 1$。
+\end{enumerate}
+
 \qed
 \end{myProof}
 \newpage
