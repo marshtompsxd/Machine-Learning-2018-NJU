@@ -205,7 +205,7 @@ f_Y(y) =
 \begin{myProof}
 此处用于写证明(中英文均可)
 
-令$g(\mathbf{x}) = f(\mathbf{x}) - \frac{\lambda}{2}\lVert \mathbf{x}\rVert^2$。要证明$(2.1)$和$(2.2)$等价，先证明$(2.2)$和
+令$g(\mathbf{y}) = f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y}\rVert^2$。要证明$(2.1)$和$(2.2)$等价，先证明$(2.2)$和
 \begin{equation}
 \begin{aligned}
 g(\mathbf{y})\ is\ convex
@@ -231,7 +231,7 @@ g(\mathbf{y})\ is\ convex
 \Leftrightarrow & f((1-\alpha)\mathbf{x} + \alpha\mathbf{y})\leq (1-\alpha)f(\mathbf{x}) + \alpha f(\mathbf{y}) - \frac{\lambda}{2}\alpha(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2
 \end{aligned}
 \end{equation}
-得证，在函数$f$可微的情况下，式~\eqref{eq-sc-1}与下式~\eqref{eq-sc-2}等价。
+得证，在函数$f$可微的情况下，式~\eqref{eq-sc-1}与式~\eqref{eq-sc-2}等价。
 \qed
 \end{myProof}
 
@@ -291,10 +291,11 @@ $D_5$ 		& 3 		&  5  		& 2  		&  1 		& 4			\\ \hline
 
 使用Friedman检验$(\alpha=0.05)$判断这些算法是否性能都相同。若不相同，进行Nemenyi后续检验$(\alpha=0.05)$，并说明性能最好的算法与哪些算法有显著差别。
 \begin{mySol}
-此处用于写解答(中英文均可)
-~\\
-~\\
-~\\
+此处用于写解答(中英文均可)\\
+Friedman检验：\\
+由题目得$k=5$，$N=5$，根据简单计算有$r_1=3.8, r_2=4, r_3=3.2, r_4=1.2, r_5=2.8$，根据书上$(2.34)$公式可得$\tau_{\chi^2} = 9.9200$，再根据书上$(2.35)$公式可得$\tau_F=3.9365$，查书上表$2.6$可得$3.9365 > 3.007 $，所以拒绝“所有算法性能相同”这个假设。\\
+Nemenyi检验：\\
+查表$2.7$可得当$k=5,\alpha=0.05$时$q_\alpha=2.728$，根据书上$(2.36)$可得$CD = 2.728$。观察题目中表$1$可得$r_2-r_4 = 2.8>2.728$所以认为算法D与算法B有显著区别，其他算法之间无显著区别。
 \end{mySol}
 
 \newpage

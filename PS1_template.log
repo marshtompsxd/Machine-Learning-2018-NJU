@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  16 MAR 2018 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  19 MAR 2018 21:26
 entering extended mode
 **./PS1_template.tex
 (PS1_template.tex
@@ -1864,23 +1864,8 @@ t/10.53937/61  \C70/rm/m/it/10.53937/72 y \C70/rm/m/it/10.53937/5f Å \C70/rm/m
 10.53937/76 Ñ
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
-
- []
-
-[6]
-Overfull \hbox (9.18968pt too wide) in paragraph at lines 316--317
+[5] [6]
+Overfull \hbox (9.18968pt too wide) in paragraph at lines 317--318
 []\OT1/cmr/bx/n/10.53937 [10pts] \C70/rm/m/n/10.53937/8b ˜ \C70/rm/m/n/10.53937
 /75 ; \C70/rm/m/n/10.53937/51 ˙ v \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.5393
 7/5e î \C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 ROC\C70/rm/m/n/10.53937/5
@@ -1895,138 +1880,140 @@ e v \C70/rm/m/n/10.53937/8b ° \C70/rm/m/n/10.53937/7b ó \C70/rm/m/n/10.53937/5b
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--326
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--326
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--326
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--326
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--326
+Underfull \hbox (badness 10000) in paragraph at lines 321--327
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 348--355
+Underfull \hbox (badness 10000) in paragraph at lines 349--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--355
+Underfull \hbox (badness 10000) in paragraph at lines 349--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--355
+Underfull \hbox (badness 10000) in paragraph at lines 349--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--355
+Underfull \hbox (badness 10000) in paragraph at lines 349--356
 
  []
 
 
 AED: lastpage setting LastPage
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 360.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 360.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
  (PS1_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 360.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 360.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
 Package rerunfilecheck Info: File `PS1_template.out' has not changed.
 (rerunfilecheck)             Checksum: 370FA4EAF3D2FF18F587F9920C0F8040;1209.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 360.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
  ) 
 Here is how much of TeX's memory you used:
- 33764 strings out of 493333
- 606988 string characters out of 3145216
+ 33826 strings out of 493333
+ 608009 string characters out of 3145216
  741032 words of memory out of 3000000
- 36395 multiletter control sequences out of 15000+200000
- 598141 words of font info for 273 fonts, out of 3000000 for 9000
+ 36443 multiletter control sequences out of 15000+200000
+ 600031 words of font info for 280 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,12n,73p,10456b,549s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
-imhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
+imhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
 /Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
-/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai
-.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
-s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
+/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Font
+s/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
 OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf>
-<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
-sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
 onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/W
-INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.t
-tf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
+INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
+tc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
 simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
-S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C
+S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C
 :/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simka
 i.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fon
-ts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
+ts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
 DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf
 ><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
 mkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
-Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
-/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDO
-WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
-C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simh
+Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/
+WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.
+ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts
+/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
+WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
+C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simh
 ei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fo
-nts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
+nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WI
 NDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.tt
 f><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
-imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
-/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
+/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
+/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei
+.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
 s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
-OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf>
-<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/sim
-hei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/F
-onts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/W
-INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
+OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
+onts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/W
+INDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.t
+tf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/
+simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
 S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
 :/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
 n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIN
-DOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc
+ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
+DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
 ><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
-Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
+mhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/
+Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
 WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cmextra/cmex7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmmib10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmti10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.
-pfb>
-Output written on PS1_template.pdf (8 pages, 846170 bytes).
+ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
+/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
+WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
+C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb>
+<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on PS1_template.pdf (8 pages, 878744 bytes).
 PDF statistics:
- 830 PDF objects out of 1000 (max. 8388607)
+ 858 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)
  333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
