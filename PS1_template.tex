@@ -318,12 +318,48 @@ Nemenyi检验：\\
 \item \textbf{[10pts]} 根据书上第35页中的公式(2.20)和公式(2.21)，试证明\[\mbox{AUC}+\ell_{rank}=1.\]
 \end{enumerate}
 \begin{mySol}
-此处用于写解答(中英文均可)
-~\\
-~\\
-~\\
-~\\
-~\\
+此处用于写解答(中英文均可)\\
+\begin{enumerate}
+\item 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{roc_curve.png}
+	\caption{根据表2中数据绘制的roc曲线}
+	\label{fig:label}
+\end{figure}
+\begin{equation}
+\begin{aligned}
+\ell_{rank} &= \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}\left(\mathbb I\left(f\left(x^+\right)<f\left(x^-\right)\right) + \frac{1}{2}\mathbb{I}\left(f\left(x^+\right)=f\left(x^-\right)\right)\right)\\
+ &= \frac{1}{6}=0.1667
+\end{aligned}
+\end{equation}
+\begin{equation}
+AUC = 1-\ell_{rank} = 0.8333
+\end{equation}
+
+\item 
+要证明${AUC}+\ell_{rank}=1$，即证明：
+\begin{equation}
+AUC = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}\left(\mathbb I\left(f\left(x^+\right)>f\left(x^-\right)\right) + \frac{1}{2}\mathbb{I}\left(f\left(x^+\right)=f\left(x^-\right)\right)\right)	
+\end{equation}
+根据AUC的定义可得AUC表示的是ROC曲线下方围成的面积，那么先定义一个$unit$为大小为$\frac{1}{m^+}\frac{1}{m^-}$的矩形块面积，在已知上一个样例的坐标为$(x_0, y_0)$时，如果当前样例是正样例，那么当前新坐标就是$(x_0, y_0+\frac{1}{m^+})$，并不增加面积。如果当前样例是负样例，那么当前新坐标就是$(x_0+\frac{1}{m^-}, y_0)$，会增加ROC之下的面积，增加的面积大小为k个$unit$的大小，k是输出值大于当前负样例的正样例的个数。\\
+由此可得，对于任意两个一正一负的样例$s_1\in D^+$， $s_2\in D^-$，有以下三种情况：
+\begin{itemize}
+\item $f(s_1) > f(s_2)$，那么$s_1$和$s_2$会为AUC贡献一个$unit$的面积，因为$s_1$贡献了$\frac{1}{m^+}$的y轴长度，$s_2$贡献了$\frac{1}{m^-}$的x轴长度。
+\item $f(s_1) = f(s_2)$，贡献一个三角形的面积，大小为半个$unit$大小。
+\item $f(s_1) < f(s_2)$，不贡献面积。
+\end{itemize}
+综上所述，可得：
+\begin{equation}
+AUC = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}\left(\mathbb I\left(f\left(x^+\right)>f\left(x^-\right)\right) + \frac{1}{2}\mathbb{I}\left(f\left(x^+\right)=f\left(x^-\right)\right)\right)
+\end{equation}
+所以
+\begin{equation}
+AUC + \ell_{rank} = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}1 = 1
+\end{equation}
+\end{enumerate}
+
+
 \end{mySol}
 
 \newpage
