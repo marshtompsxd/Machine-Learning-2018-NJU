@@ -152,13 +152,14 @@ f_Y(y) =
 \end{aligned}
 \end{equation}
 由此可得$(1.2)$与$(1.3)$等价。\\
-验证：
+验证：\\
+方法一：
 \begin{equation}
 \begin{aligned}
 \mathbb{E}[X] &= \int_{x=0}^{\infty}xf(x) \diff x = \int_{0}^{1}\frac{1}{4}x\diff x + \int_{3}^{5}\frac{3}{8}x\diff x =\frac{25}{8}
 \end{aligned}
 \end{equation}
-
+方法二：
 \begin{equation}
 \begin{aligned}
 \mathbb{E}[X] &= \int_{x=0}^{\infty}\Pr[X\geq x] \diff x = \int_{0}^{1}(1-\frac{1}{4}x)\diff x 
@@ -167,16 +168,27 @@ f_Y(y) =
 &= \frac{25}{8}
 \end{aligned}
 \end{equation}
-
+方法一：
 \begin{equation}
 \begin{aligned}
 \mathbb{E}[Y] &= \int_{y=0}^{\infty}yf(y) \diff y = \int_{\frac{1}{5}}^{\frac{1}{3}}\frac{3}{8y}\diff y + \int_{1}^{\infty}\frac{1}{4y}\diff y = \infty
 \end{aligned}
 \end{equation}
+方法二：
+\begin{equation}
+F_Y(y) =
+\begin{cases}
+\frac{15}{8} - \frac{3}{8y} & \frac{1}{5}<y\leq\frac{1}{3};\\
+\frac{3}{4} & \frac{1}{3} < y \leq 1;\\
+1-\frac{1}{4y} & 1 < y;\\
+0 & \mbox{otherwise.}
+\end{cases}
+\end{equation}
 
 \begin{equation}
 \begin{aligned}
-\mathbb{E}[Y] &= \int_{y=0}^{\infty}\Pr[Y \geq y] \diff y = \infty
+\mathbb{E}[Y] &= \int_{y=0}^{\infty}\Pr[Y \geq y] \diff y\\ 
+&= \int_{\frac{1}{5}}^{\frac{1}{3}}(\frac{3}{8y} - \frac{7}{8}) \diff y + \int_{\frac{1}{3}}^{1}\frac{1}{4}\diff y + \int_{1}^{\infty}\frac{1}{4y}\diff y =\infty
 \end{aligned}
 \end{equation}
 
@@ -205,33 +217,40 @@ f_Y(y) =
 \begin{myProof}
 此处用于写证明(中英文均可)
 
-令$g(\mathbf{y}) = f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y}\rVert^2$。要证明$(2.1)$和$(2.2)$等价，先证明$(2.2)$和
+先证明$(2.1) \Rightarrow (2.2)$：
 \begin{equation}
 \begin{aligned}
-g(\mathbf{y})\ is\ convex
+&f((1-\alpha)\mathbf{x} + \alpha\mathbf{y})\leq (1-\alpha)f(\mathbf{x}) + \alpha f(\mathbf{y}) - \frac{\lambda}{2}\alpha(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2\\
+\Rightarrow &\alpha f(\mathbf{y}) \geq f(\mathbf{x}+\alpha(\mathbf{y}-\mathbf{x})) - (1-\alpha)f(\mathbf{x}) + \frac{\lambda}{2}\alpha(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2\\
+\Rightarrow & f(\mathbf{y}) \geq f(\mathbf{x}) + \frac{f(\mathbf{x} + \alpha(\mathbf{y}-\mathbf{x}))-f(\mathbf{x})}{\alpha} + \frac{\lambda}{2}(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2
 \end{aligned}
 \end{equation}
-等价。\\
-因为
+
+根据导数定义
+\begin{equation}
+\lim\limits_{\alpha\rightarrow 0}\frac{f(\mathbf{x} + \alpha(\mathbf{y}-\mathbf{x}))-f(\mathbf{x})}{\alpha} = \nabla f(\mathbf{x})^\mathrm{T}(\mathbf{y}-\mathbf{x})	
+\end{equation}
+所以根据$(2.3)$和$(2.4)$可以得到$(2.1) \Rightarrow (2.2)$。\\\\
+下面证明$(2.2) \Rightarrow (2.1)$：\\
+因为有$f(\mathbf{y}) \geq f(\mathbf{x}) + \nabla f(\mathbf{x})^\mathrm{T}(\mathbf{y}-\mathbf{x}) + \frac{\lambda}{2}\lVert \mathbf{y} - \mathbf{x}\rVert^2$，可得：
+\begin{equation}
+f(\mathbf{x}) \geq f(\mathbf{z}) + \nabla f(\mathbf{z})(\mathbf{x}-\mathbf{z}) + \frac{\lambda}{2}\lVert \mathbf{x} - \mathbf{z}\rVert^2
+\end{equation}
+
+\begin{equation}
+f(\mathbf{y}) \geq f(\mathbf{z}) + \nabla f(\mathbf{z})(\mathbf{y}-\mathbf{z}) + \frac{\lambda}{2}\lVert \mathbf{y} - \mathbf{z}\rVert^2
+\end{equation}
+
+其中$\mathbf{z} = (1-\alpha)\mathbf{x} + \alpha\mathbf{y}$。由$(2.5)$和$(2.6)$可以得到：
 \begin{equation}
 \begin{aligned}
-&g(\mathbf{y})\ is\ convex \\
-\Leftrightarrow &g(\mathbf{y}) \geq g(\mathbf{x}) + \nabla g(\mathbf{x})^\mathrm{T}(\mathbf{y}-\mathbf{x})\\
-\Leftrightarrow &f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y}\rVert^2 \geq f(\mathbf{x}) - \frac{\lambda}{2}\lVert \mathbf{x}\rVert^2 + (\nabla f(\mathbf{x})^\mathrm{T} - \lambda\mathbf{x}^\mathrm{T})(\mathbf{y} - \mathbf{x})\\
-\Leftrightarrow &f(\mathbf{y}) \geq f(\mathbf{x}) + \nabla f(\mathbf{x})^\mathrm{T}(\mathbf{y} - \mathbf{x}) + \frac{\lambda}{2}\lVert \mathbf{y} \rVert^2 - \frac{\lambda}{2}\lVert \mathbf{x} \rVert^2 - \lambda \mathbf{x}^\mathrm{T}(\mathbf{y}-\mathbf{x})\\
-\Leftrightarrow & f(\mathbf{y}) \geq f(\mathbf{x}) + \nabla f(\mathbf{x})^\mathrm{T}(\mathbf{y} - \mathbf{x}) + \frac{\lambda}{2}\lVert \mathbf{y}-\mathbf{x} \rVert^2
+(1-\alpha) f(\mathbf{x}) + \alpha f(\mathbf{y}) &\geq f(\mathbf{z}) + \nabla f(\mathbf{z})((1-\alpha) \mathbf{x} + \alpha \mathbf{y} - \mathbf{z}) + (1-\alpha)\frac{\lambda}{2}\lVert \mathbf{x} - \mathbf{z}\rVert^2 + \alpha\frac{\lambda}{2}\lVert \mathbf{y} - \mathbf{z}\rVert^2\\
+& =f((1-\alpha)\mathbf{x}+\alpha\mathbf{y}) + (1-\alpha)\frac{\lambda}{2}\lVert \alpha(\mathbf{x} - \mathbf{y})\rVert^2 + \alpha\frac{\lambda}{2}\lVert (1-\alpha)(\mathbf{x} - \mathbf{y})\rVert^2\\
+& = f((1-\alpha)\mathbf{x}+\alpha\mathbf{y}) + \frac{\lambda}{2}\alpha(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2
 \end{aligned}
 \end{equation}
-可得$(2.2)$与$(2.3)$等价，下面证明$(2.1)$与$(2.3)$等价
-\begin{equation}
-\begin{aligned}
-&g(\mathbf{y})\ is\ convex \\
-\Leftrightarrow & g((1-\alpha)\mathbf{x} + \alpha\mathbf{y}) \leq (1-\alpha)g(\mathbf{x}) + \alpha g(\mathbf{y})\\
-\Leftrightarrow & f((1-\alpha)\mathbf{x} + \alpha\mathbf{y}) - \frac{\lambda}{2}\lVert (1-\alpha)\mathbf{x} + \alpha\mathbf{y} \rVert^2 \leq (1-\alpha)(f(\mathbf{x})-\frac{\lambda}{2}\lVert \mathbf{x} \rVert^2) + \alpha(f(\mathbf{y}) - \frac{\lambda}{2}\lVert \mathbf{y} \rVert^2)\\
-\Leftrightarrow & f((1-\alpha)\mathbf{x} + \alpha\mathbf{y})\leq (1-\alpha)f(\mathbf{x}) + \alpha f(\mathbf{y}) - \frac{\lambda}{2}\alpha(1-\alpha)\lVert \mathbf{x} - \mathbf{y}\rVert^2
-\end{aligned}
-\end{equation}
-得证，在函数$f$可微的情况下，式~\eqref{eq-sc-1}与式~\eqref{eq-sc-2}等价。
+所以可得$(2.2) \Rightarrow (2.1)$。\\\\
+综上可得，在函数$f$可微的情况下，式~\eqref{eq-sc-1}与式~\eqref{eq-sc-2}等价。
 \qed
 \end{myProof}
 
@@ -358,8 +377,6 @@ AUC = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}\left(\mathbb I\left(f\l
 AUC + \ell_{rank} = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}1 = 1
 \end{equation}
 \end{enumerate}
-
-
 \end{mySol}
 
 \newpage
@@ -388,6 +405,8 @@ AUC + \ell_{rank} = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}1 = 1
 ~\\
 ~\\
 ~\\
+
+你好
 \qed
 \end{myProof}
 

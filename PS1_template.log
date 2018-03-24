@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  20 MAR 2018 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  24 MAR 2018 19:17
 entering extended mode
 **./PS1_template.tex
 (PS1_template.tex
@@ -1841,13 +1841,23 @@ e (quanjiao) on input line 145.
  [2] [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 191.
- [4]
+(mdframed)              on input line 203.
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--255
+
+ []
+
+[4]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 242.
+(mdframed)              on input line 261.
 
-Overfull \hbox (5.9719pt too wide) in paragraph at lines 269--271
+Overfull \hbox (5.9719pt too wide) in paragraph at lines 288--290
 [] [][] \OMS/cmsy/m/n/10.53937 j\OT1/cmr/bx/n/10.53937 A[]\OMS/cmsy/m/n/10.5393
 7 j$|\C70/rm/m/it/10.53937/30 | \C70/rm/m/it/10.53937/53 » \C70/rm/m/it/10.539
 37/56 ‡ \C70/rm/m/it/10.53937/4e :$\OT1/cmr/bx/n/10.53937 X$\C70/rm/m/it/10.539
@@ -1865,7 +1875,7 @@ t/10.53937/61  \C70/rm/m/it/10.53937/72 y \C70/rm/m/it/10.53937/5f Å \C70/rm/m
  []
 
 [5] [6]
-Overfull \hbox (9.18968pt too wide) in paragraph at lines 317--318
+Overfull \hbox (9.18968pt too wide) in paragraph at lines 336--337
 []\OT1/cmr/bx/n/10.53937 [10pts] \C70/rm/m/n/10.53937/8b ˜ \C70/rm/m/n/10.53937
 /75 ; \C70/rm/m/n/10.53937/51 ˙ v \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.5393
 7/5e î \C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 ROC\C70/rm/m/n/10.53937/5
@@ -1880,60 +1890,65 @@ e v \C70/rm/m/n/10.53937/8b ° \C70/rm/m/n/10.53937/7b ó \C70/rm/m/n/10.53937/5b
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
 
  []
 
-<roc_curve.png, id=327, 562.2606pt x 415.7934pt>
+<roc_curve.png, id=330, 562.2606pt x 415.7934pt>
 File: roc_curve.png Graphic file (type png)
  <use roc_curve.png>
-Package pdftex.def Info: roc_curve.png used on input line 326.
+Package pdftex.def Info: roc_curve.png used on input line 345.
 (pdftex.def)             Requested size: 281.12961pt x 207.89618pt.
  [7 <./roc_curve.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 348.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 367.
 
  ("D:\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.53937> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 348.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 367.
  [8]
-Underfull \hbox (badness 10000) in paragraph at lines 385--392
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--392
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--392
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--392
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--408
 
  []
 
 
 AED: lastpage setting LastPage
 [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 416.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 416.
  (PS1_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 416.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 416.
 Package rerunfilecheck Info: File `PS1_template.out' has not changed.
 (rerunfilecheck)             Checksum: 370FA4EAF3D2FF18F587F9920C0F8040;1209.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 416.
  ) 
 Here is how much of TeX's memory you used:
- 33943 strings out of 493333
- 609741 string characters out of 3145216
+ 33948 strings out of 493333
+ 609831 string characters out of 3145216
  741091 words of memory out of 3000000
- 36536 multiletter control sequences out of 15000+200000
+ 36538 multiletter control sequences out of 15000+200000
  601381 words of font info for 285 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,12n,73p,10456b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1942,20 +1957,20 @@ imhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
 /Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
 /WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai
 .ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Font
-s/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
+s/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
 OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf>
-<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/sim
-kai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
-onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
-INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.t
-tf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
+<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
+onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/W
+INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
+tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
+simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
 S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C
 :/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simka
 i.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fon
 ts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
-DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf
-><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
+DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc
+><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
 mkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
 Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/
 WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.
@@ -2007,9 +2022,9 @@ onts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmti10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
-Output written on PS1_template.pdf (9 pages, 940378 bytes).
+Output written on PS1_template.pdf (9 pages, 942654 bytes).
 PDF statistics:
- 897 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
+ 900 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
