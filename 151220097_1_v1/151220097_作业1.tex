@@ -402,30 +402,11 @@ AUC + \ell_{rank} = \frac{1}{m^+m^-}\sum_{x^+\in D^+}\sum_{x^-\in D^-}1 = 1
 
 \begin{myProof}
 此处用于写证明(中英文均可)
-
-首先因为$\epsilon\sim N(0,\sigma^2)$可以得到$\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[\epsilon] = 0$和$\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[\epsilon^2] = \sigma^2$。\\
-然后根据$(6.1)$可得
-\begin{equation}
-\begin{aligned}
-\mathbf{EPE}(\textbf{x}_0)
-&=\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[(y_0-\hat{y}_0)^2]\\
-&=\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[(\textbf{x}_0^T \bm\beta +\epsilon-\hat{y}_0)^2]\\
-&=\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[((\textbf{x}_0^T \bm\beta - \mathbb{E}_{\mathcal{D}}[\hat{y}_0]) +\epsilon-(\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0] ))^2]\\
-&=\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[(\textbf{x}_0^T \bm\beta - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])^2 +\epsilon^2+(\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])^2\\
-&+ 2\epsilon(\textbf{x}_0^T \bm\beta - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])-2\epsilon(\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0]) - 2(\textbf{x}_0^T \bm\beta - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])(\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])]
-\end{aligned}
-\end{equation}
-因为$\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[\epsilon] = 0$，$\mathbb{E}_{\mathcal{D}}[\hat{y}_0] = \textbf{x}_0^T \bm\beta$以及$\mathbb{E}_{\mathcal{D}}[\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0]] = 0$，可以将上式化简得到：
-
-\begin{equation}
-\begin{aligned}
-\mathbf{EPE}(\textbf{x}_0) &=\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[\epsilon^2+(\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])^2]\\
-\end{aligned}
-\end{equation}
-又因为$\mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[\epsilon^2] = \sigma^2$以及$ \mathbb{E}_{y_0|\textbf{x}_0}\mathbb{E}_{\mathcal{D}}[(\hat{y}_0 - \mathbb{E}_{\mathcal{D}}[\hat{y}_0])^2] = \mathbb{E}_{\mathcal{D}}[\textbf{x}_0^T(\textbf{X}\textbf{X}^T)^{-1}\textbf{x}_0\sigma^2] $，所以可得：
-\begin{equation}
-\mathbf{EPE}(\textbf{x}_0) = \sigma^2+\mathbb{E}_{\mathcal{D}}[\textbf{x}_0^T(\textbf{X}\textbf{X}^T)^{-1}\textbf{x}_0\sigma^2]
-\end{equation}
+~\\
+~\\
+~\\
+~\\
+~\\
 
 \qed
 \end{myProof}

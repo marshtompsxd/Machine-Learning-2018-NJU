@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  27 MAR 2018 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  27 MAR 2018 19:11
 entering extended mode
-**./PS1_template.tex
-(PS1_template.tex
+**./151220097_1.tex
+(151220097_1.tex
 LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("D:\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -1640,8 +1640,8 @@ File: UTF8.enc 2015/04/18 4.8.4
 )
 ("D:\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.chr"
 File: UTF8.chr 2015/04/18 4.8.4
-) (PS1_template.aux)
-\openout1 = `PS1_template.aux'.
+) (151220097_1.aux)
+\openout1 = `151220097_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
@@ -1803,10 +1803,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 64.
 LaTeX Info: Redefining \pageref on input line 64.
 LaTeX Info: Redefining \nameref on input line 64.
- (PS1_template.out)
-(PS1_template.out)
+ (151220097_1.out)
+(151220097_1.out)
 \@outlinefile=\write6
-\openout6 = `PS1_template.out'.
+\openout6 = `151220097_1.out'.
 
  ABD: EveryShipout initializing macros
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1913,21 +1913,21 @@ AED: lastpage setting LastPage
 [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
- (PS1_template.aux)
+ (151220097_1.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
-Package rerunfilecheck Info: File `PS1_template.out' has not changed.
+Package rerunfilecheck Info: File `151220097_1.out' has not changed.
 (rerunfilecheck)             Checksum: 370FA4EAF3D2FF18F587F9920C0F8040;1209.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 436.
  ) 
 Here is how much of TeX's memory you used:
  33967 strings out of 493333
- 610051 string characters out of 3145216
- 741091 words of memory out of 3000000
+ 610037 string characters out of 3145216
+ 741090 words of memory out of 3000000
  36554 multiletter control sequences out of 15000+200000
  602076 words of font info for 286 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,12n,73p,10456b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,12n,73p,10455b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
 imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
 /Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
@@ -1999,7 +1999,7 @@ ic/amsfonts/cm/cmr5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
 ype1/public/amsfonts/cm/cmsy5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/MiKTeX 
 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on PS1_template.pdf (9 pages, 965648 bytes).
+Output written on 151220097_1.pdf (9 pages, 965648 bytes).
 PDF statistics:
  916 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
