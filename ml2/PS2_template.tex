@@ -79,7 +79,7 @@
 \begin{document}
 \title{机器学习导论\\
 作业二}
-\author{学号, 作者姓名, 邮箱}
+\author{151220097, 孙旭东, 248381185@qq.com}
 \maketitle
 
 \section{[25pts] Multi-Class Logistic Regression}
@@ -106,7 +106,39 @@ $$\mathbb{I}(y=j)=
 \end{cases}$$
 
 \begin{solution}
-	此处用于写解答(中英文均可)
+	
+\begin{enumerate}
+	
+\item
+因为
+\begin{equation}
+	\ln\frac{p(y=i|\mathbf{x})}{p(y=K|\mathbf{x})}=\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i
+\end{equation} 	
+所以
+\begin{equation}
+	\frac{p(y=i|\mathbf{x})}{p(y=K|\mathbf{x})} = e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}
+\end{equation}
+进一步有
+\begin{equation}
+	\frac{1-p(y=K|\mathbf{x})}{p(y=K|\mathbf{x})} = \sum_{i=1}^{K-1}e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}
+\end{equation}
+所以可得
+\begin{equation}
+	p(y=K|\mathbf{x}) = \frac{1}{1 + \sum_{i=1}^{K-1}e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}}
+\end{equation}
+由此可得当$k\neq K$
+\begin{equation}
+	p(y=k|\mathbf{x}) = \frac{e^{\mathbf{w}_k^\mathrm{T}\mathbf{x}+b_k}}{1 + \sum_{i=1}^{K-1}e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}}
+\end{equation}
+综上所述，我们有
+\begin{equation}
+		p(y=k|\mathbf{x}) = \begin{cases}
+		\frac{e^{\mathbf{w}_k^\mathrm{T}\mathbf{x}+b_k}}{1 + \sum_{i=1}^{K-1}e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}} & k\neq K;\\
+		\frac{1}{1 + \sum_{i=1}^{K-1}e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}} & k = K.
+		\end{cases}
+\end{equation}
+\end{enumerate}	
+	
 \end{solution}
 \newpage
 
