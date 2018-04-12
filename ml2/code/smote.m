@@ -3,12 +3,9 @@ function [ X_new, y_new ] = smote( X, y, k, num_labels )
 %   此处显示详细说明
 category_size = zeros(1, num_labels);
 
-for i=1 : num_labels
-    for j = 1 : size(y)
-        if(y(j) == i)
-            category_size(i) = category_size(i) + 1;
-        end
-    end
+
+for i = 1 : size(y)
+    category_size(y(i)) = category_size(y(i)) + 1;
 end
 
 max_num = max(category_size);
