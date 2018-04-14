@@ -174,7 +174,63 @@ $$\mathbb{I}(y=j)=
 
 试证明：当两类数据的分布参数$\Sigma_1=\Sigma_2=\Sigma$时，线性判别分析 (LDA)方法满足“最优分类”性质。（提示：找到满足最优分类性质的分类平面。）
 \begin{solution}
-	此处用于写解答(中英文均可)
+由于正例和负例服从高斯分布，我们用$y_1$表示正例，用$y_2$表示负例，所以可知：\\
+\begin{equation}
+p(\mathbf{x} = x \mid \mathbf{y} = y_1) = \frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_1)^\mathrm{T}\Sigma^{-1}(x - \mu_1)
+)
+\end{equation}
+\begin{equation}
+p(\mathbf{x} = x \mid \mathbf{y} = y_2) = \frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_2)^\mathrm{T}\Sigma^{-1}(x - \mu_2)
+)
+\end{equation}
+根据样例的分布情况计算$p(\mathbf{y}=y_i)$，可得:
+\begin{equation}
+p(\mathbf{y}=y_i) = \frac{m_i}{m} = p_i\ \ (i = 1, 2)
+\end{equation}
+根据贝叶斯公式：
+\begin{equation}
+\begin{aligned}
+p(\mathbf{y} = y_i \mid  \mathbf{x} = x) 
+=& \frac{p(\mathbf{x} = x \mid \mathbf{y} = y_i)p(\mathbf{y} = y_i)}{p(\mathbf{x} = x)} \\
+=& \frac{p_i}{p(\mathbf{x} = x)}\frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_i)^\mathrm{T}\Sigma^{-1}(x - \mu_i))
+\end{aligned}
+\end{equation}
+对后验概率取对数，可得（注意到$\Sigma$是对称矩阵）
+\begin{equation}
+\begin{aligned}
+\ln p(\mathbf{y} = y_i \mid  \mathbf{x} = x) 
+=& -\ln p(\mathbf{x} = x) + \ln p_i - \frac{1}{2}(x - \mu_i)^\mathrm{T}\Sigma^{-1}(x - \mu_i)\\
+=& -\ln p(\mathbf{x} = x) + \ln p_i - \frac{1}{2}(x^\mathrm{T}\Sigma^{-1}x + \mu_i^\mathrm{T}\Sigma^{-1}\mu_i + 2x^{\mathrm{T}}\Sigma^{-1}\mu_i)\\
+=& -\ln p(\mathbf{x} = x) + \ln p_i - \frac{1}{2}x^\mathrm{T}\Sigma^{-1}x - \frac{1}{2} \mu_i^\mathrm{T}\Sigma^{-1}\mu_i - x^{\mathrm{T}}\Sigma^{-1}\mu_i
+\end{aligned}
+\end{equation}
+注意到$\ln p(\mathbf{x} = x)$和$\frac{1}{2}x^\mathrm{T}\Sigma^{-1}x$都是和$i$无关的，所以为了方便之后的计算，整理所有和$i$无关的项，用常数$C$代替，可得
+\begin{equation}
+\ln p(\mathbf{y} = y_i \mid  \mathbf{x} = x) = C + \ln p_i - \frac{1}{2} \mu_i^\mathrm{T}\Sigma^{-1}\mu_i - x^{\mathrm{T}}\Sigma^{-1}\mu_i 
+\end{equation}
+那么对于给定的$x$，$\mathbf{y}$取$y_1$或者$y_2$的后验概率为
+\begin{equation}
+\ln p(\mathbf{y} = y_1 \mid  \mathbf{x} = x) = C + \ln p_1 - \frac{1}{2} \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - x^{\mathrm{T}}\Sigma^{-1}\mu_1 
+\end{equation}
+\begin{equation}
+\ln p(\mathbf{y} = y_2 \mid  \mathbf{x} = x) = C + \ln p_2 - \frac{1}{2} \mu_2^\mathrm{T}\Sigma^{-1}\mu_2 - x^{\mathrm{T}}\Sigma^{-1}\mu_2 
+\end{equation}
+现在考虑最优分类平面的定义。如果一个平面将空间分成A，B两个部分，不妨认为落在A部分的$x$是正例的可能性更大，落在B部分的$x$是负例的可能性更大。那么当判断$x$落在A部分时，就预测它属于正例，反之预测它属于反例，这就满足了最优分类的性质，这样的平面就是最优的分类平面。很显然，当$x$落在分类平面上时，$x$属于正例和负例的可能性一样大。根据这一点令$i=1$和$i=2$的后验概率相等来计算最优平面：
+\begin{equation}
+\begin{aligned}
+C + \ln p_1 - \frac{1}{2} \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - x^{\mathrm{T}}\Sigma^{-1}\mu_1 &= C + \ln p_2 - \frac{1}{2} \mu_2^\mathrm{T}\Sigma^{-1}\mu_2 - x^{\mathrm{T}}\Sigma^{-1}\mu_2 \\
+\Leftrightarrow\ \ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) &= x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)
+\end{aligned}
+\end{equation}
+上式是一个超平面方程，由于$x$的系数为$\Sigma^{-1}(\mu_1 - \mu_2)$，所以$\Sigma^{-1}(\mu_1 - \mu_2)$是超平面的一个法向量。\\
+现在再考虑LDA。根据LDA的定义，所有样例将要被映射到$w$上，而$w = S^{-1}_w(\mu_1 - \mu_2)$，而$S^{-1}_w = \Sigma_1 + \Sigma_2 = 2\Sigma$。现在只考虑方向，那么$w = \Sigma^{-1}(\mu_1 - \mu_2)$就是LDA将样本投影到的直线，这也刚好是最优分类平面的法向量。考虑到LDA将所有样本映射到$w$上，所以需要一个阈值来作为正例和负例的分界。设置阈值为$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2)$，小于阈值预测为正例，反之预测为负例。现在来观察这个分类器是否满足最优分类性质。\\
+由于$(2.9)$定义了最优平面的方程，所以：\\
+当$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) > x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时，样本为正例的可能性大于样本为负例的可能性，所以预测为正例；\\
+当$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) < x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时，样本为负例的可能性大于样本为正例的可能性，所以预测为负例。\\
+在LDA分类器中，每一个样本$x$都被映射为一个标量$x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$，所以：\\
+在$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) > x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时预测为正例，根据最优平面的性质，这也是样本为正例可能性大于负例可能性的情况；\\
+在$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) < x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时预测为负例，根据最优平面的性质，这也是样本为负例可能性大于正例可能性的情况。\\
+综上所述，LDA方法满足最优分类性质。
 \end{solution}
 \newpage
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  14 APR 2018 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  14 APR 2018 22:41
 entering extended mode
 **./PS2_template.tex
 (PS2_template.tex
@@ -1671,16 +1671,39 @@ Overfull \hbox (6.22058pt too wide) detected at line 149
 [][][]
  []
 
-[2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 205.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+[3]
+Overfull \hbox (5.50746pt too wide) in paragraph at lines 224--234
+\C70/rm/m/it/10.53937/73 ∞ \C70/rm/m/it/10.53937/57 ( \C70/rm/m/it/10.53937/51 
+ç \C70/rm/m/it/10.53937/80  \C70/rm/m/it/10.53937/86 Q\OT1/cmr/m/it/10.53937 L
+DA|\C70/rm/m/it/10.53937/30 | \C70/rm/m/it/10.53937/68 9 \C70/rm/m/it/10.53937
+/63 n\OT1/cmr/m/it/10.53937 LDA\C70/rm/m/it/10.53937/76 Ñ \C70/rm/m/it/10.53937
+/5b ö \C70/rm/m/it/10.53937/4e I|\C70/rm/m/it/10.53937/ff | \C70/rm/m/it/10.53
+937/62 @ \C70/rm/m/it/10.53937/67 	 \C70/rm/m/it/10.53937/68 7 \C70/rm/m/it/10.
+53937/4f ã \C70/rm/m/it/10.53937/5c  \C70/rm/m/it/10.53937/89 Å \C70/rm/m/it/1
+0.53937/88 ´ \C70/rm/m/it/10.53937/66   \C70/rm/m/it/10.53937/5c  \C70/rm/m/it
+/10.53937/52 0$\OML/cmm/m/it/10.53937 w$\C70/rm/m/it/10.53937/4e 
+|\C70/rm/m/it/10.53937/ff | \C70/rm/m/it/10.53937/80 $\OML/cmm/m/it/10.53937 
+w \OT1/cmr/m/n/10.53937 = \OML/cmm/m/it/10.53937 S[]\OT1/cmr/m/n/10.53937 (\OML
+/cmm/m/it/10.53937 [] \OMS/cmsy/m/n/10.53937   \OML/cmm/m/it/10.53937 []\OT1/
+cmr/m/n/10.53937 )$|\C70/rm/m/it/10.53937/ff | \C70/rm/m/it/10.53937/80 $\OML
+/cmm/m/it/10.53937 S[] \OT1/cmr/m/n/10.53937 =
+ []
+
+[4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 261.
 
  ("D:\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.53937> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 261.
 
-Overfull \hbox (6.68344pt too wide) in paragraph at lines 212--213
+Overfull \hbox (6.68344pt too wide) in paragraph at lines 268--269
 \C70/rm/m/n/10.53937/78 |\C70/rm/m/n/10.53937/ff 	||| \C70/rm/m/n/10.53937/59
  Ç \C70/rm/m/n/10.53937/4f  \C70/rm/m/n/10.53937/53  \C70/rm/m/n/10.53937/7b 
 ó \C70/rm/m/n/10.53937/6c ’ \C70/rm/m/n/10.53937/90 	 \C70/rm/m/n/10.53937/62 È
@@ -1693,69 +1716,69 @@ C70/rm/m/n/10.53937/51 ô \C70/rm/m/n/10.53937/88 h []\OT1/cmr/m/n/10.53937 2[]|
 ttp : / / www . tablesgenerator .
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--277
-
- []
-
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 290--297
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 290--297
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--333
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
 
 AED: lastpage setting LastPage
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (PS2_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `PS2_template.out' has not changed.
 (rerunfilecheck)             Checksum: C1151CD84BCFBECFBF167EFC535A9508;749.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 26309 strings out of 493333
- 433593 string characters out of 3145216
- 603334 words of memory out of 3000000
- 29202 multiletter control sequences out of 15000+200000
- 581552 words of font info for 212 fonts, out of 3000000 for 9000
+ 26577 strings out of 493333
+ 438037 string characters out of 3145216
+ 604334 words of memory out of 3000000
+ 29394 multiletter control sequences out of 15000+200000
+ 590462 words of font info for 245 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,45p,10456b,540s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
@@ -1772,12 +1795,12 @@ INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
 tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
 simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
 S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C
-:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
-n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
-DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
-><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
+:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simka
+i.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fon
+ts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
+DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf
+><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
+mkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
 Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/
 WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.
 ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts
@@ -1789,34 +1812,46 @@ nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
 NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
 c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
 imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
-/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
-s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
-OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
-sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
-onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
+/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:
+/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai
+.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Font
+s/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
+OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf>
+<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/sim
+kai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
+onts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
 INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><D:/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmbx7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><D:/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cmextra/cmmib7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
-10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><D:/MiKTeX 2.9/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on PS2_template.pdf (6 pages, 782386 bytes).
+tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
+simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
+S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
+:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
+n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
+ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
+DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
+><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
+msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
+Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
+WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
+ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
+/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><D:/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><D:/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cmextra/cmmib7.pfb><D:/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><D:/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on PS2_template.pdf (7 pages, 923269 bytes).
 PDF statistics:
- 676 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 827 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 
