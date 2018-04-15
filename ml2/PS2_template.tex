@@ -106,7 +106,10 @@ $$\mathbb{I}(y=j)=
 \end{cases}$$
 
 \begin{solution}
-
+~\\
+符号说明：\\
+为防止混淆概念，下述中所有的$\boldsymbol{\beta}$为$\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1}$的统称，$\mathbf{w}$为$\mathbf{w}_1, \mathbf{w}_2,...,\mathbf{w}_{K-1}$的统称，\\
+$b$为$b_1, b_2,..., b_{K-1}$的统称。\\
 \begin{enumerate}
 	
 \item
@@ -137,23 +140,46 @@ $$\mathbb{I}(y=j)=
 		\frac{1}{1 + \sum_{i=1}^{K-1}e^{\mathbf{w}_i^\mathrm{T}\mathbf{x}+b_i}} & k = K.
 		\end{cases}
 \end{equation}
-我们假设总共有$m$个样例
+综上，可以得到
+\begin{equation}
+p(y_i|\mathbf{x}_i;\mathbf{w}, b) = \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)
+\end{equation}
+通过观察可以发现，在$\mathbb{I}(y_i=j)\ (1 \leq j \leq K)$这$K$个式子中，有且仅有一个可以取1，其他全部为0。根据这个性质，再对概率取对数，可以得到
 \begin{equation}
 \begin{aligned}
-&\ell(\mathbf{w}, \mathbf{b}) \\
-=& \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i)\\
-=& \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)\ln \frac{e^{\mathbf{w}_j^\mathrm{T}\mathbf{x}_i+b_j}}{1 + \sum_{t=1}^{K-1}e^{\mathbf{w}_t^\mathrm{T}\mathbf{x}_i+b_t}} + \sum_{i=1}^{m}\mathbb{I}(y_i=K)\ln\frac{1}{1 + \sum_{t=1}^{K-1}e^{\mathbf{w}_t^\mathrm{T}\mathbf{x}_i+b_t}}\\
-=& \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\mathbf{w}_j^\mathrm{T}\mathbf{x}_i+b_j - \ln (1 + \sum_{t=1}^{K-1}e^{\mathbf{w}_t^\mathrm{T}\mathbf{x}_i+b_t})) - \sum_{i=1}^{m}\mathbb{I}(y_i=K)\ln(1 + \sum_{t=1}^{K-1}e^{\mathbf{w}_t^\mathrm{T}\mathbf{x}_i+b_t})\\
-=&\sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\mathbf{w}_j^\mathrm{T}\mathbf{x}+b_j) - \sum_{i=1}^{m}\ln(1 + \sum_{t=1}^{K-1}e^{\mathbf{w}_t^\mathrm{T}\mathbf{x}_i+b_t})
+\ln p(y_i|\mathbf{x}_i;\mathbf{w}, b) =& \ln \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)\\
+=& \sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)
 \end{aligned}
 \end{equation}
-再令$\boldsymbol{\beta}_j = (\mathbf{w}_j; b_j)$以及$\hat{\mathbf{x}} = (\mathbf{x}; 1)$，可以有
+我们假设总共有$m$个样例，下面计算对数似然
+\begin{equation}
+\ell(\mathbf{w}, b) = \sum_{i=1}^{m}\ln p(y_i|\mathbf{x}_i;\mathbf{w}, b)
+= \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)
+\end{equation}
+为了便于讨论，令$\boldsymbol{\beta}_j = (\mathbf{w}_j; b_j)$以及$\hat{\mathbf{x}}_i = (\mathbf{x}_i; 1)$，现在$\mathbf{w}_j^\mathrm{T}\mathbf{x}_i+b_j$可以简写为$\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i$，并且因为只是改变了符号，所以对数极大似然可以写成如下形式
+\begin{equation}
+\begin{aligned}
+\ell(\boldsymbol{\beta}) = \ell(\mathbf{w}, b) 
+=& \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)\\
+=&\sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\hat{\mathbf{x}}_i;\boldsymbol{\beta})
+\end{aligned}
+\end{equation}
+根据以上讨论，最终对数似然求解如下
+\begin{equation}
+\begin{aligned}
+&\ell(\boldsymbol{\beta}) = \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\hat{\mathbf{x}}_i;\boldsymbol{\beta})\\
+=& \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)\ln \frac{e^{\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i}}{1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i}} + \sum_{i=1}^{m}\mathbb{I}(y_i=K)\ln\frac{1}{1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i}}\\
+=& \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i- \ln (1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})) - \sum_{i=1}^{m}\mathbb{I}(y_i=K)\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})\\
+=&\sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i) - \sum_{i=1}^{m}\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})
+\end{aligned}
+\end{equation}
+综上所述
 \begin{equation}
 \ell(\boldsymbol{\beta}) = \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i) - \sum_{i=1}^{m}\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})
 \end{equation}
 
 \item
-由上一问可得：
+由上一问可得，$\ell(\boldsymbol{\beta})$对$\boldsymbol{\beta}_j$求偏导：
 \begin{equation}
 \begin{aligned}
 \frac{\partial\ell(\boldsymbol{\beta})}{\partial\boldsymbol{\beta}_j} 
@@ -174,6 +200,7 @@ $$\mathbb{I}(y=j)=
 
 试证明：当两类数据的分布参数$\Sigma_1=\Sigma_2=\Sigma$时，线性判别分析 (LDA)方法满足“最优分类”性质。（提示：找到满足最优分类性质的分类平面。）
 \begin{solution}
+~\\
 由于正例和负例服从高斯分布，我们用$y_1$表示正例，用$y_2$表示负例，所以可知：\\
 \begin{equation}
 p(\mathbf{x} = x \mid \mathbf{y} = y_1) = \frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_1)^\mathrm{T}\Sigma^{-1}(x - \mu_1)
