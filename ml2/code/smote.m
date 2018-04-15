@@ -1,6 +1,4 @@
 function [ X_new, y_new ] = smote( X, y, k, num_labels )
-%SMOTE 此处显示有关此函数的摘要
-%   此处显示详细说明
 category_size = zeros(1, num_labels);
 
 

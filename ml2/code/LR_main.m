@@ -24,4 +24,3 @@ X_test = [ones(size(X_test, 1), 1), X_test];
 
 pred = predict(all_theta, X_test);
 analysis(y_test, pred, num_labels);
-%fprintf('\nTest Set Accuracy: %f\n', mean(double(pred == y_test)) * 100);
