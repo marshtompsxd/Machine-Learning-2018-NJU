@@ -217,7 +217,32 @@ child { node [env] {X = ?}
  \end{enumerate}
 
  \begin{solution}
- 	此处用于写解答(中英文均可)
+ ~\\
+ \begin{enumerate}
+ \item [(1)]
+ 根节点的熵值为
+ \begin{equation}
+ Ent(D) = -(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}) = 1.000
+ \end{equation}
+ \item [(2)]
+ 第一次划分的规则为$f_1\leq 6$。第一次划分之后，满足$f_1\leq 6$的节点的第二次划分的规则为$f_2\leq 1$，不满足$f_1\leq 6$的节点的所有样本的标签都是$1$，所以不需要再次划分。
+ \item [(3)]
+ 按照$f_2\leq 2$来划分，将$D$分成了$D^1$和$D^2$两个部分。其中$D^1$包含第一个和第四个样例。由此可得
+ \begin{equation}
+ Ent(D^1) =  -(\frac{1}{2}\log_2\frac{1}{2} + \frac{1}{2}\log_2\frac{1}{2}) = 1.000
+ \end{equation}
+ \begin{equation}
+ Ent(D^2) = -(\frac{2}{4}\log_2\frac{2}{4} + \frac{2}{4}\log_2\frac{2}{4}) = 1.000
+ \end{equation}
+ 所以可得信息增益为
+ \begin{equation}
+ \begin{aligned}
+ Gain(D, f_2\leq 2) &= Ent(D) - \sum_{v=1}^{2}\frac{|D^v|}{|D|}Ent(D^v)\\
+ &= 1 - (\frac{2}{6}\times 1 + \frac{4}{6}\times 1)\\
+ &= 0
+ \end{aligned}
+ \end{equation}
+ \end{enumerate}
  \end{solution}
 \newpage
 
