@@ -6,22 +6,21 @@ else
     [sample_num, attr_num] = size(Xs);
     new_sample_num = N*sample_num;
     Xs_new = zeros(new_sample_num, attr_num);
-    new_index = 1;
-    distance_matrix=dist(Xs');
+    index_num = 1;
+    distanceM=dist(Xs');
     sample_index=1:sample_num;     
     
     for i = 1 : sample_num
-        %knnidx = knnsearch(Xs, Xs, 'K', K);
-        knnidx = knnIdx(sample_index(i), K, distance_matrix);
+        knnidx = knnIdx(sample_index(i), K, distanceM);
         for j = 1 : N
             nnrand = randperm(K, 1);
-            nn_idx = knnidx(nnrand);
+            nnidx = knnidx(nnrand);
             for k = 1 : attr_num
-                diff = Xs(nn_idx, k) - Xs(i, k);
-                gap = rand(1, 1);
-                Xs_new(new_index, k) = Xs(i, k) + gap*diff;
+                difference = Xs(nnidx, k) - Xs(i, k);
+                deviation = rand(1, 1);
+                Xs_new(index_num, k) = Xs(i, k) + deviation*difference;
             end
-            new_index = new_index+1;
+            index_num = index_num+1;
         end
     end
     Xs_new = [Xs;Xs_new];

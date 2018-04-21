@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  27 MAR 2018 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  21 APR 2018 16:17
 entering extended mode
-**./PS1_template.tex
-(PS1_template.tex
+**./PS3_template.tex
+(PS3_template.tex
 LaTeX2e <2017/01/01> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("D:\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -1210,247 +1210,13 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 \epsfxsize=\dimen166
 \epsfysize=\dimen167
 )
-("D:\MiKTeX 2.9\tex\latex\tcolorbox\tcolorbox.sty"
-Package: tcolorbox 2018/01/12 version 4.12 text color boxes
-
-("D:\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
-("D:\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
-("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
-\pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen168
-\pgfutil@tempdimb=\dimen169
-
-("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex"))
-("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box51
-
-("D:\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-("D:\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
-("D:\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
-("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks33
-\pgfkeys@temptoks=\toks34
-
-("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks35
-))
-\pgf@x=\dimen170
-\pgf@y=\dimen171
-\pgf@xa=\dimen172
-\pgf@ya=\dimen173
-\pgf@xb=\dimen174
-\pgf@yb=\dimen175
-\pgf@xc=\dimen176
-\pgf@yc=\dimen177
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count278
-\c@pgf@countb=\count279
-\c@pgf@countc=\count280
-\c@pgf@countd=\count281
-\t@pgf@toka=\toks36
-\t@pgf@tokb=\toks37
-\t@pgf@tokc=\toks38
-
-("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
-
-("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def"
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
-("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex"
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count282
-\pgfsyssoftpath@bigbuffer@items=\count283
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex"
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-("D:\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-("D:\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 709.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
-
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen178
-\pgfmath@count=\count284
-\pgfmath@box=\box52
-\pgfmath@toks=\toks39
-\pgfmath@stack@operand=\toks40
-\pgfmath@stack@operation=\toks41
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex")
-("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.t
-ex"))) ("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count285
-))
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex"
-File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen179
-\pgf@picmaxx=\dimen180
-\pgf@picminy=\dimen181
-\pgf@picmaxy=\dimen182
-\pgf@pathminx=\dimen183
-\pgf@pathmaxx=\dimen184
-\pgf@pathminy=\dimen185
-\pgf@pathmaxy=\dimen186
-\pgf@xx=\dimen187
-\pgf@xy=\dimen188
-\pgf@yx=\dimen189
-\pgf@yy=\dimen190
-\pgf@zx=\dimen191
-\pgf@zy=\dimen192
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex"
-File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen193
-\pgf@path@lasty=\dimen194
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex"
-File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen195
-\pgf@shorten@start@additional=\dimen196
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex"
-File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box53
-\pgf@hbox=\box54
-\pgf@layerbox@main=\box55
-\pgf@picture@serial@count=\count286
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex"
-File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen197
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex"
-File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen198
-\pgf@pt@y=\dimen199
-\pgf@pt@temp=\dimen256
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
-File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex"
-File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex"
-File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex"
-File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen257
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
-File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen258
-\pgf@sys@shading@range@num=\count287
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex"
-File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
-
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex"
-File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box56
-))
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex"
-File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex"
-File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex"
-File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-)))
-("D:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
-File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box57
-)
-("D:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
-File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-)
-("D:\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen259
-\pgf@nodesepend=\dimen260
-)
-("D:\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-("D:\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks42
-\verbatim@line=\toks43
-\verbatim@in@stream=\read3
-)
-("D:\MiKTeX 2.9\tex\latex\environ\environ.sty"
-Package: environ 2014/05/04 v0.3 A new way to define environments
-
-("D:\MiKTeX 2.9\tex\latex\trimspaces\trimspaces.sty"
-Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
-))
-("D:\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count288
-)
-\tcb@titlebox=\box58
-\tcb@upperbox=\box59
-\tcb@lowerbox=\box60
-\tcb@phantombox=\box61
-\c@tcbbreakpart=\count289
-\c@tcblayer=\count290
-\tcolorbox@number=\count291
-\tcb@temp=\box62
-\tcb@temp=\box63
-\tcb@temp=\box64
-\tcb@temp=\box65
-\tcb@out=\write4
-\tcb@record@out=\write5
-)
 ("D:\MiKTeX 2.9\tex\latex\mdframed\mdframed.sty"
 Package: mdframed 2013/07/01 1.9b: mdframed
 
+("D:\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
+)
 ("D:\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
 Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
 
@@ -1460,14 +1226,14 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count292
+\c@abspage=\count279
 Package zref Info: New property: abspage on input line 62.
 )
 ("D:\MiKTeX 2.9\tex\latex\needspace\needspace.sty"
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip60
-\c@mdf@globalstyle@cnt=\count293
+\c@mdf@globalstyle@cnt=\count280
 \mdf@skipabove@length=\skip61
 \mdf@skipbelow@length=\skip62
 \mdf@leftmargin@length=\skip63
@@ -1511,11 +1277,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 ("D:\MiKTeX 2.9\tex\latex\mdframed\md-frame-0.mdf"
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box66
-\mdf@footnotebox=\box67
-\mdf@splitbox@one=\box68
-\mdf@splitbox@two=\box69
-\mdf@splitbox@save=\box70
+\mdf@frametitlebox=\box51
+\mdf@footnotebox=\box52
+\mdf@splitbox@one=\box53
+\mdf@splitbox@two=\box54
+\mdf@splitbox@save=\box55
 \mdfsplitboxwidth=\skip100
 \mdfsplitboxtotalwidth=\skip101
 \mdfsplitboxheight=\skip102
@@ -1543,7 +1309,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip124
 \mdfsubtitleheight=\skip125
 \mdfsubsubtitleheight=\skip126
-\c@mdfcountframes=\count294
+\c@mdfcountframes=\count281
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -1559,20 +1325,319 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count295
-\c@mdf@env@i=\count296
-\c@mdf@env@ii=\count297
-\c@mdf@zref@counter=\count298
+\mdf@envdepth=\count282
+\c@mdf@env@i=\count283
+\c@mdf@env@ii=\count284
+\c@mdf@zref@counter=\count285
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 ("D:\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count299
+\c@lips@count=\count286
 )
-\c@thm-box=\count300
-\c@prop-box=\count301
-\c@def-box=\count302
+("D:\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("D:\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("D:\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen168
+\pgfutil@tempdimb=\dimen169
 
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex"))
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+\pgfutil@abb=\box56
+
+("D:\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("D:\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("D:\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen170
+\pgf@y=\dimen171
+\pgf@xa=\dimen172
+\pgf@ya=\dimen173
+\pgf@xb=\dimen174
+\pgf@yb=\dimen175
+\pgf@xc=\dimen176
+\pgf@yc=\dimen177
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+
+("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("D:\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("D:\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen178
+\pgfmath@count=\count293
+\pgfmath@box=\box57
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex")
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.t
+ex"))) ("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count294
+))
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen179
+\pgf@picmaxx=\dimen180
+\pgf@picminy=\dimen181
+\pgf@picmaxy=\dimen182
+\pgf@pathminx=\dimen183
+\pgf@pathmaxx=\dimen184
+\pgf@pathminy=\dimen185
+\pgf@pathmaxy=\dimen186
+\pgf@xx=\dimen187
+\pgf@xy=\dimen188
+\pgf@yx=\dimen189
+\pgf@yy=\dimen190
+\pgf@zx=\dimen191
+\pgf@zy=\dimen192
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen193
+\pgf@path@lasty=\dimen194
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen195
+\pgf@shorten@start@additional=\dimen196
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count295
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen197
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen198
+\pgf@pt@y=\dimen199
+\pgf@pt@temp=\dimen256
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen257
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen258
+\pgf@sys@shading@range@num=\count296
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box61
+))
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("D:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box62
+)
+("D:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("D:\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
+)
+("D:\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("D:\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("D:\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
+("D:\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
+("D:\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("D:\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+\pgffor@iter=\dimen261
+\pgffor@skip=\dimen262
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+))
+("D:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("D:\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count297
+\pgfplotmarksize=\dimen263
+)
+\tikz@lastx=\dimen264
+\tikz@lasty=\dimen265
+\tikz@lastxsaved=\dimen266
+\tikz@lastysaved=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count298
+\tikznumberofchildren=\count299
+\tikznumberofcurrentchild=\count300
+\tikz@fig@count=\count301
+
+("D:\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count302
+\pgfmatrixcurrentcolumn=\count303
+\pgf@matrix@numberofcolumns=\count304
+)
+\tikz@expandcount=\count305
+
+("D:\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths
+.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+\c@thm-box=\count306
+\c@prop-box=\count307
+\c@def-box=\count308
+ ("D:\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count309
+\lst@gtempboxa=\box67
+\lst@token=\toks44
+\lst@length=\count310
+\lst@currlwidth=\dimen270
+\lst@column=\count311
+\lst@pos=\count312
+\lst@lostspace=\dimen271
+\lst@width=\dimen272
+\lst@newlines=\count313
+\lst@lineno=\count314
+\lst@maxwidth=\dimen273
+
+("D:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
+\lst@framebox=\box68
+)
+("D:\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("D:\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen274
+\lightrulewidth=\dimen275
+\cmidrulewidth=\dimen276
+\belowrulesep=\dimen277
+\belowbottomsep=\dimen278
+\aboverulesep=\dimen279
+\abovetopsep=\dimen280
+\cmidrulesep=\dimen281
+\cmidrulekern=\dimen282
+\defaultaddspace=\dimen283
+\@cmidla=\count317
+\@cmidlb=\count318
+\@aboverulesep=\dimen284
+\@belowrulesep=\dimen285
+\@thisruleclass=\count319
+\@lastruleclass=\count320
+\@thisrulewidth=\dimen286
+)
 ("D:\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -1591,46 +1656,46 @@ Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
 ("D:\MiKTeX 2.9\tex\latex\tools\layout.sty"
 Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count303
-\cnt@paperwidth=\count304
-\cnt@paperheight=\count305
-\cnt@hoffset=\count306
-\cnt@voffset=\count307
-\cnt@textheight=\count308
-\cnt@textwidth=\count309
-\cnt@topmargin=\count310
-\cnt@oddsidemargin=\count311
-\cnt@evensidemargin=\count312
-\cnt@headheight=\count313
-\cnt@headsep=\count314
-\cnt@marginparsep=\count315
-\cnt@marginparwidth=\count316
-\cnt@marginparpush=\count317
-\cnt@footskip=\count318
-\fheight=\count319
-\ref@top=\count320
-\ref@hoffset=\count321
-\ref@voffset=\count322
-\ref@head=\count323
-\ref@body=\count324
-\ref@foot=\count325
-\ref@margin=\count326
-\ref@marginwidth=\count327
-\ref@marginpar=\count328
-\Interval=\count329
-\ExtraYPos=\count330
-\PositionX=\count331
-\PositionY=\count332
-\ArrowLength=\count333
+\oneinch=\count321
+\cnt@paperwidth=\count322
+\cnt@paperheight=\count323
+\cnt@hoffset=\count324
+\cnt@voffset=\count325
+\cnt@textheight=\count326
+\cnt@textwidth=\count327
+\cnt@topmargin=\count328
+\cnt@oddsidemargin=\count329
+\cnt@evensidemargin=\count330
+\cnt@headheight=\count331
+\cnt@headsep=\count332
+\cnt@marginparsep=\count333
+\cnt@marginparwidth=\count334
+\cnt@marginparpush=\count335
+\cnt@footskip=\count336
+\fheight=\count337
+\ref@top=\count338
+\ref@hoffset=\count339
+\ref@voffset=\count340
+\ref@head=\count341
+\ref@body=\count342
+\ref@foot=\count343
+\ref@margin=\count344
+\ref@marginwidth=\count345
+\ref@marginpar=\count346
+\Interval=\count347
+\ExtraYPos=\count348
+\PositionX=\count349
+\PositionY=\count350
+\ArrowLength=\count351
 )
-\c@myThm=\count334
+\c@theorem=\count352
 
 ("D:\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip136
-\multirow@cntb=\count335
+\multirow@cntb=\count353
 \multirow@dima=\skip137
-\bigstrutjot=\dimen261
+\bigstrutjot=\dimen287
 )
 ("D:\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.bdg"
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -1640,94 +1705,94 @@ File: UTF8.enc 2015/04/18 4.8.4
 )
 ("D:\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.chr"
 File: UTF8.chr 2015/04/18 4.8.4
-) (PS1_template.aux)
-\openout1 = `PS1_template.aux'.
+) (PS3_template.aux)
+\openout1 = `PS3_template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 64.
+LaTeX Info: Redefining \selectfont on input line 89.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1765,17 +1830,17 @@ LaTeX Info: Redefining \selectfont on input line 64.
 
 ("D:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
-\scratchdimen=\dimen262
-\scratchbox=\box71
-\nofMPsegments=\count337
-\nofMParguments=\count338
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count339
-\MPscratchDim=\dimen263
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count354
+\scratchdimen=\dimen288
+\scratchbox=\box69
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen289
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks46
 ) ("D:\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1789,8 +1854,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring OFF on input line 64.
+\AtBeginShipoutBox=\box70
+Package hyperref Info: Link coloring OFF on input line 89.
 
 ("D:\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1798,37 +1863,79 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("D:\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count342
+\c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 64.
-LaTeX Info: Redefining \pageref on input line 64.
-LaTeX Info: Redefining \nameref on input line 64.
- (PS1_template.out)
-(PS1_template.out)
-\@outlinefile=\write6
-\openout6 = `PS1_template.out'.
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
+ (PS3_template.out)
+(PS3_template.out)
+\@outlinefile=\write4
+\openout4 = `PS3_template.out'.
 
  ABD: EveryShipout initializing macros
+\c@lstlisting=\count361
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 64.
-LaTeX Font Info:    Try loading font information for C70+rm on input line 69.
+(lastpage)             ! on input line 89.
+LaTeX Font Info:    Try loading font information for C70+rm on input line 94.
 
 ("D:\MiKTeX 2.9\tex\latex\ctex\fd\c70rm.fd"
 File: c70rm.fd 2017/04/01 v2.4.9 Chinese font definition (CTEX)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 94.
 
 ("D:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 94.
 
 ("D:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
-quanjiao) on input line 72.
+quanjiao) on input line 100.
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
+e (quanjiao) on input line 132.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--156
+
+ []
 
 ("D:\MiKTeX 2.9\tex\generic\ctex\zhwindowsfonts.tex"
 File: zhwindowsfonts.tex 2017/04/01 v2.4.9 Windows font map loader for pdfTeX a
@@ -1836,172 +1943,98 @@ nd DVIPDFMx (CTEX)
 ) [1
 
 ]
-Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
-e (quanjiao) on input line 145.
- [2] [3]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 203.
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--237
+Underfull \hbox (badness 10000) in paragraph at lines 157--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--256
+Underfull \hbox (badness 10000) in paragraph at lines 157--185
 
  []
 
-[4]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 262.
-
-Overfull \hbox (5.9719pt too wide) in paragraph at lines 289--292
-[] [][] \OMS/cmsy/m/n/10.53937 j\OT1/cmr/bx/n/10.53937 A[]\OMS/cmsy/m/n/10.5393
-7 j$|\C70/rm/m/it/10.53937/30 | \C70/rm/m/it/10.53937/53 » \C70/rm/m/it/10.539
-37/56 ‡ \C70/rm/m/it/10.53937/4e :$\OT1/cmr/bx/n/10.53937 X$\C70/rm/m/it/10.539
-37/66 / \C70/rm/m/it/10.53937/53 Ã \C70/rm/m/it/10.53937/96 è \C70/rm/m/it/10.5
-3937/67 : \C70/rm/m/it/10.53937/77 È \C70/rm/m/it/10.53937/96 5 \C70/rm/m/it/10
-.53937/62 @ \C70/rm/m/it/10.53937/4e Â \C70/rm/m/it/10.53937/5b ˘ \C70/rm/m/it/
-10.53937/4e é \C70/rm/m/it/10.53937/51 v \C70/rm/m/it/10.53937/4e ˚ \C70/rm/m/i
-t/10.53937/61  \C70/rm/m/it/10.53937/72 y \C70/rm/m/it/10.53937/5f Å \C70/rm/m
-/it/10.53937/50 <$\OML/cmm/m/it/10.53937 $\C70/rm/m/it/10.53937/90 ˝ \C70/rm/m
-/it/10.53937/67 	$\OMS/cmsy/m/n/10.53937 j\OML/cmm/m/it/10.53937 \OMS/cmsy/m/n
-/10.53937 j  \OT1/cmr/m/n/10.53937 1$|\C70/rm/m/it/10.53937/ff | \C70/rm/m/it
-/10.53937/53 » \C70/rm/m/it/10.53937/56 ‡ \C70/rm/m/it/10.53937/4e :$\OT1/cmr/m
-/n/10.53937 1$\C70/rm/m/it/10.53937/66 /$\OT1/cmr/bx/n/10.53937 X$\C70/rm/m/it/
-10.53937/76 Ñ
- []
-
-[5] [6]
-Overfull \hbox (9.18968pt too wide) in paragraph at lines 338--339
-[]\OT1/cmr/bx/n/10.53937 [10pts] \C70/rm/m/n/10.53937/8b ˜ \C70/rm/m/n/10.53937
-/75 ; \C70/rm/m/n/10.53937/51 ˙ v \C70/rm/m/n/10.53937/5b ˘ \C70/rm/m/n/10.5393
-7/5e î \C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 ROC\C70/rm/m/n/10.53937/5
-6 ˛ \C70/rm/m/n/10.53937/50 œ|\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/5
-e v \C70/rm/m/n/10.53937/8b ° \C70/rm/m/n/10.53937/7b ó \C70/rm/m/n/10.53937/5b
- ˘ \C70/rm/m/n/10.53937/5e î \C70/rm/m/n/10.53937/76 Ñ$[]$\C70/rm/m/n/10.53937/
-54 å$\OML/cmm/m/it/10.53937 `[]$\C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/
-50 < |\C70/rm/m/n/10.53937/ff |\C70/rm/m/n/10.53937/63 – \C70/rm/m/n/10.53937/
-79 :|\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/53 Ô \C70/rm/m/n/10.53937/
-4f  \C70/rm/m/n/10.53937/75 ([]\OT1/cmr/m/n/10.53937 TikZ\C70/rm/m/n/10.53937/
-53 []\C70/rm/m/n/10.53937/4f \
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--344
-
- []
-
-<roc_curve.png, id=331, 526.96875pt x 395.22656pt>
-File: roc_curve.png Graphic file (type png)
- <use roc_curve.png>
-Package pdftex.def Info: roc_curve.png used on input line 347.
-(pdftex.def)             Requested size: 263.48372pt x 197.6128pt.
- [7 <./roc_curve.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 369.
+[2] [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 257.
 
  ("D:\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.53937> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 369.
- [8]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.53937> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 257.
 
+<nn_structure.png, id=220, 4798.92876pt x 446.66875pt>
+File: nn_structure.png Graphic file (type png)
+ <use nn_structure.png>
+Package pdftex.def Info: nn_structure.png used on input line 263.
+(pdftex.def)             Requested size: 429.24884pt x 65.03452pt.
+
+[5 <./nn_structure.png>] 
 AED: lastpage setting LastPage
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
- (PS1_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
-Package rerunfilecheck Info: File `PS1_template.out' has not changed.
-(rerunfilecheck)             Checksum: 370FA4EAF3D2FF18F587F9920C0F8040;1209.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 436.
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
+ (PS3_template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 272.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
+Package rerunfilecheck Info: File `PS3_template.out' has not changed.
+(rerunfilecheck)             Checksum: 54C6166E03723B5253B962BFC7A46F9C;767.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
  ) 
 Here is how much of TeX's memory you used:
- 33967 strings out of 493333
- 610051 string characters out of 3145216
- 741091 words of memory out of 3000000
- 36554 multiletter control sequences out of 15000+200000
- 602076 words of font info for 286 fonts, out of 3000000 for 9000
+ 35778 strings out of 493333
+ 639563 string characters out of 3145216
+ 795172 words of memory out of 3000000
+ 38506 multiletter control sequences out of 15000+200000
+ 578198 words of font info for 199 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,12n,73p,10456b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
-/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
-/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai
-.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Font
-s/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
-OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf>
-<C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
-sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
-onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/W
-INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
-simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
-S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C
+ 55i,13n,69p,10456b,1385s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
+imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
+/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
+/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
+OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
+onts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/W
+INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.t
+tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
+simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
+S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C
 :/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simka
 i.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fon
 ts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
 DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf
-><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
+><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
 mkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
-Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/
-WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.
-ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts
-/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDO
-WS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><
-C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
-un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
-nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
-NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.tt
-f><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
-/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
-/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Font
-s/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WIND
-OWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf>
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
-sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
-onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
-INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOW
-S/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C
-:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhe
-i.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
-DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
-><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
 Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
 WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
 ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
-/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDO
-WS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><
+/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
+WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
 C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
 un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
-nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cmextra/cmex7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmib10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-<D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/MiKTeX 
-2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on PS1_template.pdf (9 pages, 965648 bytes).
+nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
+NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
+c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
+imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
+/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
+/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10
+.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><D:/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti7.pfb>
+Output written on PS3_template.pdf (6 pages, 727834 bytes).
 PDF statistics:
- 916 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 338 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

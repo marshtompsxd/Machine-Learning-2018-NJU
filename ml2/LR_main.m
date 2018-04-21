@@ -20,7 +20,7 @@ X = [ones(m, 1) X];
 
 
 fprintf('training...\n');
-[all_theta] = oneVsRest(X, y, num_labels, lambda, alpha, num_iters);
+[all_theta] = oneVsRest(X, y, num_labels, alpha, num_iters);
 
 fprintf('predicting for training set...\n');
 pred = predict(all_theta, X);

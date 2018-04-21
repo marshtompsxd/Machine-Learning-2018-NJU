@@ -106,10 +106,6 @@ $$\mathbb{I}(y=j)=
 \end{cases}$$
 
 \begin{solution}
-~\\
-符号说明：\\
-为防止混淆概念，下述中所有的$\boldsymbol{\beta}$为$\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1}$的统称，$\mathbf{w}$为$\mathbf{w}_1, \mathbf{w}_2,...,\mathbf{w}_{K-1}$的统称，\\
-$b$为$b_1, b_2,..., b_{K-1}$的统称。\\
 \begin{enumerate}
 	
 \item
@@ -142,32 +138,37 @@ $b$为$b_1, b_2,..., b_{K-1}$的统称。\\
 \end{equation}
 进一步可以得到
 \begin{equation}
-p(y_i|\mathbf{x}_i;\mathbf{w}, b) = \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)
+p(y_i|\mathbf{x}_i;\mathbf{w}_1, \mathbf{w}_2,...,\mathbf{w}_{K-1}, b_1, b_2,...,b_{K-1}) = \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mathbf{x}_i;\mathbf{w}_1, ...,\mathbf{w}_{K-1}, b_1, ...,b_{K-1})
 \end{equation}
 通过观察可以发现，在$\mathbb{I}(y_i=j)\ (1 \leq j \leq K)$这$K$个式子中，有且仅有一个可以取1，其他全部为0。根据这个性质，再对概率取对数，可以得到
 \begin{equation}
 \begin{aligned}
-\ln p(y_i|\mathbf{x}_i;\mathbf{w}, b) =& \ln \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)\\
-=& \sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)
+&\ln p(y_i|\mathbf{x}_i;\mathbf{w}_1, \mathbf{w}_2,...,\mathbf{w}_{K-1}, b_1, b_2,...,b_{K-1})\\ 
+=& \ln \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mathbf{x}_i;\mathbf{w}_1,...,\mathbf{w}_{K-1}, b_1,...,b_{K-1})\\
+=& \sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}_1,...,\mathbf{w}_{K-1}, b_1,...,b_{K-1})
 \end{aligned}
 \end{equation}
 我们假设总共有$m$个样例，下面计算对数似然
 \begin{equation}
-\ell(\mathbf{w}, b) = \sum_{i=1}^{m}\ln p(y_i|\mathbf{x}_i;\mathbf{w}, b)
-= \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)
+\begin{aligned}
+&\ell(\mathbf{w}_1, \mathbf{w}_2,...,\mathbf{w}_{K-1}, b_1, b_2,...,b_{K-1})\\
+=& \sum_{i=1}^{m}\ln p(y_i|\mathbf{x}_i;\mathbf{w}_1,...,\mathbf{w}_{K-1}, b_1,...,b_{K-1})\\
+=& \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}_1,...,\mathbf{w}_{K-1}, b_1,...,b_{K-1})
+\end{aligned}
 \end{equation}
 为了便于讨论，令$\boldsymbol{\beta}_j = (\mathbf{w}_j; b_j)$以及$\hat{\mathbf{x}}_i = (\mathbf{x}_i; 1)$，现在$\mathbf{w}_j^\mathrm{T}\mathbf{x}_i+b_j$可以简写为$\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i$，并且因为只是改变了符号，所以对数极大似然可以写成如下形式
 \begin{equation}
 \begin{aligned}
-\ell(\boldsymbol{\beta}) = \ell(\mathbf{w}, b) 
-=& \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}, b)\\
-=&\sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\hat{\mathbf{x}}_i;\boldsymbol{\beta})
+&\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})\\
+=& \ell(\mathbf{w}_1, \mathbf{w}_2,...,\mathbf{w}_{K-1}, b_1, b_2,...,b_{K-1}) \\
+=& \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\mathbf{x}_i;\mathbf{w}_1,...,\mathbf{w}_{K-1}, b_1,...,b_{K-1})\\
+=&\sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\hat{\mathbf{x}}_i;\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})
 \end{aligned}
 \end{equation}
 根据以上讨论，最终对数似然求解如下
 \begin{equation}
 \begin{aligned}
-&\ell(\boldsymbol{\beta}) = \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\hat{\mathbf{x}}_i;\boldsymbol{\beta})\\
+&\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1}) = \sum_{i=1}^{m}\sum_{j=1}^{K}\mathbb{I}(y_i=j)\ln p(y_i=j|\hat{\mathbf{x}}_i;\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})\\
 =& \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)\ln \frac{e^{\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i}}{1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i}} + \sum_{i=1}^{m}\mathbb{I}(y_i=K)\ln\frac{1}{1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i}}\\
 =& \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i- \ln (1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})) - \sum_{i=1}^{m}\mathbb{I}(y_i=K)\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})\\
 =&\sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i) - \sum_{i=1}^{m}\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})
@@ -175,20 +176,27 @@ p(y_i|\mathbf{x}_i;\mathbf{w}, b) = \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mat
 \end{equation}
 综上所述
 \begin{equation}
-\ell(\boldsymbol{\beta}) = \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i) - \sum_{i=1}^{m}\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})
+\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1}) = \sum_{i=1}^{m}\sum_{j=1}^{K-1}\mathbb{I}(y_i=j)(\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i) - \sum_{i=1}^{m}\ln(1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i})
 \end{equation}
 
 \item
-由上一问可得，$\ell(\boldsymbol{\beta})$对$\boldsymbol{\beta}_j$求偏导：
+$\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})$对$\boldsymbol{\beta}_j$求偏导，即可得到对数似然的梯度：
 \begin{equation}
 \begin{aligned}
-\frac{\partial\ell(\boldsymbol{\beta})}{\partial\boldsymbol{\beta}_j} 
+\frac{\partial\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})}{\partial\boldsymbol{\beta}_j} 
 =& \sum_{i=1}^{m}\mathbb{I}(y_i=j)\hat{\mathbf{x}}_i - \sum_{i=1}^{m}\frac{e^{\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i}}{1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i}}\hat{\mathbf{x}}_i\\
 =& \sum_{i=1}^{m}(\mathbb{I}(y_i=j) - \frac{e^{\boldsymbol{\beta}_j^\mathrm{T}\hat{\mathbf{x}}_i}}{1 + \sum_{t=1}^{K-1}e^{\boldsymbol{\beta}_t^\mathrm{T}\hat{\mathbf{x}}_i}})\hat{\mathbf{x}}_i\\
 =& \sum_{i=1}^{m}(\mathbb{I}(y_i=j) - 	p(y_i=j|\hat{\mathbf{x}}_i))\hat{\mathbf{x}}_i
 \end{aligned}
 \end{equation} 
-
+所以梯度为：
+\begin{equation}
+\begin{aligned}
+&\nabla \ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})\\
+=&\left(\frac{\partial\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,...,\boldsymbol{\beta}_{K-1})}{\partial\boldsymbol{\beta}_1},\ ...,\frac{\partial\ell(\boldsymbol{\beta}_1, \boldsymbol{\beta}_2,\ ...,\  \boldsymbol{\beta}_{K-1})}{\partial\boldsymbol{\beta}_{K-1}}\right)\\
+=& \left(\sum_{i=1}^{m}(\mathbb{I}(y_i=1) - 	p(y_i=1|\hat{\mathbf{x}}_i))\hat{\mathbf{x}}_i,\ ...,\ \sum_{i=1}^{m}(\mathbb{I}(y_i=K-1) - 	p(y_i=K-1|\hat{\mathbf{x}}_i))\hat{\mathbf{x}}_i\right)
+\end{aligned}
+\end{equation}
 \end{enumerate}	
 	
 \end{solution}
@@ -202,62 +210,72 @@ p(y_i|\mathbf{x}_i;\mathbf{w}, b) = \sum_{j=1}^{K}\mathbb{I}(y_i=j) p(y_i=j|\mat
 \begin{solution}
 ~\\
 由于正例和负例服从高斯分布，我们用$y_1$表示正例，用$y_2$表示负例，所以可知：\\
+已知该样本采样于正例，该样本出现的概率为：\\
 \begin{equation}
 p(\mathbf{x} = x \mid \mathbf{y} = y_1) = \frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_1)^\mathrm{T}\Sigma^{-1}(x - \mu_1)
 )
 \end{equation}
+已知该样本采样于负例，该样本出现的概率为：\\
 \begin{equation}
 p(\mathbf{x} = x \mid \mathbf{y} = y_2) = \frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_2)^\mathrm{T}\Sigma^{-1}(x - \mu_2)
 )
 \end{equation}
-根据样例的分布情况计算$p(\mathbf{y}=y_i)$，可得:
-\begin{equation}
-p(\mathbf{y}=y_i) = \frac{m_i}{m} = p_i\ \ (i = 1, 2)
-\end{equation}
-根据贝叶斯公式：
+对概率取对数，可得（注意到$\Sigma$是对称矩阵）
 \begin{equation}
 \begin{aligned}
-p(\mathbf{y} = y_i \mid  \mathbf{x} = x) 
-=& \frac{p(\mathbf{x} = x \mid \mathbf{y} = y_i)p(\mathbf{y} = y_i)}{p(\mathbf{x} = x)} \\
-=& \frac{p_i}{p(\mathbf{x} = x)}\frac{1}{(2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}}\exp(-\frac{1}{2}(x - \mu_i)^\mathrm{T}\Sigma^{-1}(x - \mu_i))
+\ln p(\mathbf{x} = x \mid \mathbf{y} = y_i) 
+=&- \ln((2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}) - \frac{1}{2}(x - \mu_i)^\mathrm{T}\Sigma^{-1}(x - \mu_i)\\
+=&- \ln((2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}) - \frac{1}{2}(x^\mathrm{T}\Sigma^{-1}x + \mu_i^\mathrm{T}\Sigma^{-1}\mu_i - 2x^{\mathrm{T}}\Sigma^{-1}\mu_i)\\
+=&- \ln((2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}) - \frac{1}{2}x^\mathrm{T}\Sigma^{-1}x - \frac{1}{2} \mu_i^\mathrm{T}\Sigma^{-1}\mu_i + x^{\mathrm{T}}\Sigma^{-1}\mu_i
 \end{aligned}
 \end{equation}
-对后验概率取对数，可得（注意到$\Sigma$是对称矩阵）
+注意到$\frac{1}{2}x^\mathrm{T}\Sigma^{-1}x$和$ \ln((2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}})$都是和$i$无关的，所以为了方便之后的计算，令$C = - \ln((2\pi)^{\frac{n}{2}}\lvert \Sigma \rvert^{\frac{1}{2}}) - \frac{1}{2}x^\mathrm{T}\Sigma^{-1}x$，可得
 \begin{equation}
-\begin{aligned}
-\ln p(\mathbf{y} = y_i \mid  \mathbf{x} = x) 
-=& -\ln p(\mathbf{x} = x) + \ln p_i - \frac{1}{2}(x - \mu_i)^\mathrm{T}\Sigma^{-1}(x - \mu_i)\\
-=& -\ln p(\mathbf{x} = x) + \ln p_i - \frac{1}{2}(x^\mathrm{T}\Sigma^{-1}x + \mu_i^\mathrm{T}\Sigma^{-1}\mu_i + 2x^{\mathrm{T}}\Sigma^{-1}\mu_i)\\
-=& -\ln p(\mathbf{x} = x) + \ln p_i - \frac{1}{2}x^\mathrm{T}\Sigma^{-1}x - \frac{1}{2} \mu_i^\mathrm{T}\Sigma^{-1}\mu_i - x^{\mathrm{T}}\Sigma^{-1}\mu_i
-\end{aligned}
+\ln p(\mathbf{x} = x \mid \mathbf{y} = y_i)  = C - \frac{1}{2} \mu_i^\mathrm{T}\Sigma^{-1}\mu_i + x^{\mathrm{T}}\Sigma^{-1}\mu_i 
 \end{equation}
-注意到$\ln p(\mathbf{x} = x)$和$\frac{1}{2}x^\mathrm{T}\Sigma^{-1}x$都是和$i$无关的，所以为了方便之后的计算，整理所有和$i$无关的项，用常数$C$代替，可得
+所以有：
 \begin{equation}
-\ln p(\mathbf{y} = y_i \mid  \mathbf{x} = x) = C + \ln p_i - \frac{1}{2} \mu_i^\mathrm{T}\Sigma^{-1}\mu_i - x^{\mathrm{T}}\Sigma^{-1}\mu_i 
-\end{equation}
-那么对于给定的$x$，$\mathbf{y}$取$y_1$或者$y_2$的后验概率为
-\begin{equation}
-\ln p(\mathbf{y} = y_1 \mid  \mathbf{x} = x) = C + \ln p_1 - \frac{1}{2} \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - x^{\mathrm{T}}\Sigma^{-1}\mu_1 
+\ln p( \mathbf{x} = x \mid \mathbf{y} = y_1) = C - \frac{1}{2} \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 + x^{\mathrm{T}}\Sigma^{-1}\mu_1 
 \end{equation}
 \begin{equation}
-\ln p(\mathbf{y} = y_2 \mid  \mathbf{x} = x) = C + \ln p_2 - \frac{1}{2} \mu_2^\mathrm{T}\Sigma^{-1}\mu_2 - x^{\mathrm{T}}\Sigma^{-1}\mu_2 
+\ln p(\mathbf{x} = x \mid \mathbf{y} = y_2) = C - \frac{1}{2} \mu_2^\mathrm{T}\Sigma^{-1}\mu_2 + x^{\mathrm{T}}\Sigma^{-1}\mu_2 
 \end{equation}
-现在考虑最优分类平面的定义。如果一个平面将空间分成A，B两个部分，不妨认为落在A部分的$x$是正例的可能性更大，落在B部分的$x$是负例的可能性更大。那么当判断$x$落在A部分时，就预测它属于正例，反之预测它属于反例，这就满足了最优分类的性质，这样的平面就是最优的分类平面。很显然，当$x$落在分类平面上时，$x$属于正例和负例的可能性一样大。根据这一点令$i=1$和$i=2$的后验概率相等来计算最优平面：
+如果令$(2.5)$和$(2.6)$相减，可得平面方程：
 \begin{equation}
-\begin{aligned}
-C + \ln p_1 - \frac{1}{2} \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - x^{\mathrm{T}}\Sigma^{-1}\mu_1 &= C + \ln p_2 - \frac{1}{2} \mu_2^\mathrm{T}\Sigma^{-1}\mu_2 - x^{\mathrm{T}}\Sigma^{-1}\mu_2 \\
-\Leftrightarrow\ \ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) &= x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)
-\end{aligned}
+	f(x) = x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2) - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2)
 \end{equation}
-上式是一个超平面方程，由于$x$的系数为$\Sigma^{-1}(\mu_1 - \mu_2)$，所以$\Sigma^{-1}(\mu_1 - \mu_2)$是超平面的一个法向量。\\
-现在再考虑LDA。根据LDA的定义，所有样例将要被映射到$w$上，而$w = S^{-1}_w(\mu_1 - \mu_2)$，而$S^{-1}_w = \Sigma_1 + \Sigma_2 = 2\Sigma$。现在只考虑方向，那么$w = \Sigma^{-1}(\mu_1 - \mu_2)$就是LDA将样本投影到的直线，这也刚好是最优分类平面的法向量。考虑到LDA将所有样本映射到$w$上，所以需要一个阈值来作为正例和负例的分界。设置阈值为$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2)$，小于阈值预测为正例，反之预测为负例。现在来观察这个分类器是否满足最优分类性质。\\
-由于$(2.9)$定义了最优平面的方程，所以：\\
-当$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) > x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时，样本为正例的可能性大于样本为负例的可能性，所以预测为正例；\\
-当$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) < x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时，样本为负例的可能性大于样本为正例的可能性，所以预测为负例。\\
-在LDA分类器中，每一个样本$x$都被映射为一个标量$x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$，所以：\\
-在$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) > x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时预测为正例，根据最优平面的性质，这也是样本为正例可能性大于负例可能性的情况；\\
-在$\ln\frac{p_1}{p_2} - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) < x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$时预测为负例，根据最优平面的性质，这也是样本为负例可能性大于正例可能性的情况。\\
-综上所述，LDA方法满足最优分类性质。
+通过观察易得：\\
+当$f(x) = 0$时，$p( \mathbf{x} = x \mid \mathbf{y} = y_1) = p( \mathbf{x} = x \mid \mathbf{y} = y_2)$；\\
+当$f(x) > 0$时，$p( \mathbf{x} = x \mid \mathbf{y} = y_1) > p( \mathbf{x} = x \mid \mathbf{y} = y_2)$；\\
+当$f(x) < 0$时，$p( \mathbf{x} = x \mid \mathbf{y} = y_1) < p( \mathbf{x} = x \mid \mathbf{y} = y_2)$；\\\\
+现在再考虑LDA。根据LDA的定义，所有样例将要被映射到$w$上，$w = S^{-1}_w(\mu_1 - \mu_2)$，同时$S^{-1}_w = \Sigma_1 + \Sigma_2 = 2\Sigma$，所以$w = 2\Sigma^{-1}(\mu_1 - \mu_2)$，这与分类平面的法向量同向。考虑到LDA将所有样本映射到$w$上，所以需要一个阈值来作为正例和负例的分界。设置阈值为$\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2$。\\\\
+LDA分类器的预测过程为：\\
+对于向量$x$，将其映射到$w = 2\Sigma^{-1}(\mu_1 - \mu_2)$上，得到标量$2x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$，如果$2x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2) > \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2$，则预测为正例，反之预测为负例。现在来证明这个LDA分类器满足最优分类性质。\\\\
+根据平面方程$f(x)$的性质以及LDA分类器的定义，可以得到：\\
+在比较$2x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2)$和$\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2$时，有以下两种情况（此处忽略相等的情况，但不影响证明正确性）：\\\\
+情况一：$2x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2) > \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2$，此时有
+\begin{equation}
+	x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2) - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) > 0
+\end{equation}
+也就是说$f(x) > 0$，根据平面方程定义，此时
+\begin{equation}
+p(\mathbf{x} = x \mid \mathbf{y} = y_1) > p(\mathbf{x} = x \mid \mathbf{y} = y_2)
+\end{equation}
+也就是说“已知$x$采样于正例，$x$出现的概率”大于“已知$x$采样于负例，$x$出现的概率”。而根据LDA分类器的定义，此时会把$x$预测为正例。\\\\
+情况二：$2x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2) < \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2$，此时有
+\begin{equation}
+x^{\mathrm{T}}\Sigma^{-1}(\mu_1 - \mu_2) - \frac{1}{2}(\mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - \mu_2^\mathrm{T}\Sigma^{-1}\mu_2) < 0
+\end{equation}
+也就是说$f(x) < 0$，根据平面方程定义，此时
+\begin{equation}
+p(\mathbf{x} = x \mid \mathbf{y} = y_1) < p(\mathbf{x} = x \mid \mathbf{y} = y_2)
+\end{equation}
+也就是说“已知$x$采样于正例，$x$出现的概率”小于“已知$x$采样于负例，$x$出现的概率”。而根据LDA分类器的定义，此时会把$x$预测为负例。\\\\
+综合两种情况可得，LDA分类器满足“若对空间中的任意样本点，分别计算已知该样本采样于正例时该样本出现的概率与已知该样本采样于负例时该样本出现的概率后，取概率较大的所采类别作为最终预测的类别输出”。\\
+综上所述，LDA方法满足最优分类性质。\\\\
+参考资料：\\
+1. Izenman A.J. (2013) Modern Multivariate Statistical Techniques\\
+2. Christopher M. Bishop (2016) Pattern Recognition and Machine Learning\\
 \end{solution}
 \newpage
 
@@ -317,7 +335,12 @@ C + \ln p_1 - \frac{1}{2} \mu_1^\mathrm{T}\Sigma^{-1}\mu_1 - x^{\mathrm{T}}\Sigm
 \noindent\textbf{实验过程}\\
 本次程序的实现主要按照以下几个流程：读入数据，过采样，归一化，进行训练，预测数据。其中关键步骤在于过采样和进行训练。\\\\
 过采样：\\
-过采样的算法采用了smote算法，也就是针对每一个少数类进行过采样。具体的流程为对于少数类中的每一个样例，寻找他们的k近邻，然后随机挑选一个k近邻，在该样例和近邻之间插值，作为插入的新样本。如此重复，直到少数类数量接近其他类。\\\\
+过采样的算法采用了smote算法，也就是针对每一个少数类进行过采样。具体的流程为：\\
+对于少数类中的每一个样例$\mathbf{x}$，寻找$\mathbf{x}$的k近邻$\mathbf{xnn}_1,\mathbf{xnn}_2,...,\mathbf{xnn}_k$（寻找近邻要用的距离的定义可以有不同，我采用的是欧式距离），然后随机挑选其中一个近邻$\mathbf{xnn}_t$，在该样例和近邻之间插值生成新的样例$\mathbf{xs}$。插值的过程是针对每一个特征去生成新的特征，具体为：规定$\mathbf{x}(i)$表示$\mathbf{x}$的第$i$个特征，那么针对每一个特征：
+\begin{equation}
+\mathbf{xs}(i) = \mathbf{x}(i) + gap*(\mathbf{x}(i) - \mathbf{xnn}_t(i))
+\end{equation}
+其中$gap$是随机生成的在0和1之间的随机数。这样就成功生成了一个新的样例。如果要把少数类扩大N倍，那么重复上述过程N次，即可完成过采样操作。\\\\
 训练过程：\\
 因为是多分类问题，所以训练的过程主要采用了One vs Rest的思想，每次把一个类作为正例，其余所有类作为反例，按照二分类问题的方法来训练出一组针对正例类的参数，这样针对每一个类别进行一次训练，共计训练出5个模型。\\
 在训练的过程中，需要首先确定模型的cost function，我所采用的cost function是
@@ -344,7 +367,7 @@ h(\mathbf{x}) = \frac{1}{1 + \exp(-\boldsymbol{\theta}^\mathrm{T}\mathbf{x})}
 归一化：\\
 考虑到不同特征之间差异较大，有的特征大小可以达到几千，有的不到1，所以进行了归一化的处理，具体操作为针对每一种特征，计算其均值$\mu$和方差$\sigma$，然后对每一个特征值$t$，构造$t' = (t-\mu)/\sigma$，这样不同的特征的范围就大致相同了。\\\\
 超参数的设置：\\
-超参数主要包括k近邻个数，梯度下降迭代次数，步长等，设置如下表：
+超参数主要包括k近邻个数，梯度下降迭代次数，步长等，设置如表3：
 \begin{table}[!htbp]
 	\centering
 	\caption{超参数设置}
@@ -355,17 +378,39 @@ h(\mathbf{x}) = \frac{1}{1 + \exp(-\boldsymbol{\theta}^\mathrm{T}\mathbf{x})}
 		$\alpha$(梯度下降步长)     & 5    \\ \hline
 		$num\_iters$(梯度下降迭代次数) & 1000 \\ \hline
 	\end{tabular}
-\end{table}
-其中每一个超参数的设置都是通过多次测试得到结果，比如通过观察梯度下降迭代次数和cost的大小来判断迭代次数和步长，发现在步长为5，次数为1000时，较快收敛到最小值附近，此时第一类的收敛情况如下所示
+\end{table}\\
+其中每一个超参数的设置都是通过多次测试得到结果，比如通过观察梯度下降迭代次数和cost的大小来判断迭代次数和步长，发现在步长为5，次数为1000时，较快收敛到最小值附近，此时第一类的收敛情况如图一所示。\\
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{cost.png}
+	\includegraphics[scale=0.4]{cost.png}
 	\caption{针对第一类进行训练时梯度下降的收敛情况}
 	\label{fig:label}
 \end{figure}\\
 \noindent\textbf{实验结果}\\
 对于训练集的预测准确度达到了0.94，对于测试集的预测准确度到达了0.91，预测的结果综合来看比较乐观。\\\\
 
+\noindent\textbf{附加题目}\\
+我额外做了一些实验来测试一下策略：\\
+1. 对多数类使用欠采样，适当减少多数类数量\\
+2. 对少数类过采样的时候适当减少采样倍数，这样可以提高少数类的查准率\\
+综合上述策略，采用的设置为：数目最多的类别（第一类）随机减少一半样本，少数类在过采样时将样本数量扩展到多数类数量的5分之一。\\
+按照上述设置进行实验，得出结果为表4所示，发现测试集准确率，少数类查准率有了上升\\
+\begin{table}[!h]
+	\centering
+	\caption{添加欠采样，同时降低少数类过采样倍数的实验结果}\vspace{3mm}
+	\label{new_exp_performance}
+	\begin{tabular}{@{}c|cccccc@{}}
+		\toprule
+		标记     & 1    & 2    & 3    & 4    & 5    & \begin{tabular}[c]{@{}c@{}}准确率\end{tabular} \\ \midrule
+		查全率    & 0.97 & 0.75 & 0.75 & 0.67 & 0.42 & \multirow{2}{*}{0.94}                                     \\
+		查准率 & 0.96 & 0.93 & 1.00 & 1.00 & 0.45 &  \\ \cmidrule(r){1-7}
+	\end{tabular}
+\end{table}\\
+但是在这种设置下训练集上的准确率发生了明显的下降，同时程序的结果也不如之前的设置稳定。对此作出的推测为：欠采样的随机性太强，减少了很多多数类的样本，有可能丢掉了一些“关键”的样本，所以分类器在训练集的预测效果下降。至于少数类的查准率上升有可能就是因为过采样生成样本数量较少导致的。\\
+考虑到新的设置在训练集上效果变差，而且不是非常稳定，随机性较强，\textbf{所以最终提交的代码还是保持了原来的设置，即，仅使用了smote过采样算法，不再使用欠采样。}\\\\
+附加实验参考资料：\\
+1. Zhi-Hua Zhou (2016) 机器学习\\
+2. V. Chawla, Kevin W. Bowyer, Lawrence O. Hall, W. Philip Kegelmeyer (2002) SMOTE: Synthetic Minority Over-sampling Technique Nitesh \\\\
 \noindent\textbf{实验心得}\\
 \begin{itemize}
 \item 对于少数类别的处理非常重要，提高少数类别的准确率也很不容易。
@@ -375,6 +420,6 @@ h(\mathbf{x}) = \frac{1}{1 + \exp(-\boldsymbol{\theta}^\mathrm{T}\mathbf{x})}
 \end{itemize}
 ~\\
 \noindent\textbf{参考资料}\\
-1. "机器学习" 周志华\\
-2. "SMOTE: Synthetic Minority Over-sampling Technique Nitesh" V. Chawla, Kevin W. Bowyer, Lawrence O. Hall, W. Philip Kegelmeyer\\
+1. Zhi-Hua Zhou (2016) 机器学习\\
+2. V. Chawla, Kevin W. Bowyer, Lawrence O. Hall, W. Philip Kegelmeyer (2002) SMOTE: Synthetic Minority Over-sampling Technique Nitesh \\
 \end{document}

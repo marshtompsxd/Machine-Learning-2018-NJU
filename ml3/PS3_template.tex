@@ -1,0 +1,272 @@
+\documentclass[a4paper,UTF8]{article}
+\usepackage{ctex}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{tikz}
+\newmdtheoremenv{thm-box}{Theorem}
+\newmdtheoremenv{prop-box}{Proposition}
+\newmdtheoremenv{def-box}{定义}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+	numbers=left, 
+	numberstyle= \tiny, 
+	keywordstyle= \color{ blue!70},
+	commentstyle= \color{red!50!green!50!blue!50}, 
+	frame=shadowbox, % 阴影效果
+	rulesepcolor= \color{ red!20!green!20!blue!20} ,
+	escapeinside=``, % 英文分号中可写入中文
+	xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+	framexleftmargin=2em
+} 
+
+\usepackage{booktabs}
+
+\setlength{\evensidemargin}{.25in}
+\setlength{\textwidth}{6in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\topmargin}{-0.5in}
+% \setlength{\textheight}{9.5in}
+%%%%%%%%%%%%%%%%%%此处用于设置页眉页脚%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}                                
+\usepackage{lastpage}                                           
+\usepackage{layout}                                             
+\footskip = 10pt 
+\pagestyle{fancy}                    % 设置页眉                 
+\lhead{2018年春季}                    
+\chead{机器学习导论}                                                
+% \rhead{第\thepage/\pageref{LastPage}页} 
+\rhead{作业三}                                                                                               
+\cfoot{\thepage}                                                
+\renewcommand{\headrulewidth}{1pt}  			%页眉线宽，设为0可以去页眉线
+\setlength{\skip\footins}{0.5cm}    			%脚注与正文的距离           
+\renewcommand{\footrulewidth}{0pt}  			%页脚线宽，设为0可以去页脚线
+
+\makeatletter 									%设置双线页眉                                        
+\def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi%
+\hrule\@height 1.0pt \@width\headwidth\vskip1pt	%上面线为1pt粗  
+\hrule\@height 0.5pt\@width\headwidth  			%下面0.5pt粗            
+\vskip-2\headrulewidth\vskip-1pt}      			%两条线的距离1pt        
+ \vspace{6mm}}     								%双线与下面正文之间的垂直间距              
+\makeatother  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%\usepackage[thmmarks, amsmath, thref]{ntheorem}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{definition}{Definition}
+\newtheorem*{solution}{Solution}
+\newtheorem*{prove}{Proof}
+\newcommand{\indep}{\rotatebox[origin=c]{90}{$\models$}}
+
+\usepackage{multirow}
+
+%--
+
+\tikzset{
+	treenode/.style = {shape=rectangle, rounded corners,
+		draw, align=center,
+		top color=white, bottom color=blue!20},
+	root/.style     = {treenode, font=\Large, bottom color=red!30},
+	env/.style      = {treenode, font=\ttfamily\normalsize},
+	dummy/.style    = {circle,draw}
+}
+
+%--
+\begin{document}
+\title{机器学习导论\\
+作业三}
+\author{学号, 作者姓名, 邮箱}
+\maketitle
+
+
+
+\section{[15pts] Decision Tree I}
+
+\begin{enumerate}[ {(}1{)}]
+	\item \textbf{[5pts]} 假设一个包含三个布尔属性${X, Y, Z}$的空间，并且目标函数是$f(x,y,z) = x\ \mathbf{XOR}\ z$，其中$\mathbf{XOR}$为异或运算符。令$H$为基于这三个属性的决策树，请问：目标函数$f$可实现吗？如果可实现，画出相应的决策树以证明；如果不可实现，请论证原因；
+	
+	\item \textbf{[10pts]} 现有如表~\ref{table:ranking}所示数据集：
+	
+	\begin{table}[!h]
+		\centering
+		\caption{样例表} \vspace{2mm}\label{table:ranking}
+		\begin{tabular}{c c c|c}\hline
+			$X$ & $Y$ & $Z$ & $f$ \\
+			\hline
+			$1$ & $0$  & $1$ &  $1$\\
+			$1$ & $1$  & $0$ &  $0$\\
+			$0$ & $0$  & $0$ &  $0$\\
+			$0$ & $1$  & $1$ &  $1$\\
+			$1$ & $0$  & $1$ &  $1$\\
+			$0$ & $0$  & $1$ &  $0$\\
+			$0$ & $1$  & $1$ &  $1$\\
+			$1$ & $1$  & $1$ &  $0$\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	请画出由该数据集生成的决策树。划分属性时要求以信息增益 (information gain)为准则。当信息增益 (information gain)相同时，依据字母顺序选择属性即可。
+\end{enumerate}
+\begin{solution}
+~\\
+~\\
+~\\
+~\\
+~\\
+~\\
+\begin{enumerate}
+\item[(1)]目标函数$f$是可以实现的，决策树如下所示：\\\\
+\begin{tikzpicture}
+[
+grow                    = down,
+edge from parent/.style = {draw, -latex},
+every node/.style       = {font=\footnotesize}
+]
+\tikzstyle{level 1}=[level distance=20mm,sibling distance=5cm]
+\tikzstyle{level 2}=[level distance=20mm,sibling distance=2cm]
+\tikzstyle{level 3}=[level distance=20mm,sibling distance=1cm]
+\node [root] {x = ?}
+child { node [env] {z = ?}
+    child { node [env] { f = 0}
+        edge from parent node [below] {0} }
+    child { node [env] {f = 1}
+        edge from parent node [below] {1} }
+	edge from parent node [below] {0} }
+child { node [env] {z = ?}
+    child { node [env] { f = 1}
+        edge from parent node [below] {0} }
+    child { node [env] {f = 0}
+        edge from parent node [below] {1} }
+	edge from parent node [below] {1} };
+\end{tikzpicture}\\
+\item[(2)]
+根据数据集生成的决策树如下：\\\\
+\begin{tikzpicture}
+[
+grow                    = down,
+edge from parent/.style = {draw, -latex},
+every node/.style       = {font=\footnotesize}
+]
+\tikzstyle{level 1}=[level distance=20mm,sibling distance=9cm]
+\tikzstyle{level 2}=[level distance=20mm,sibling distance=4cm]
+\tikzstyle{level 3}=[level distance=20mm,sibling distance=2cm]
+\node [root] {Z = ?}
+child { node [env] {f = 0}
+	edge from parent node [below] {0} }
+child { node [env] {X = ?}
+	child { node [env] { Y = ?}
+		child {node [env] {f=0}
+			edge from parent node [below] {0} }
+		child {node [env] {f=1}
+			edge from parent node [below] {1} }
+		edge from parent node [below] {0} }
+	child { node [env] { Y = ?}
+		child {node [env] {f=1}
+			edge from parent node [below] {0} }
+		child {node [env] {f=0}
+			edge from parent node [below] {1} }
+		edge from parent node [below] {1} }
+	edge from parent node [below] {1} };
+\end{tikzpicture}\\
+\end{enumerate}
+\end{solution}
+\newpage
+
+
+
+ \section{[20pts] Decision Tree II}
+ 考虑如下矩阵：
+ $$
+ \begin{bmatrix}
+ 4 & 6 & 9 & 1 & 7 & 5 \\
+ 1 & 6 & 5 & 2 & 3 & 4
+ \end{bmatrix}^T
+ $$
+
+ 该矩阵代表了$6$个样本数据，每个样本都包含$2$个特征$f_1$和$f_2$。这$6$个样本数据对应的标签如下：
+ $$
+ \begin{bmatrix}
+ 1 & 0 & 1 & 0 & 1 & 0
+ \end{bmatrix}^T
+ $$
+
+ 在这个问题中，我们要构造一个深度为$2$的树进行分类任务。
+
+ \begin{enumerate}[ {(}1{)}]
+ 	\item \textbf{[5pts]} 请计算根结点 (root) 的熵值 (entropy)；
+
+ 	\item \textbf{[10pts]} 请给出第一次划分的规则，例如$f_1 \geq 4, f_2 \geq 3$。对于第一次划分后产生的两个结点，请给出下一次划分的规则；
+
+ 	提示：可以直观判断，不必计算熵。
+
+ 	\item \textbf{[5pts]} 现在回到根结点 (root)，并且假设我们是建树的新手。是否存在一种划分使得根结点 (root) 的信息增益 (information gain) 为$0$?
+ \end{enumerate}
+
+ \begin{solution}
+ 	此处用于写解答(中英文均可)
+ \end{solution}
+\newpage
+
+ \section{[25pts] Universal Approximator}
+ 已知函数$f:[-1, 1]^n \mapsto [-1, 1]$满足$\rho$-Lipschiz性质。 给定误差$\epsilon > 0$，请构造一个激活函数为\mbox{ sgn($\mathbf{x}$) }的神经网络$ \mathcal{N}:[-1,1]^n \mapsto [-1,1] $，使得对于任意的输入样本$ \mathbf{x} \in [-1,1]^n $，有$|f(\mathbf{x}) - \mathcal{N}(\mathbf{x})| \leq \epsilon$。\\
+ (Lipschiz条件为：$ \forall \mathbf{x}, \mathbf{y} \in [-1,1]^n$，$ \exists \rho > 0$，$ \mbox{ s.t. } |f(\mathbf{x})-f(\mathbf{y})| \leq \rho \lVert \mathbf{x} - \mathbf{y} \rVert_2 $，其中\mbox{ sgn($\mathbf{x}$) }的定义参见《机器学习》第98页。)
+ 
+  \begin{enumerate}[ {(}1{)}]
+ 	\item \textbf{[5pts]} 请画出构造的神经网络$\mathcal{N}$的示意图；
+ 	
+ 	\item \textbf{[10pts]} 请对构造的神经网络进行简要的说明(写清每一层的线性组合形式，也就是结点间的连接方式和对应的权重)；
+ 	
+ 	\item \textbf{[10pts]} 证明自己构造的神经网络的拟合误差满足要求。
+ \end{enumerate}
+
+
+ \begin{solution}
+	此处用于写解答(中英文均可)
+ \end{solution}
+\newpage
+
+\section{[40pts] Neural Network in Practice}
+通过《机器学习》课本第5章的学习，相信大家已经对神经网络有了初步的理解。深度神经网络在某些现实机器学习问题，如图像、自然语言处理等表现优异。本次作业旨在引导大家学习使用一种深度神经网络工具，快速搭建、训练深度神经网络，完成分类任务。
+
+我们选取PyTorch为本次实验的深度神经网络工具，有了基础工具，我们就能如同搭积木一样构建深度神经网络。\href{http://pytorch.org/}{PyTorch}是Facebook开发的一种开源深度学习框架，有安装方便、文档齐全、构架方便、训练效率高等特点。本次作业的首要任务就是安装PyTorch。
+
+目前PyTorch仅支持Linux和MacOS操作系统，所以Window用户需要装一个Linux虚拟机或者直接安装Linux系统。PyTorch安装很方便，只需要在其主页中的Get Start一栏选择对应的环境设置，便能够一键安装。有GPU的同学也可以尝试安装GPU版本的PyTorch。为保证此次作业的公平性，只要求使用CPU进行网络训练，当然有条件的同学也可以尝试使用GPU进行训练。在批改作业时，助教会提供Python 2.7、3.5、3.6三种环境进行实验验证。
+
+我们选取CIFAR10作为本次作业的训练任务。\href{https://en.wikipedia.org/wiki/CIFAR-10}{CIFAR10}是一个经典的图片分类数据集，数据集中总共有60000张32$\times$32的彩色图片，总共有10类，每类6000张图片，其中50000张图片构成训练集，10000张图片构成测试集。PyTorch通过torchvision给用户提供了获取CIFAR10的方法，详细信息可见\href{http://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html}{PyTorch的教程}。此外关于CIFAR10分类准确率排行可见此\href{http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html}{链接}。
+
+下面我们将尝试使用PyTorch来解决实际问题：
+
+\begin{enumerate}[(1)]
+	\item \textbf{[15pts]} 首先我们跟随PyTorch的教程，用一个简单的卷积神经网络（Convolutional Neural Network, CNN），完成CIFAR10上的分类任务，具体要求如下：
+	
+	\begin{itemize}
+		\item \textbf{[7pts]} 在代码实现之前，大家可能需要对CNN网络进行一定的了解，请大家自行查阅资料（PyTorch的教程中也有部分介绍CNN网络），并在实验报告中给出对CNN的见解：主要回答什么是卷积层，什么是Pooling层，以及两者的作用分别是什么；
+		\item \textbf{[8pts]} 接下来就是具体的代码实现和训练。教程会手把手教你完成一次训练过程，其中使用SGD作为优化方法，请同学们自行调整epoch的大小和学习率，完成此次训练。另外，请在实验报告中给出必要的参数设置，以及训练结果如最终的loss、在测试集上的准确率等；
+	\end{itemize}
+	\item \textbf{[20pts]} 显然，这样一个简单的网络在CIFAR10上并不能取得令人满意的结果，我们需要选取一个更为复杂的网络来提升训练效果。在此小题中，我们选取了CIFAR10准确率排行榜上排名第二的结构，具体参见\href{https://arxiv.org/pdf/1412.6806.pdf}{论文链接}。为了方便大家实现，我们直接给出了网络结构如图\ref{network_structure}所示。请大家搭建完成此网络结构，并选择Adam为优化器，自行调整相关参数完成训练和预测，实验结果报告内容同第（1）小题；
+	\begin{figure}[!h]
+		\centering   
+		\includegraphics[width=0.99\textwidth, height=0.15\textwidth]{nn_structure.png}  
+		\caption{待实现网络结构} 
+		\label{network_structure}
+	\end{figure}
+	\item \textbf{[5pts]} 通过上一题实验我们可以发现，即使使用现成的网络结构也不一定能达到与其相同的训练效果。请大家分析其中的原因，并谈谈本次实验的感想，以及对深度学习调参的体会。
+\end{enumerate}
+
+\noindent{\textbf{实验报告.}}
+
+\end{document}
