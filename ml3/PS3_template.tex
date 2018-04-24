@@ -154,6 +154,34 @@ child { node [env] {z = ?}
 	edge from parent node [below] {1} };
 \end{tikzpicture}\\
 \item[(2)]
+按照信息增益为准则，划分依据为：\\
+第一层根结点：\\
+如果选择$X$划分：
+\begin{equation}
+\begin{aligned}
+Gain(D, X) =& Ent(D) - \sum_{v=1}^{2}\frac{|D^v|}{|D|}Ent(D^v) \\
+=& 1 - 1 = 0 
+\end{aligned}
+\end{equation}
+如果选择$Y$划分：
+\begin{equation}
+Gain(D, Y) = 1 - 1 = 0 
+\end{equation}
+如果选择$Z$划分：
+\begin{equation}
+Gain(D, Y) = 1 - \frac{3}{4}\times 0.918 = 0.6885 
+\end{equation}
+所以选择$Z$划分。\\
+第二层第一个结点都是同一类，现在考虑第二个结点的划分：\\
+如果选择$X$划分：
+\begin{equation}
+Gain(D, X) = 0.918 - 0.918 = 0
+\end{equation}
+如果选择$Y$划分：
+\begin{equation}
+Gain(D, Y)  = 0.918 - 0.918 = 0
+\end{equation}
+所以按照字母顺序选择$X$划分。\\
 根据数据集生成的决策树如下：\\\\
 \begin{tikzpicture}
 [
@@ -220,14 +248,20 @@ child { node [env] {X = ?}
  ~\\
  \begin{enumerate}
  \item [(1)]
- 根节点的熵值为
+ 根结点的熵值为
  \begin{equation}
  Ent(D) = -(\frac{3}{6}\log_2\frac{3}{6} + \frac{3}{6}\log_2\frac{3}{6}) = 1.000
  \end{equation}
  \item [(2)]
- 第一次划分的规则为$f_1\leq 6$。第一次划分之后，满足$f_1\leq 6$的节点的第二次划分的规则为$f_2\leq 1$，不满足$f_1\leq 6$的节点的所有样本的标签都是$1$，所以不需要再次划分。
+ 规则如图1所示。第一次划分的规则为$f_1\leq 6$。不满足$f_1\leq 6$的结点的所有样本的标签都是$1$，所以这一部分不需要再次划分。第一次划分之后，满足$f_1\leq 6$的节点的第二次划分的规则为$f_2\leq 1$，其中满足$f_2\leq 1$的结点的样本的标签都都是$1$，不满足的都是$0$，所以不需要再次划分。
+ \begin{figure}[!h]
+ 	\centering   
+ 	\includegraphics[scale=0.5]{coordinate1.png}  
+ 	\caption{划分规则} 
+ 	\label{coordinate1}
+ \end{figure}
  \item [(3)]
- 按照$f_2\leq 2$来划分，将$D$分成了$D^1$和$D^2$两个部分。其中$D^1$包含第一个和第四个样例。由此可得
+ 规则如图2所示。按照$f_2\leq 2$来划分，将$D$分成了$D^1$和$D^2$两个部分。其中$D^1$包含第一个和第四个样例。由此可得
  \begin{equation}
  Ent(D^1) =  -(\frac{1}{2}\log_2\frac{1}{2} + \frac{1}{2}\log_2\frac{1}{2}) = 1.000
  \end{equation}
@@ -242,6 +276,12 @@ child { node [env] {X = ?}
  &= 0
  \end{aligned}
  \end{equation}
+ \begin{figure}[!h]
+ 	\centering   
+ 	\includegraphics[scale=0.5]{coordinate2.png}  
+ 	\caption{划分规则} 
+ 	\label{coordinate2}
+ \end{figure}
  \end{enumerate}
  \end{solution}
 \newpage
