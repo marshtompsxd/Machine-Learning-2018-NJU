@@ -15,6 +15,8 @@
 \usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage{tikz}
+\usepackage{algorithm}  
+\usepackage{algpseudocode}  
 \newmdtheoremenv{thm-box}{Theorem}
 \newmdtheoremenv{prop-box}{Proposition}
 \newmdtheoremenv{def-box}{定义}
@@ -286,22 +288,110 @@ child { node [env] {X = ?}
  \end{solution}
 \newpage
 
- \section{[25pts] Universal Approximator}
- 已知函数$f:[-1, 1]^n \mapsto [-1, 1]$满足$\rho$-Lipschiz性质。 给定误差$\epsilon > 0$，请构造一个激活函数为\mbox{ sgn($\mathbf{x}$) }的神经网络$ \mathcal{N}:[-1,1]^n \mapsto [-1,1] $，使得对于任意的输入样本$ \mathbf{x} \in [-1,1]^n $，有$|f(\mathbf{x}) - \mathcal{N}(\mathbf{x})| \leq \epsilon$。\\
- (Lipschiz条件为：$ \forall \mathbf{x}, \mathbf{y} \in [-1,1]^n$，$ \exists \rho > 0$，$ \mbox{ s.t. } |f(\mathbf{x})-f(\mathbf{y})| \leq \rho \lVert \mathbf{x} - \mathbf{y} \rVert_2 $，其中\mbox{ sgn($\mathbf{x}$) }的定义参见《机器学习》第98页。)
- 
-  \begin{enumerate}[ {(}1{)}]
- 	\item \textbf{[5pts]} 请画出构造的神经网络$\mathcal{N}$的示意图；
- 	
- 	\item \textbf{[10pts]} 请对构造的神经网络进行简要的说明(写清每一层的线性组合形式，也就是结点间的连接方式和对应的权重)；
- 	
- 	\item \textbf{[10pts]} 证明自己构造的神经网络的拟合误差满足要求。
- \end{enumerate}
+\section{[25pts] Universal Approximator}
+已知函数$f:[-1, 1]^n \mapsto [-1, 1]$满足$\rho$-Lipschiz性质。 给定误差$\epsilon > 0$，请构造一个激活函数为\mbox{ sgn($\mathbf{x}$) }的神经网络$ \mathcal{N}:[-1,1]^n \mapsto [-1,1] $，使得对于任意的输入样本$ \mathbf{x} \in [-1,1]^n $，有$|f(\mathbf{x}) - \mathcal{N}(\mathbf{x})| \leq \epsilon$。\\
+(Lipschitz条件参见\href{https://en.wikipedia.org/wiki/Lipschitz_continuity}{Wikipedia}，其中\mbox{ sgn($\mathbf{x}$) }的定义参见《机器学习》第98页。)
+
+\begin{enumerate}[ {(}1{)}]
+	\item \textbf{[5pts]} 请画出构造的神经网络$\mathcal{N}$的示意图；
+	
+	\item \textbf{[10pts]} 请对构造的神经网络进行简要的说明(写清每一层的线性组合形式，也就是结点间的连接方式和对应的权重)；
+	
+	\item \textbf{[10pts]} 证明自己构造的神经网络的拟合误差满足要求。
+\end{enumerate}
 
 
- \begin{solution}
-	此处用于写解答(中英文均可)
- \end{solution}
+\begin{solution}
+
+\begin{enumerate}[ {(}1{)}]
+\item 神经网络$\mathcal{N}$的示意图如下所示：
+\begin{figure}[!h]
+	\centering   
+	\includegraphics[scale=0.3]{net.png}  
+	\caption{神经网络$\mathcal{N}$} 
+	\label{net}
+\end{figure}	
+	
+\item 神经网络说明：\\
+\textbf{结构：}\\
+神经网络分为$4$层，其中包括输入层，输出层和两个隐层。其中输入层有$n$个输入单元（每个单元对应了一个$\mathbf{x}$的维度的数值），第一个隐层（以后称为B层）有$2nk$个单元，第二个隐层（以后称为T层）有$m$个单元，输出层只有一个单元也就是整个神经网络的输出值。\\
+
+\textbf{符号表示：}
+见下表：
+\begin{table}[!h]
+	\centering
+	\caption{符号表}
+	\label{my-label}
+	\begin{tabular}{|l|l|}
+		\hline
+	$x_i$	& 输入单元接受的输入值，也就是$ \mathbf{x} $向量的各个维度的数值 \\ \hline
+	$b_{i,j}^+, b_{i,j}^-$	& B层的单元，注意到$b_{i,j}^+$和$b_{i,j}^-$是成对出现的 \\ \hline
+	$\alpha_{i,j}^+,\alpha_{i,j}^-$	& 分别是$b_{i,j}^+$和$b_{i,j}^-$的输入 \\ \hline
+	$\beta_{i,j}^+,\beta{i,j}^-$	& 分别是$b_{i,j}^+$和$b_{i,j}^-$的输出 \\ \hline
+	$\theta_{i,j}^+,\theta{i,j}^-$	& 分别是$b_{i,j}^+$和$b_{i,j}^-$的阈值 \\ \hline
+	$t_i$	& T层的单元 \\ \hline
+	$\gamma_i$	& $t_i$的输入 \\ \hline
+	$\delta_i$	& $t_i$的输出 \\ \hline
+	$\lambda_i$	& $t_i$的阈值 \\ \hline
+	$z$	& 输出层的单元的输出值 \\ \hline
+	$K$	& 函数$f$的Lipschiz常数 \\ \hline
+	$m$	& 神经网络的超参数，用于控制B层的神经元的数目\\ \hline
+	\end{tabular}
+\end{table}\\
+
+\textbf{线性组合形式：}\\
+输入层神经元数目：$n$\\
+B层神经元数目：$2m$\\
+T层神经元数目：$m^n$\\
+输出层神经元数目：$1$\\
+从输入层到B层的传播：
+\begin{equation}
+\alpha_{i,j}^* = x_i\ ,\ \ *\in \{+,-\}
+\end{equation}
+B层的神经元计算：
+\begin{equation}
+\begin{aligned}
+&\theta_{i,j}^+ = -1 + (j-1)L\\
+&\theta_{i,j}^- = -1 + jL\\
+&\beta_{i,j}^* = sgn(\alpha_{i,j}^* - \theta_{i,j}^*)\ ,\ \ *\in \{+, -\}
+\end{aligned}
+\end{equation}
+从B层到T层，映射较为复杂：B层的神经元$b_{1, index_1}^+,b_{2,index_2}^+,...,b_{n,index_n}^+$的输出乘以权重$1$以及$b_{1, index_1}^-,b_{2,index_2}^-,...,b_{n,index_n}^-$的输出乘以权重$-1$之后作为$t_s$的输入值，其中$s= 1+\sum_{i=1}^{n}(index_i-1)m^{(i-1)} $，所以为了根据$s$得到$index_i$，给出以下算法：
+\begin{algorithm}[h]  
+	\caption{IndexTranslate}  
+	\begin{algorithmic}[1]  
+		\Require  
+		T层的神经元编号s  
+		\Ensure  
+		输入到$t_s$的B层神经元的编号$(index_1,index_2,...,index_n)$
+		\State $s = s-1$ 
+		\For{i from 1 to n}  
+		\State $index_i = s \mod m^i$
+		\State $s = s - index_i$
+		\State $index_i = index_i + 1$
+		\EndFor
+		\label{code:recentEnd}  
+	\end{algorithmic}  
+\end{algorithm}\\
+现在给出从B层到T层的传播：
+\begin{equation}
+(index_1, index_2,...,index_n) = IndexTranslate(s)
+\end{equation}
+\begin{equation}
+\gamma_s = \sum_{i=1}^{n}\beta_{i,index_i}^+ - \sum_{i=1}^{n}\beta_{i,index_i}^-
+\end{equation}
+T层的神经元计算：\\
+\begin{equation}
+\begin{aligned}
+&\lambda_s = n - \frac{1}{2}\\
+&\delta_s = sgn(\gamma_s - \lambda_s)
+\end{aligned}
+\end{equation}
+\item \textbf{[10pts]} 证明自己构造的神经网络的拟合误差满足要求。
+\end{enumerate}
+
+
+\end{solution}
 \newpage
 
 \section{[40pts] Neural Network in Practice}
