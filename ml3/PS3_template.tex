@@ -556,6 +556,13 @@ C_1||\mathbf{x}-\mathbf{xt}||_2 \leq ||\mathbf{x}-\mathbf{xt}||_p \leq C_2||\mat
 \textbf{Pooling层的概念}：pooling层也是卷积神经网络中一个重要的结构，他的主要功能在于对数据进行采样。\\\\
 \textbf{Pooling层的作用}：总体来讲pooling层的作用在于减少数据大小，减少参数，降低运算量，减低训练时间，防止过拟合，提高泛化能力，同时还可以保持特征的不变形（包括平移，旋转，尺度等方面）。具体的，pooling层就是按照一定的比例对输入数据进行采样，常见的有max-pooling和average-pooling。常见的做法是将数据分成$2\times 2$的数据块然后从每个数据块中选择一个最大值（或者平均值）来代替整个数据块。其中max-pooling采样操作还能够保持输入数据的特征不变型，比如说某个数据块中出现了某个特征，反映在输入数据上就是某个元素的值非常大。当我们在对这个数据块采样的时候，为了在下一层维持这个特征的表现，我们选择了最大的数值作为采样后的结果，这背后蕴含了即便数据缩小了，我们仍然尽可能保持原有的特征这一思想，所以实践中往往max-pooling表现会比较好。实践中会在卷积层之间周期性的插入pooling层来提升整体的效果。\\
 \textbf{官方教程CNN实验过程：}在pytorch官网下载对应版本之后，跟着教程训练了一个简单的卷积神经网络，其中包括卷积层，pooling层，全连接层，最终得到实验结果。\\
+\textbf{模型结构：}
+\begin{figure}[!h]
+	\centering   
+	\includegraphics[scale=0.5]{ng1.png}  
+	\caption{简单CNN} 
+	\label{ng1}
+\end{figure}\\
 \textbf{官方教程CNN实验的参数设置如下：}
 \begin{table}[h]
 	\centering
@@ -603,7 +610,14 @@ C_1||\mathbf{x}-\mathbf{xt}||_2 \leq ||\mathbf{x}-\mathbf{xt}||_p \leq C_2||\mat
 \item [(2)]
 \textbf{ALL-CONV-NET实验过程：}仿照上一个简单CNN的实验，实现ALL-CONV-NET的结构并进行测试。在实验过程中，发现给定的网络结构十分复杂，训练时间开销巨大，准确率提升缓慢，所以决定修改简化模型，调整参数，最终实现了简化后的ALL-CONV-NET-S模型。由于机器性能有限，作业时间有限以及自己掌握的深度学习知识有限，所以并没有能够复现出论文中的高准确率，但是相比于简单CNN模型，已经有了巨大的提升，同时时间开销也是可以忍受的。\\
 \textbf{修改简化模型：}\\
-简化后结构如下图所示：\\
+简化后结构如下图所示：
+\begin{figure}[!h]
+	\centering   
+	\includegraphics[scale=0.3]{ng2.png}  
+	\caption{ALL-CONV-NET-S} 
+	\label{ng2}
+\end{figure}\\
+简化的模型删去了3个relu层和1个dropout层。
 改进后的模型在降低了复杂度的同时，提高了训练效率，降低了时间开销，具体对比如下：
 \begin{figure}[!h]
 	\centering   
