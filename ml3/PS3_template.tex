@@ -258,7 +258,7 @@ child { node [env] {X = ?}
  规则如图1所示。第一次划分的规则为$f_1\leq 6$。不满足$f_1\leq 6$的结点的所有样本的标签都是$1$，所以这一部分不需要再次划分。第一次划分之后，满足$f_1\leq 6$的节点的第二次划分的规则为$f_2\leq 1$，其中满足$f_2\leq 1$的结点的样本的标签都都是$1$，不满足的都是$0$，所以不需要再次划分。
  \begin{figure}[!h]
  	\centering   
- 	\includegraphics[scale=0.5]{coordinate1.png}  
+ 	\includegraphics[scale=0.4]{coordinate1.png}  
  	\caption{划分规则} 
  	\label{coordinate1}
  \end{figure}
@@ -280,7 +280,7 @@ child { node [env] {X = ?}
  \end{equation}
  \begin{figure}[!h]
  	\centering   
- 	\includegraphics[scale=0.5]{coordinate2.png}  
+ 	\includegraphics[scale=0.4]{coordinate2.png}  
  	\caption{划分规则} 
  	\label{coordinate2}
  \end{figure}
@@ -307,12 +307,13 @@ child { node [env] {X = ?}
 \item 神经网络$\mathcal{N}$的示意图如下所示（因为空间有限，所以省略了部分结点和边，以及所有权值为0的边均在图中省略）：
 \begin{figure}[!h]
 	\centering   
-	\includegraphics[scale=0.3]{net.png}  
+	\includegraphics[scale=0.5]{net.png}  
 	\caption{神经网络$\mathcal{N}$} 
 	\label{net}
-\end{figure}	
+\end{figure}\\
+如上图所示，输入层$n$个神经元$x_1,...,x_n$，从输入层到第一个隐层，$x_i$只和$b_{i,j}^+$以及$b_{i,j}^-$相连，权重为$1$。第一个隐层共有$2nm$个神经元$b_{1,1}^+,b_{1,1}^-,...,b_{n,m}^+,b_{n,m}^-$，阈值暂时没有画在图中，将在之后解释，$b_{i,j}^+$连接特定的$t_s$，权重为$1$，$b_{i,j}^-$连接特定的$t_s$，权重为$-1$。第二个隐层的阈值暂时没有画在图中，将在之后解释，所有的$t_s$都连接到输出神经元，权值为$w_s$。（以上说明中，关于“连接到”，也可以理解为没有连接到的点之间权值为0）\\
 	
-\item 神经网络说明：\\
+\item 
 \textbf{$\mathcal{N}$的结构：}\\
 神经网络分为$4$层，其中包括输入层，输出层和两个隐层。其中输入层有$n$个输入单元（每个单元对应了一个$\mathbf{x}$的维度的数值），第一个隐层（以后称为B层）有$2mn$个单元，第二个隐层（以后称为T层）有$m^n$个单元，输出层只有一个单元也就是整个神经网络的输出值。\\
 \textbf{$\mathcal{N}$的符号表示：}
@@ -323,6 +324,7 @@ child { node [env] {X = ?}
 	\label{my-label}
 	\begin{tabular}{|l|l|}
 		\hline
+	\textbf{符号}	& \textbf{描述} \\ \hline
 	$x_i$	& 输入单元接受的输入值，也就是$ \mathbf{x} $向量的各个维度的数值 \\ \hline
 	$b_{i,j}^+, b_{i,j}^-$	& B层的单元，注意到$b_{i,j}^+$和$b_{i,j}^-$是成对出现的 \\ \hline
 	$\alpha_{i,j}^+,\alpha_{i,j}^-$	& 分别是$b_{i,j}^+$和$b_{i,j}^-$的输入 \\ \hline
@@ -549,15 +551,60 @@ C_1||\mathbf{x}-\mathbf{xt}||_2 \leq ||\mathbf{x}-\mathbf{xt}||_p \leq C_2||\mat
 \begin{enumerate}
 \item [(1)]
 ~\\
-\textbf{对CNN的见解}：卷积神经网络是一种非常强大的，适合用于图像，视频识别以及自然语言处理的神经网络的。卷积神经网络本身就是一种特殊的神经网络，其训练的流程为：输入层接受训练集数据，通过隐层一层层传递到输出层，输出与真实标签进行比较，得到损失函数，然后再通过反向传播来调整隐层的参数，进而降低损失函数，来使得预测结果逼近与真实标签。CNN中比较特殊的隐层结构是卷积层和pooling层，其中卷积层主要承担了对特定模式的识别工作，pooling层主要起到了采样的作用。\\
-\textbf{卷积层的概念}：是卷积神经网络的核心，承担了卷积神经网络大部分的工作量。\\
-\textbf{卷积层的作用}：卷积层的作用主要在于提取特征，这个操作类似于信号处理中的滤波，和人类大脑认知世界也有几分相似。这个操作的实现用到了卷积的方法。具体的，如果输入的数据大小为$H\times W\times D$(此处先假设batch size为1，其中D表示channel数量)，那么卷积层就会有诸多大小为$H'\times W'\times D$的filter(其中$H' < H$而且$W' < W$)。通过将一个filter“覆盖”在输入数据上，会得到输入数据上的一个和filter相同大小的数据块，把数据块和filter对应位置的元素相乘然后求和，可以得到一个标量值，把filter“覆盖”到数据的不同位置可以得到很多标量值，将这些标量值按照顺序排列起来可以得到一个activation map，每一个filter针对每一个输入数据都会得到一个activation map，把多个filter对应的activation map堆叠在一起就可以得到下一个隐层的输入数据。每一个卷积层得到的activation map其实就是对某种特征的提取，如果map中某个元素值很大，就说明这个元素对应的输入数据的特定位置有可能存在某种特征。所以activation map实际上可以反应出特征在输入数据集中的分布。卷积层可以识别的特征多种多样的，一般第一卷积层只能识别一些简单的特征，例如边缘，曲线，角，更多层的卷积层可以识别到更加复杂的特征。\\
-\textbf{Pooling层的概念}：pooling层也是卷积神经网络中一个重要的结构，他的主要功能在于对数据进行采样。\\
+\textbf{对CNN的见解}：卷积神经网络是一种非常强大的，适合用于图像，视频识别以及自然语言处理的神经网络的。卷积神经网络本身就是一种特殊的神经网络，其训练的流程为：输入层接受训练集数据，通过隐层一层层传递到输出层，输出与真实标签进行比较，得到损失函数，然后再通过反向传播来调整隐层的参数，进而降低损失函数，来使得预测结果逼近与真实标签。CNN中比较特殊的隐层结构是卷积层和pooling层，其中卷积层主要承担了对特定模式的识别工作，pooling层主要起到了采样的作用。\\\\
+\textbf{卷积层的概念}：是卷积神经网络的核心，承担了卷积神经网络大部分的工作量。\\\\
+\textbf{卷积层的作用}：卷积层的作用主要在于提取特征，这个操作类似于信号处理中的滤波，和人类大脑认知世界也有几分相似。这个操作的实现用到了卷积的方法。具体的，如果输入的数据大小为$H\times W\times D$(此处先假设batch size为1，其中D表示channel数量)，那么卷积层就会有诸多大小为$H'\times W'\times D$的filter(其中$H' < H$而且$W' < W$)。通过将一个filter“覆盖”在输入数据上，会得到输入数据上的一个和filter相同大小的数据块，把数据块和filter对应位置的元素相乘然后求和，可以得到一个标量值，把filter“覆盖”到数据的不同位置可以得到很多标量值，将这些标量值按照顺序排列起来可以得到一个activation map，每一个filter针对每一个输入数据都会得到一个activation map，然后把多个filter对应的activation map堆叠在一起就可以得到下一个隐层的输入数据。每一个卷积层得到的activation map其实就是对某种特征的提取，如果map中某个元素值很大，就说明这个元素对应的输入数据的特定位置有可能存在某种特征。所以activation map实际上可以反应出特征在输入数据集中的分布。卷积层可以识别的特征多种多样的，一般第一卷积层只能识别一些简单的特征，例如边缘，曲线，角，更多层的卷积层可以识别到更加复杂的特征。\\\\
+\textbf{Pooling层的概念}：pooling层也是卷积神经网络中一个重要的结构，他的主要功能在于对数据进行采样。\\\\
 \textbf{Pooling层的作用}：总体来讲pooling层的作用在于减少数据大小，减少参数，降低运算量，减低训练时间，防止过拟合，提高泛化能力，同时还可以保持特征的不变形（包括平移，旋转，尺度等方面）。具体的，pooling层就是按照一定的比例对输入数据进行采样，常见的有max-pooling和average-pooling。常见的做法是将数据分成$2\times 2$的数据块然后从每个数据块中选择一个最大值（或者平均值）来代替整个数据块。其中max-pooling采样操作还能够保持输入数据的特征不变型，比如说某个数据块中出现了某个特征，反映在输入数据上就是某个元素的值非常大。当我们在对这个数据块采样的时候，为了在下一层维持这个特征的表现，我们选择了最大的数值作为采样后的结果，这背后蕴含了即便数据缩小了，我们仍然尽可能保持原有的特征这一思想，所以实践中往往max-pooling表现会比较好。实践中会在卷积层之间周期性的插入pooling层来提升整体的效果。
 	
 \item [(2)]
 ~\\
-	
+CNN实验的参数设置如下：
+\begin{table}[h]
+	\centering
+	\caption{简单CNN参数设置}
+	\label{cllnet}
+	\begin{tabular}{| l | l |}
+		\hline
+	参数 & 大小 \\ \hline
+	epoch	& 40 \\ \hline
+	learning rate	& 0.0005 \\ \hline
+	momentum	& 0.9 \\ \hline
+	\end{tabular}
+\end{table}\\
+选择epoch为40是考虑到模型在40个epoch之后loss就很难下降而且出现了明显的震荡，选择learning rate为0.0005是因为如果把rate调大，SGD效果反而变差，如果把rate调小，那么SGD下降会变慢，训练过程见下图（下图中横坐标表示训练的张次数，即1张图片训练1次为1张次数）：\\
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[width=6cm]{net-0005-001-40.png}
+		\caption{epoch=40, rate=0.001 or 0.002}
+	\end{minipage}
+	\begin{minipage}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[width=6cm]{net-0005-0001-10.png}
+		\caption{epoch=10, rate=0.001 or 0.0005}
+	\end{minipage}
+\end{figure}\\
+设置epoch=40，对比rate=0.0005和rate=0.001的模型的训练效果，发现随着迭代次数增加前者下降的更快。\\
+设置epoch=10，对比rate=0.0005和rate=0.0001的模型的训练效果，发现前者下降明显快于后者。\\
+训练结果：\\
+最终loss：采用的计算loss的方式为cross entropy loss，\textbf{最终loss的大小为：$0.664$}。\\
+测试集上的准确率：
+\begin{table}[h]
+	\centering
+	\caption{简单CNN准确率}
+	\label{ac1}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
+		\hline
+	类别	& plane & car & bird & cat & deer & dog & frog & horse & ship & truck & total \\ \hline
+	准确率	& 0.67 & 0.73 & 0.46 & 0.43 & 0.48 & 0.43 & 0.68 & 0.63 & 0.70 & 0.68 & 0.59 \\ \hline
+	\end{tabular}
+\end{table}\\
+
+\item [(3)]
+
+
 \end{enumerate}
 
 \end{document}
