@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  19 MAY 2018 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  19 MAY 2018 22:26
 entering extended mode
 **./151220097_4_v1.tex
 (151220097_4_v1.tex
@@ -1660,7 +1660,7 @@ nd DVIPDFMx (CTEX)
 ) [1
 
 ] [2] [3] [4]
-Overfull \hbox (1.89044pt too wide) in paragraph at lines 203--204
+Overfull \hbox (1.89044pt too wide) in paragraph at lines 214--215
 []\OT1/cmr/bx/n/10.53937 [5pts] \C70/rm/m/n/10.53937/5f S$\OML/cmm/m/it/10.5393
 7 p \OT1/cmr/m/n/10.53937 = 1$\C70/rm/m/n/10.53937/4e $\OML/cmm/m/it/10.53937 
 t \OMS/cmsy/m/n/10.53937 2 \OT1/cmr/m/n/10.53937 [0\OML/cmm/m/it/10.53937 ; \OT
@@ -1676,7 +1676,7 @@ n/10.53937/5e  \C70/rm/m/n/10.53937/51 ˝ \C70/rm/m/n/10.53937/65 p\OT1/cmr/m/n
  []
 
 
-Overfull \hbox (5.27924pt too wide) in paragraph at lines 209--210
+Overfull \hbox (5.27924pt too wide) in paragraph at lines 220--221
 []\OT1/cmr/bx/n/10.53937 [10pts] \C70/rm/m/n/10.53937/8b ˜ \C70/rm/m/n/10.53937
 /6c B \C70/rm/m/n/10.53937/89 „ \C70/rm/m/n/10.53937/96 è \C70/rm/m/n/10.53937/
 67 : \C70/rm/m/n/10.53937/53 ÿ \C70/rm/m/n/10.53937/91 œ$\OML/cmm/m/it/10.53937
@@ -1693,42 +1693,42 @@ m/n/10.53937 . \C70/rm/m/n/10.53937/7b T \C70/rm/m/n/10.53937/68 H \C70/rm/m/n/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 [5]
-Overfull \hbox (18.86725pt too wide) in paragraph at lines 230--231
+Overfull \hbox (18.86725pt too wide) in paragraph at lines 241--242
 \C70/rm/m/n/10.53937/50 < \C70/rm/m/n/10.53937/8b ° \C70/rm/m/n/10.53937/7b ó|\
 C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/53 ÷ \C70/rm/m/n/10.53937/8f É \
 C70/rm/m/n/10.53937/9a ÿ \C70/rm/m/n/10.53937/72 y \C70/rm/m/n/10.53937/5f Å \C
@@ -1747,57 +1747,57 @@ m/n/10.53937/8f É \C70/rm/m/n/10.53937/4f N \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 255--263
 
  []
 
 
 AED: lastpage setting LastPage
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
  (151220097_4_v1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 254.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
 Package rerunfilecheck Info: File `151220097_4_v1.out' has not changed.
 (rerunfilecheck)             Checksum: 022E4A94A904E3B96CD83B62FB7F0F0B;819.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 24832 strings out of 493333
- 416218 string characters out of 3145216
+ 24836 strings out of 493333
+ 416288 string characters out of 3145216
  582334 words of memory out of 3000000
- 27742 multiletter control sequences out of 15000+200000
+ 27745 multiletter control sequences out of 15000+200000
  579382 words of font info for 203 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,17n,45p,10458b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1851,9 +1851,9 @@ r12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/
 MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 151220097_4_v1.pdf (6 pages, 688964 bytes).
+Output written on 151220097_4_v1.pdf (6 pages, 691904 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
  277 words of extra memory for PDF output out of 10000 (max. 10000000)
 

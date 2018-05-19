@@ -180,8 +180,19 @@ L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu}) =& \frac{1
 \begin{split}
 \max_{\mathbf{\alpha}}& \quad \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j\\
 \text{s.t.}&  \quad \sum_{i=1}^{m}\alpha_iy_i = 0\\
-& \quad 0 \leq \alpha_i \leq , i = 1,2,\cdots,m.
+& \quad 0 \leq \alpha_i \leq C(\mathbb{I}(i\in \mathbf{P}) + k\mathbb{I}(i\in \mathbf{N}) ), i = 1,2,\cdots,m.
 \end{split}	
+\end{equation}
+KKT条件要求为
+\begin{equation}
+\begin{cases}
+\alpha_i \geq 0\\
+\mu_i \geq 0\\
+\xi_i \geq 0\\
+y_i(\mathbf{w}^\mathrm{T}\mathbf{x}_i + b) - 1 + \xi_i \geq 0\\
+\alpha_i(y_i(\mathbf{w}^\mathrm{T}\mathbf{x}_i + b) - 1 + \xi_i) = 0\\
+\mu_i\xi_i = 0
+\end{cases}
 \end{equation}
 \end{enumerate}
 \end{mySol}
