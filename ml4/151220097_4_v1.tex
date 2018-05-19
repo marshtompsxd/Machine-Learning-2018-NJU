@@ -1,0 +1,254 @@
+\documentclass[a4paper,UTF8]{article}
+\usepackage{ctex}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{mathtools}
+\newmdtheoremenv{thm-box}{myThm}
+\newmdtheoremenv{prop-box}{Proposition}
+\newmdtheoremenv{def-box}{定义}
+
+\setlength{\evensidemargin}{.25in}
+\setlength{\textwidth}{6in}
+\setlength{\topmargin}{-0.5in}
+\setlength{\topmargin}{-0.5in}
+% \setlength{\textheight}{9.5in}
+%%%%%%%%%%%%%%%%%%此处用于设置页眉页脚%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}                                
+\usepackage{lastpage}                                           
+\usepackage{layout}                                             
+\footskip = 10pt 
+\pagestyle{fancy}                    % 设置页眉                 
+\lhead{2018年春季}                    
+\chead{机器学习导论}                                                
+% \rhead{第\thepage/\pageref{LastPage}页} 
+\rhead{作业四}                                                                                               
+\cfoot{\thepage}                                                
+\renewcommand{\headrulewidth}{1pt}  			%页眉线宽，设为0可以去页眉线
+\setlength{\skip\footins}{0.5cm}    			%脚注与正文的距离           
+\renewcommand{\footrulewidth}{0pt}  			%页脚线宽，设为0可以去页脚线
+
+\makeatletter 									%设置双线页眉                                        
+\def\headrule{{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi%
+\hrule\@height 1.0pt \@width\headwidth\vskip1pt	%上面线为1pt粗  
+\hrule\@height 0.5pt\@width\headwidth  			%下面0.5pt粗            
+\vskip-2\headrulewidth\vskip-1pt}      			%两条线的距离1pt        
+ \vspace{6mm}}     								%双线与下面正文之间的垂直间距              
+\makeatother  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%\usepackage[thmmarks, amsmath, thref]{ntheorem}
+\newtheorem{myThm}{myThm}
+\newtheorem*{myDef}{Definition}
+\newtheorem*{mySol}{Solution}
+\newtheorem*{myProof}{Proof}
+\newcommand{\indep}{\rotatebox[origin=c]{90}{$\models$}}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+
+\usepackage{multirow}
+
+%--
+
+%--
+\begin{document}
+\title{机器学习导论\\
+作业四}
+\author{151220097, 孙旭东, 248381185@qq.com}
+\maketitle
+
+\section{[30pts] Kernel Methods}
+Mercer定理告诉我们对于一个二元函数$k(\cdot,\cdot)$，它是正定核函数当且仅当对任意$N$和$\mathbf{x}_1, \mathbf{x}_2,\ldots,\mathbf{x}_N$，它对应的核矩阵是半正定的. 假设$k_1(\cdot,\cdot)$和$k_2(\cdot,\cdot)$分别是关于核矩阵$K_1$和$K_2$的正定核函数. 另外，核矩阵$K$中的元素为$K_{ij}=k(\mathbf{x}_i,\mathbf{x}_j)$. 请根据Mercer定理证明对应于以下核矩阵的核函数正定.
+\begin{enumerate}[(1)]
+	\item \textbf{[10pts]} $K_3=a_1K_1+a_2K_2$, 其中$a_1,a_2\geq 0$.
+	\item \textbf{[10pts]} $f(\cdot)$是任意实值函数，由$k_4(\mathbf{x},\mathbf{x}')=f(\mathbf{x})f(\mathbf{x}')$定义的$K_4$.
+	\item \textbf{[10pts]} 由$k_5(\mathbf{x},\mathbf{x}')=k_1(\mathbf{x},\mathbf{x}')k_2(\mathbf{x},\mathbf{x}')$定义的$K_5$.
+\end{enumerate}
+
+\begin{mySol}
+\begin{enumerate}[(1)]
+~\\
+\item
+要证明$K_3$对应的核函数正定，即证明$K_3$半正定。\\
+由于$K_1$和$K_2$对应的核函数是正定核函数，所以$K_1$和$K_2$都是半正定矩阵。所以有：对任意非零向量$\mathbf{x}$，都有：\\
+\begin{equation}
+\mathbf{x}^\mathrm{T}K_1\mathbf{x} \geq 0
+\end{equation}
+\begin{equation}
+\mathbf{x}^\mathrm{T}K_2\mathbf{x} \geq 0
+\end{equation}
+又因为$a_1,a_2\geq 0$，所以：
+\begin{equation}
+\mathbf{x}^\mathrm{T}a_1K_1\mathbf{x} \geq 0
+\end{equation}
+\begin{equation}
+\mathbf{x}^\mathrm{T}a_2K_2\mathbf{x} \geq 0
+\end{equation}
+那么可以得到：
+\begin{equation}
+\mathbf{x}^\mathrm{T}K_3\mathbf{x} = \mathbf{x}^\mathrm{T}(a_1K_1+a_2K_2)\mathbf{x} = \mathbf{x}^\mathrm{T}a_1K_1\mathbf{x} + \mathbf{x}^\mathrm{T}a_2K_2\mathbf{x} \geq 0
+\end{equation}
+所以可得$K_3$是半正定矩阵，所以对应的核函数正定。
+\item 
+设$K_{ij}$表示$K_4$的$i$行，第$j$列的项。对于任意非零向量$\mathbf{x}$，用$x_i$表示$\mathbf{x}$的第$i$个项，可以有：
+\begin{equation}
+\mathbf{x}^\mathrm{T}K_4\mathbf{x} = \sum_{i=1}^{N}\sum_{j=1}^{N}x_iK_{ij}x_j
+\end{equation}
+又因为$k_4(\mathbf{x}_i,\mathbf{x}_j)=f(\mathbf{x}_i)f(\mathbf{x}_j)$，所以为了方便证明令$t_i = f(\mathbf{x}_i)$，可得$K_{ij}=k_4(\mathbf{x}_i,\mathbf{x}_j)=f(\mathbf{x}_i)f(\mathbf{x}_j)=t_it_j$，结合上式可得：
+\begin{equation}
+\begin{aligned}
+\mathbf{x}^\mathrm{T}K_4\mathbf{x} =& \sum_{i=1}^{N}\sum_{j=1}^{N}x_iK_{ij}x_j = \sum_{i=1}^{N}\sum_{j=1}^{N}x_it_it_jx_j\\ 
+=& \sum_{i=1}^{N}(x_it_i)^2 + 2\sum_{i=1}^{N-1}\sum_{j=i+1}^{N}x_it_ix_jt_j\\
+=& (t_1x_1 + t_2x_2 +...+ t_nx_n)^2 \geq 0
+\end{aligned}
+\end{equation}
+所以可得$K_4$是半正定矩阵，所以对应的核函数正定。
+\end{enumerate}
+\end{mySol}
+\newpage
+
+\section{[25pts] SVM with Weighted Penalty}
+考虑标准的SVM优化问题如下(即课本公式(6.35))，
+\begin{equation}
+	\label{eq-svm}
+	\begin{split}
+		\min_{\mathbf{w},b,\xi_i}& \quad \frac{1}{2} \lVert \mathbf{w} \rVert^2 + C\sum_{i=1}^m\xi_i\\
+		\text{s.t.}&  \quad y_i(\mathbf{w}^\mathrm{T}\mathbf{x}_i + b)\geq 1-\xi_i\\
+		& \quad \xi_i \geq 0, i = 1,2,\cdots,m.
+	\end{split}
+\end{equation}
+
+注意到，在\eqref{eq-svm}中，对于正例和负例，其在目标函数中分类错误的“惩罚”是相同的. 在实际场景中，很多时候正例和负例错分的“惩罚”代价是不同的. 比如考虑癌症诊断问题，将一个确实患有癌症的人误分类为健康人，以及将健康人误分类为患有癌症，产生的错误影响以及代价不应该认为是等同的.
+
+现在，我们希望对负例分类错误的样本(即false positive)施加$k>0$倍于正例中被分错的样本的“惩罚”. 对于此类场景下，
+\begin{enumerate}[(1)]
+\item \textbf{[10pts]} 请给出相应的SVM优化问题.
+\item \textbf{[15pts]} 请给出相应的对偶问题，要求详细的推导步骤，尤其是如KKT条件等.
+\end{enumerate}
+\begin{mySol}
+	此处用于写解答(中英文均可)
+\begin{enumerate}[(1)]
+\item 
+定义$\mathbf{P}$表示正例的下标的集合，$\mathbf{N}$表示负例的下标的集合，相应的SVM优化问题为：
+\begin{equation}
+\begin{split}
+\min_{\mathbf{w},b,\xi_i}& \quad \frac{1}{2} \lVert \mathbf{w} \rVert^2 + C\sum_{i \in \mathbf{P}}^m\xi_i + Ck\sum_{i \in \mathbf{N}}^m\xi_i\\
+\text{s.t.}&  \quad y_i(\mathbf{w}^\mathrm{T}\mathbf{x}_i + b)\geq 1-\xi_i\\
+& \quad \xi_i \geq 0, i = 1,2,\cdots,m.
+\end{split}
+\end{equation}
+
+\item 
+根据上式$(2.2)$，使用拉格朗日乘子法可得拉格朗日函数如下：
+\begin{equation}
+\begin{aligned}
+L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu}) =& \frac{1}{2} \lVert \mathbf{w} \rVert^2 + C\sum_{i \in \mathbf{P}}^m\xi_i + Ck\sum_{i \in \mathbf{N}}^m\xi_i\\
+& + \sum_{i=1}^{m}\alpha_i(1-\xi_i-y_i(\mathbf{w}^\mathrm{T}\mathbf{x}_i + b)) - \sum_{i=1}^{m}\mu_i\xi_i 
+\end{aligned}
+\end{equation}
+其中$\alpha_i \geq 0$，$\mu_i \geq 0$是拉格朗日乘子。\\
+令$L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu})$对$\mathbf{w}$，$b$，$\xi_i$的偏导为零可得
+\begin{equation}
+	\mathbf{w} = \sum_{i=1}^{m}\alpha_iy_i\mathbf{x}_i
+\end{equation}
+\begin{equation}
+	0=\sum_{i=1}^{m}\alpha_iy_i
+\end{equation}
+\begin{equation}
+	C = (\alpha_i + \mu_i)(\mathbb{I}(i\in \mathbf{P}) + \frac{1}{k}\mathbb{I}(i\in \mathbf{N}) )
+\end{equation}
+为了方便解答，这里用到了指示器函数，定义如下：
+\begin{equation}
+\mathbb{I}(\cdot) = 
+\begin{cases}
+1 & \mbox{$\cdot$ is true}\\
+0 & \mbox{$\cdot$ is false}
+\end{cases}
+\end{equation}
+现在将$(2.4)-(2.6)$代入式$(2.3)$即可得到式$(2.2)$的对偶问题
+\begin{equation}
+\begin{split}
+\max_{\mathbf{\alpha}}& \quad \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j\\
+\text{s.t.}&  \quad \sum_{i=1}^{m}\alpha_iy_i = 0\\
+& \quad 0 \leq \alpha_i \leq , i = 1,2,\cdots,m.
+\end{split}	
+\end{equation}
+\end{enumerate}
+\end{mySol}
+\newpage
+
+
+\section{[30pts+10*pts] Nearest Neighbor}
+假设数据集$\{\mathbf{x}_1,...,\mathbf{x}_n\}$是从一个以$\mathbf{0}$为中心的$p$维单位球中独立均匀采样而得到的$n$个样本点. 这个球可以表示为：
+\begin{equation}
+	B = \{\mathbf{x}: \lVert \mathbf{x} \rVert^2 \leq 1\} \subset \mathbb{R}^p.
+\end{equation}
+其中，$\lVert \mathbf{x} \rVert= \sqrt{\langle\mathbf{x}, \mathbf{x}\rangle}$，$\langle\mathbf{x}, \mathbf{x}\rangle$是$\mathbb{R}^p$空间中向量的内积.
+在本题中，我们将探究原点$O$与其最近邻($1$-NN)的距离$d^*$，以及这个距离$d^*$与$p$之间的关系. 在这里，我们将原点$O$以及其$1$-NN之间的距离定义为:
+\begin{equation}
+d^* \coloneqq \min_{1\leq i \leq n} \lVert \mathbf{x}_i \rVert,
+\end{equation}
+不难发现$d^*$是一个随机变量，因为$\mathbf{x}_i$是随机产生的.
+\begin{enumerate}[(1)]
+\item \textbf{[5pts]} 当$p=1$且$t\in [0,1]$时，请计算$\Pr(d^*\leq t)$，即随机变量$d^*$的累积分布函数(Cumulative Distribution Function, $\mathbf{CDF}$).
+\item \textbf{[10pts]} 请写出$d^*$的$\mathbf{CDF}$的一般公式，即当$p\in\{1,2,3,...\}$时$d^*$对应的取值. 提示：半径为$r$的$p$维球体积是：
+	\begin{equation}
+	V_p(r)=\frac{(r\sqrt{\pi})^p}{\Gamma(p/2+1)},
+	\end{equation}
+	其中，$\Gamma(1/2)=\sqrt{\pi}$，$\Gamma(1)=1$，且有$\Gamma(x+1)=x\Gamma(x)$对所有的$x>0$成立；并且对于$n\in\mathbb{N}^*$，有$\Gamma(n+1)=n!$.
+\item \textbf{[10pts]} 请求解随机变量$d^*$的中位数，即使得$\Pr(d^*\leq t)=1/2$成立时的$t$值. 答案是与$n$和$p$相关的函数.
+
+\item \textbf{[附加题10pts]} 请通过$\mathbf{CDF}$计算使得原点$O$距其最近邻的距离$d^*$小于$1/2$的概率至少$0.9$的样本数$n$的大小. 提示：答案仅与$p$相关. 你可能会用到$\ln(1-x)$的泰勒展开式：
+\begin{equation}
+\ln(1-x) = - \sum_{i=1}^{\infty} \frac{x^i}{i}, \quad \mbox{for } -1 \leq x < 1.
+\end{equation}
+\item \textbf{[5pts]} 在解决了以上问题后，你关于$n$和$p$以及它们对$1$-NN的性能影响有什么理解.
+\end{enumerate}
+\begin{mySol}
+	此处用于写解答(中英文均可)
+	~\\
+	~\\
+	~\\
+	~\\
+	~\\
+	~\\
+	~\\
+\end{mySol}
+\newpage
+
+\section{[15pts] Principal Component Analysis}
+一些经典的降维方法，例如PCA，可以将均值为$\mathbf{0}$的高维数据通过对其协方差矩阵的特征值计算，取较高特征值对应的特征向量的操作而后转化为维数较低的数据. 在这里，我们记$U_k$为$d\times k$的矩阵，这个矩阵是由原数据协方差矩阵最高的$k$个特征值对应的特征向量组成的. 
+
+在这里我们有两种方法来求出低维的对应于$\mathbf{x}\in \mathbb{R}^d$的重构向量$\mathbf{w}\in \mathbb{R}^k$:
+
+A. 求最小重构平方误差；
+
+B. 将$\mathbf{x}$投影在由$U_k$的列向量张成的空间中.
+
+在这里，我们将探究这两种方法的关系.
+\begin{enumerate}[(1)]
+\item \textbf{[5pts]} 写出$U_k, \mathbf{x}$以及$\mathbf{w}$的最小二乘形式 (方法A).
+\item \textbf{[10pts]} 证明方法A的解就是$U_k^\mathrm{T}\mathbf{x}$，也就是$\mathbf{x}$在$U_k$列向量空间中的投影 (方法B).
+\end{enumerate}
+\begin{mySol}
+	此处用于写解答(中英文均可)
+	~\\
+	~\\
+	~\\
+	~\\
+	~\\
+	~\\
+	~\\
+\end{mySol}
+
+\end{document}
