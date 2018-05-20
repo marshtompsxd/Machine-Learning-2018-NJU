@@ -80,7 +80,8 @@ Mercer定理告诉我们对于一个二元函数$k(\cdot,\cdot)$，它是正定�
 ~\\
 \item
 要证明$K_3$对应的核函数正定，即证明$K_3$半正定。\\
-由于$K_1$和$K_2$对应的核函数是正定核函数，所以$K_1$和$K_2$都是半正定矩阵。所以有：对任意非零向量$\mathbf{x}$，都有：\\
+由于$K_1$和$K_2$对应的核函数是正定核函数，所以$K_1$和$K_2$都是半正定矩阵，所以$K_1$和$K_2$是对称的，所以显然$K_3$也是对称的。\\
+又因为$K_1$和$K_2$是半正定矩阵，所以还有：对任意非零向量$\mathbf{x}$，都有：\\
 \begin{equation}
 \mathbf{x}^\mathrm{T}K_1\mathbf{x} \geq 0
 \end{equation}
@@ -98,9 +99,9 @@ Mercer定理告诉我们对于一个二元函数$k(\cdot,\cdot)$，它是正定�
 \begin{equation}
 \mathbf{x}^\mathrm{T}K_3\mathbf{x} = \mathbf{x}^\mathrm{T}(a_1K_1+a_2K_2)\mathbf{x} = \mathbf{x}^\mathrm{T}a_1K_1\mathbf{x} + \mathbf{x}^\mathrm{T}a_2K_2\mathbf{x} \geq 0
 \end{equation}
-所以可得$K_3$是半正定矩阵，所以对应的核函数正定。
+所以可得$K_3$是半正定矩阵，所以对应的核函数是正定的。
 \item 
-设$K_{ij}$表示$K_4$的$i$行，第$j$列的项。对于任意非零向量$\mathbf{x}$，用$x_i$表示$\mathbf{x}$的第$i$个项，可以有：
+设$K_{ij}$表示$K_4$的$i$行，第$j$列的项。首先因为$K_{ij}=f(\mathbf{x}_i)f(\mathbf{x}_j)=f(\mathbf{x}_j)f(\mathbf{x}_i)=K_{ji}$，所以$K_4$是对称的。对于任意非零向量$\mathbf{x}$，用$x_i$表示$\mathbf{x}$的第$i$个项，可以有：
 \begin{equation}
 \mathbf{x}^\mathrm{T}K_4\mathbf{x} = \sum_{i=1}^{N}\sum_{j=1}^{N}x_iK_{ij}x_j
 \end{equation}
@@ -113,6 +114,30 @@ Mercer定理告诉我们对于一个二元函数$k(\cdot,\cdot)$，它是正定�
 \end{aligned}
 \end{equation}
 所以可得$K_4$是半正定矩阵，所以对应的核函数正定。
+\item 
+为了方便证明，令$A=K_1$，$B=K_2$，$C=K_5$。然后再定义$A_{ij}$表示$A$的第$i$行第$j$列的元素，即$A_{ij}=k_1(\mathbf{x}_i, \mathbf{x}_j)$，同理有$B_{ij}=k_2(\mathbf{x}_i, \mathbf{x}_j)$，$C_{ij}=k_5(\mathbf{x}_i, \mathbf{x}_j)$。根据题目定义可得$C_{ij} = A_{ij}B_{ij}$。\\
+因为$k_1$和$k_2$都是正定核函数，所以$A$和$B$都是半正定矩阵。所以$A$和$B$都是对称的，所以得到$k_5(\mathbf{x}_i,\mathbf{x}_j)=k_1(\mathbf{x}_i,\mathbf{x}_j)k_2(\mathbf{x}_i,\mathbf{x}_j)=k_1(\mathbf{x}_j,\mathbf{x}_i)k_2(\mathbf{x}_j,\mathbf{x}_i)=k_5(\mathbf{x}_j,\mathbf{x}_i)$，所以$C$是实对称矩阵。又因为$B$是半正定矩阵，所以根据半正定矩阵的性质可知，通过使用Cholesky分解，一定存在N阶实矩阵$L$，满足$B= LL^\mathrm{T}$，使用$L_{ij}$表示$L$的每个元素，根据定义可得$B_{ij} = \sum_{k=1}^{N}L_{ik}L_{jk}$。对于任意非零向量$\mathbf{x}$，用$x_i$表示$\mathbf{x}$的第$i$个项，可以有：
+\begin{equation}
+\mathbf{x}^\mathrm{T}C\mathbf{x} = \sum_{i=1}^{N}\sum_{j=1}^{N}x_iC_{ij}x_j
+\end{equation}
+再根据以上定义，有
+\begin{equation}
+\begin{aligned}
+\mathbf{x}^\mathrm{T}C\mathbf{x} =& \sum_{i=1}^{N}\sum_{j=1}^{N}x_iC_{ij}x_j\\
+=& \sum_{i=1}^{N}\sum_{j=1}^{N}x_iA_{ij}B_{ij}x_j\\
+=& \sum_{i=1}^{N}\sum_{j=1}^{N}x_iA_{ij}x_j\sum_{k=1}^{N}L_{ik}L_{jk}\\
+=& \sum_{k=1}^{N}\sum_{i=1}^{N}\sum_{j=1}^{N}(x_iL_{ik})A_{ij}(x_jL_{jk})\\
+\end{aligned}
+\end{equation}
+然后定义向量$\mathbf{y}_k=(x_1L_{1k},x_2L_{2k},\cdots,x_nL_{nk})$，所以有
+\begin{equation}
+\mathbf{x}^\mathrm{T}C\mathbf{x} = \sum_{k=1}^{N}\mathbf{y}_k^\mathrm{T}A\mathbf{y}_k
+\end{equation}
+又因为$A$是半正定矩阵，所以有$\mathbf{y}_k^\mathrm{T}A\mathbf{y}_k \geq 0$，所以可得
+\begin{equation}
+\mathbf{x}^\mathrm{T}C\mathbf{x} = \sum_{k=1}^{N}\mathbf{y}_k^\mathrm{T}A\mathbf{y}_k \geq 0
+\end{equation}
+所以可得$C$是半正定矩阵，所以$K_5$是半正定矩阵，所以对应的核函数正定。
 \end{enumerate}
 \end{mySol}
 \newpage
@@ -227,13 +252,64 @@ d^* \coloneqq \min_{1\leq i \leq n} \lVert \mathbf{x}_i \rVert,
 \end{enumerate}
 \begin{mySol}
 	此处用于写解答(中英文均可)
-	~\\
-	~\\
-	~\\
-	~\\
-	~\\
-	~\\
-	~\\
+\begin{enumerate}[(1)]
+\item 因为$p=1$，所以可得$d^* \coloneqq \min_{1\leq i \leq n} x_i$。要计算$\Pr(d^*\leq t)$，可以先计算$\Pr(d^* > t)$。定义事件$E_i$表示$x_i > t$，考虑到$d^* \coloneqq \min_{1\leq i \leq n} x_i$，所以$d^* > t$等价于对任意$i=1,2,\cdots,n$，都有$x_i > t$。所以$Pr(d^* > t) = Pr(E_1 \land E_2 \land \cdots \land E_n)$，再考虑到n个样本独立均匀的采样得到的，所以：
+\begin{equation}
+\begin{aligned}
+Pr(d^* > t) =& Pr(E_1 \land E_2 \land \cdots \land E_n)\\
+=& Pr(E_1)Pr(E_2)\cdots Pr(E_n)\\
+=& Pr(x_1>t)Pr(x_2>t)\cdots Pr(x_n>t)\\
+=& (1-t)^n
+\end{aligned}
+\end{equation}
+所以可得
+\begin{equation}
+Pr(d^* \leq t) = 1 - Pr(d^* > t) = 1 - (1-t)^n
+\end{equation}
+\item 先考虑$Pr(\lVert \mathbf{x}_i \rVert \leq t)$。根据独立均匀采样，球体的定义以及$\lVert \mathbf{x} \rVert= \sqrt{\langle\mathbf{x}, \mathbf{x}\rangle}$，可得满足$\lVert \mathbf{x}_i \rVert \leq t$的$\mathbf{x}_i$构成了一个半径为t的p维球体，所以可得：
+\begin{equation}
+Pr(\lVert \mathbf{x}_i \rVert > t) = 1 - Pr(\lVert \mathbf{x}_i \rVert \leq t) = 1 - \frac{V_p(t)}{V_p(1)}
+\end{equation}
+根据p维球体的定义，可得：
+\begin{equation}
+\frac{V_p(t)}{V_p(1)} = \frac{t^p}{1}
+\end{equation}
+结合上一问可得
+\begin{equation}
+\begin{aligned}
+Pr(d^* > t) =& Pr(E_1 \land E_2 \land \cdots \land E_n)\\
+=& Pr(E_1)Pr(E_2)\cdots Pr(E_n)\\
+=& Pr(\lVert \mathbf{x}_1\rVert > t)Pr(\lVert \mathbf{x}_2\rVert > t)\cdots Pr(\lVert \mathbf{x}_n\rVert > t)\\
+=& (1 - t^p)^n
+\end{aligned}
+\end{equation}
+所以可得
+\begin{equation}
+Pr(d^* \leq t) = 1 - Pr(d^* > t) = 1 - (1-t^p)^n
+\end{equation}
+\item 
+因为$Pr(d^*\leq t)=\frac{1}{2}$，所以有$1 - (1-t^p)^n = \frac{1}{2}$，可得
+\begin{equation}
+\begin{aligned}
+&1 - (1-t^p)^n = 1/2\\
+\Leftrightarrow\ &1/2 = (1-t^p)^n\\
+\Leftrightarrow\ &\sqrt[n]{1/2} = 1-t^p\\
+\Leftrightarrow\ &t^p = 1- \sqrt[n]{1/2}\\
+\Leftrightarrow\ &t = \sqrt[p]{1- \sqrt[n]{1/2}}
+\end{aligned}
+\end{equation}
+所以可得$t = \sqrt[p]{1- \sqrt[n]{1/2}}$。
+\item 
+根据第$(2)$题答案可得$Pr(d^* \leq \frac{1}{2}) = 1 - (1-(1/2)^p)^n$，令$1 - (1-(1/2)^p)^n \geq 0.9$，可得
+\begin{equation}
+\begin{aligned}
+&1 - (1-(1/2)^p)^n \geq 0.9\\
+\Leftrightarrow\ &0.1 \geq (1-(1/2)^p)^n\\
+\Leftrightarrow\ &n \geq \log_{1-(1/2)^p}0.1\\
+\Leftrightarrow\ &n \geq \frac{\ln (1-0.9)}{\ln (1-(1/2)^p)}
+\end{aligned}
+\end{equation}
+\end{enumerate}
 \end{mySol}
 \newpage
 

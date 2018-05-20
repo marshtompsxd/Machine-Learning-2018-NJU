@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  19 MAY 2018 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  20 MAY 2018 19:50
 entering extended mode
 **./151220097_4_v1.tex
 (151220097_4_v1.tex
@@ -1650,7 +1650,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--82
 Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
 e (quanjiao) on input line 82.
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 82--85
 
  []
 
@@ -1659,8 +1659,8 @@ File: zhwindowsfonts.tex 2017/04/01 v2.4.9 Windows font map loader for pdfTeX a
 nd DVIPDFMx (CTEX)
 ) [1
 
-] [2] [3] [4]
-Overfull \hbox (1.89044pt too wide) in paragraph at lines 214--215
+] [2] [3] [4] [5]
+Overfull \hbox (1.89044pt too wide) in paragraph at lines 239--240
 []\OT1/cmr/bx/n/10.53937 [5pts] \C70/rm/m/n/10.53937/5f S$\OML/cmm/m/it/10.5393
 7 p \OT1/cmr/m/n/10.53937 = 1$\C70/rm/m/n/10.53937/4e $\OML/cmm/m/it/10.53937 
 t \OMS/cmsy/m/n/10.53937 2 \OT1/cmr/m/n/10.53937 [0\OML/cmm/m/it/10.53937 ; \OT
@@ -1676,7 +1676,7 @@ n/10.53937/5e  \C70/rm/m/n/10.53937/51 ˝ \C70/rm/m/n/10.53937/65 p\OT1/cmr/m/n
  []
 
 
-Overfull \hbox (5.27924pt too wide) in paragraph at lines 220--221
+Overfull \hbox (5.27924pt too wide) in paragraph at lines 245--246
 []\OT1/cmr/bx/n/10.53937 [10pts] \C70/rm/m/n/10.53937/8b ˜ \C70/rm/m/n/10.53937
 /6c B \C70/rm/m/n/10.53937/89 „ \C70/rm/m/n/10.53937/96 è \C70/rm/m/n/10.53937/
 67 : \C70/rm/m/n/10.53937/53 ÿ \C70/rm/m/n/10.53937/91 œ$\OML/cmm/m/it/10.53937
@@ -1693,42 +1693,24 @@ m/n/10.53937 . \C70/rm/m/n/10.53937/7b T \C70/rm/m/n/10.53937/68 H \C70/rm/m/n/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
+Overfull \hbox (3.89996pt too wide) in paragraph at lines 269--270
+[]\C70/rm/m/it/10.53937/51 H \C70/rm/m/it/10.53937/80  \C70/rm/m/it/10.53937/8
+6 Q$\OML/cmm/m/it/10.53937 Pr\OT1/cmr/m/n/10.53937 (\OMS/cmsy/m/n/10.53937 k\OT
+1/cmr/bx/n/10.53937 x[]\OMS/cmsy/m/n/10.53937 k  \OML/cmm/m/it/10.53937 t\OT1/
+cmr/m/n/10.53937 )$|\C70/rm/m/it/10.53937/30 | \C70/rm/m/it/10.53937/68 9 \C70
+/rm/m/it/10.53937/63 n \C70/rm/m/it/10.53937/72 Ï \C70/rm/m/it/10.53937/7a À \C
+70/rm/m/it/10.53937/57 G \C70/rm/m/it/10.53937/53   \C70/rm/m/it/10.53937/91 « 
+\C70/rm/m/it/10.53937/68 7|\C70/rm/m/it/10.53937/ff | \C70/rm/m/it/10.53937/74
+  \C70/rm/m/it/10.53937/4f S \C70/rm/m/it/10.53937/76 Ñ \C70/rm/m/it/10.53937/
+5b ö \C70/rm/m/it/10.53937/4e I Â \C70/rm/m/it/10.53937/53  $\OMS/cmsy/m/n/10.5
+3937 k\OT1/cmr/bx/n/10.53937 x\OMS/cmsy/m/n/10.53937 k \OT1/cmr/m/n/10.53937 = 
+[]$|\C70/rm/m/it/10.53937/ff | \C70/rm/m/it/10.53937/53 Ô \C70/rm/m/it/10.5393
+7/5f ó \C70/rm/m/it/10.53937/6e · \C70/rm/m/it/10.53937/8d ≥$\OMS/cmsy/m/n/10.5
+3937 k\OT1/cmr/bx/n/10.53937 x[]\OMS/cmsy/m/n/10.53937 k 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--237
-
- []
-
-[5]
-Overfull \hbox (18.86725pt too wide) in paragraph at lines 241--242
+[6] [7]
+Overfull \hbox (18.86725pt too wide) in paragraph at lines 317--318
 \C70/rm/m/n/10.53937/50 < \C70/rm/m/n/10.53937/8b ° \C70/rm/m/n/10.53937/7b ó|\
 C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/53 ÷ \C70/rm/m/n/10.53937/8f É \
 C70/rm/m/n/10.53937/9a ÿ \C70/rm/m/n/10.53937/72 y \C70/rm/m/n/10.53937/5f Å \C
@@ -1747,67 +1729,67 @@ m/n/10.53937/8f É \C70/rm/m/n/10.53937/4f N \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 331--339
 
  []
 
 
 AED: lastpage setting LastPage
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (151220097_4_v1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `151220097_4_v1.out' has not changed.
 (rerunfilecheck)             Checksum: 022E4A94A904E3B96CD83B62FB7F0F0B;819.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 24836 strings out of 493333
- 416288 string characters out of 3145216
+ 24951 strings out of 493333
+ 418021 string characters out of 3145216
  582334 words of memory out of 3000000
- 27745 multiletter control sequences out of 15000+200000
- 579382 words of font info for 203 fonts, out of 3000000 for 9000
+ 27821 multiletter control sequences out of 15000+200000
+ 582082 words of font info for 213 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,17n,45p,10458b,585s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,17n,45p,10458b,582s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
-/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
-s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
-OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf>
+imkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
+/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
+/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei
+.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
+OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
 <C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/sim
 kai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
 onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/W
@@ -1829,31 +1811,35 @@ WS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><
 C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simk
 ai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fo
 nts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WI
-NDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.tt
-c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
-/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+NDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.tt
+f><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/s
+imkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
+/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
+/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
 .ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
 s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
 OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
 sun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/F
-onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><D:/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/
-MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 151220097_4_v1.pdf (6 pages, 691904 bytes).
+onts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
+INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
+tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
+simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
+S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><D:/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmib10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb>
+Output written on 151220097_4_v1.pdf (8 pages, 747860 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
