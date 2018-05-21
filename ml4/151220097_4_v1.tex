@@ -203,7 +203,7 @@ L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu}) =& \frac{1
 现在将$(2.4)-(2.6)$代入式$(2.3)$即可得到式$(2.2)$的对偶问题
 \begin{equation}
 \begin{split}
-\max_{\mathbf{\alpha}}& \quad \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j\\
+\max_{\alpha_i}& \quad \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j\\
 \text{s.t.}&  \quad \sum_{i=1}^{m}\alpha_iy_i = 0\\
 & \quad 0 \leq \alpha_i \leq C(\mathbb{I}(i\in \mathbf{P}) + k\mathbb{I}(i\in \mathbf{N}) ), i = 1,2,\cdots,m.
 \end{split}	
@@ -318,24 +318,56 @@ Pr(d^* \leq t) = 1 - Pr(d^* > t) = 1 - (1-t^p)^n
 
 在这里我们有两种方法来求出低维的对应于$\mathbf{x}\in \mathbb{R}^d$的重构向量$\mathbf{w}\in \mathbb{R}^k$:
 
-A. 求最小重构平方误差；
+A. 利用$U_k\mathbf{w}$重构出对应的$\mathbf{x}$时, 最小化重构平方误差；
 
 B. 将$\mathbf{x}$投影在由$U_k$的列向量张成的空间中.
 
 在这里，我们将探究这两种方法的关系.
 \begin{enumerate}[(1)]
-\item \textbf{[5pts]} 写出$U_k, \mathbf{x}$以及$\mathbf{w}$的最小二乘形式 (方法A).
-\item \textbf{[10pts]} 证明方法A的解就是$U_k^\mathrm{T}\mathbf{x}$，也就是$\mathbf{x}$在$U_k$列向量空间中的投影 (方法B).
+	\item \textbf{[5pts]} 写出方法A中最小化重构平方误差的目标函数的表示形式.
+	\item \textbf{[10pts]} 证明通过方法A得到的重构向量就是$U_k^\mathrm{T}\mathbf{x}$，也就是$\mathbf{x}$在$U_k$列向量空间中的投影 (通过方法B得到的重构向量). 这里, 有$U_k^\mathrm{T}U_k=I_k$成立, 其中的$I_k$是$k\times k$的单位矩阵.
 \end{enumerate}
 \begin{mySol}
 	此处用于写解答(中英文均可)
-	~\\
-	~\\
-	~\\
-	~\\
-	~\\
-	~\\
-	~\\
+\begin{enumerate}[(1)]
+\item 
+假设共计有m个样例高维向量$\mathbf{x}_1,\mathbf{x}_2,\cdots,\mathbf{x}_m$，他们对应的低维向量为$\mathbf{w}_1,\mathbf{w}_2,\cdots,\mathbf{w}_m$。所有的$\mathbf{x}_i$的均值为$\mathbf{0}$。用$U_k$和$\mathbf{w}_i$重构出$\hat{\mathbf{x}}_i$，即
+\begin{equation}
+\hat{\mathbf{x}}_i = U_k\mathbf{w}_i
+\end{equation}
+为了最小化重构平方误差，可得目标函数
+\begin{equation}
+\min_{\hat{\mathbf{x}}_i} \quad \sum_{i=1}^{m}\lVert \hat{\mathbf{x}}_i - \mathbf{x}_i\rVert_2^2	
+\end{equation}
+即
+\begin{equation}
+\min_{\mathbf{w}_i} \quad \sum_{i=1}^{m}\lVert U_k\mathbf{w}_i - \mathbf{x}_i\rVert_2^2	
+\end{equation}
+或者写为
+\begin{equation}
+\min_{\mathbf{w}_i} \quad \sum_{i=1}^{m}(U_k\mathbf{w}_i - \mathbf{x}_i)^\mathrm{T}(U_k\mathbf{w}_i - \mathbf{x}_i)
+\end{equation}
+\item 
+令$f(\mathbf{w}_1,\mathbf{w}_2,\cdots,\mathbf{w}_m)=\sum_{i=1}^{m}\lVert U_k\mathbf{w}_i - \mathbf{x}_i\rVert_2^2$。为了得到$(4.3)$的解，即让$f$对$\mathbf{w}_1,\cdots,\mathbf{w}_m$求偏导，然后令导数为0，即
+\begin{equation}
+\begin{aligned}
+\frac{\partial f}{\partial \mathbf{w}_1} =& 2U_k^\mathrm{T}(U_k\mathbf{w}_1 - \mathbf{x}_1)=0\\
+\frac{\partial f}{\partial \mathbf{w}_2} =& 2U_k^\mathrm{T}(U_k\mathbf{w}_2 - \mathbf{x}_2)=0\\
+&\cdots\cdots\\
+\frac{\partial f}{\partial \mathbf{w}_m} =& 2U_k^\mathrm{T}(U_k\mathbf{w}_m - \mathbf{x}_m)=0\\
+\end{aligned}
+\end{equation}
+可得，对任意的$i=1,2,\cdots,m$，都有
+\begin{equation}
+\begin{aligned}
+&2U_k^\mathrm{T}(U_k\mathbf{w}_i - \mathbf{x}_i)=0\\
+\Leftrightarrow\ &U_k^\mathrm{T}U_k\mathbf{w}_i = U_k^\mathrm{T}\mathbf{x}_i\\
+\Leftrightarrow\ &I_k\mathbf{w}_i = U_k^\mathrm{T}\mathbf{x}_i\\
+\Leftrightarrow\ &\mathbf{w}_i = U_k^\mathrm{T}\mathbf{x}_i
+\end{aligned}
+\end{equation}
+根据以上可得对于$\mathbf{x}_i$，通过方法A得到的重构向量$\mathbf{w}_i$就是$U_k^\mathrm{T}\mathbf{x}_i$。所以得证通过方法A得到的重构向量就是$U_k^\mathrm{T}\mathbf{x}$，也就是$\mathbf{x}$在$U_k$列向量空间中的投影 (通过方法B得到的重构向量)。
+\end{enumerate}
 \end{mySol}
 
 \end{document}
