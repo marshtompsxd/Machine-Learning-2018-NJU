@@ -190,7 +190,7 @@ L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu}) =& \frac{1
 	0=\sum_{i=1}^{m}\alpha_iy_i
 \end{equation}
 \begin{equation}
-	C = (\alpha_i + \mu_i)(\mathbb{I}(i\in \mathbf{P}) + \frac{1}{k}\mathbb{I}(i\in \mathbf{N}) )
+	(\mathbb{I}(i\in \mathbf{P}) + k\mathbb{I}(i\in \mathbf{N}) )C = \alpha_i + \mu_i
 \end{equation}
 为了方便解答，这里用到了指示器函数，定义如下：
 \begin{equation}
@@ -200,7 +200,30 @@ L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu}) =& \frac{1
 0 & \mbox{$\cdot$ is false}
 \end{cases}
 \end{equation}
-现在将$(2.4)-(2.6)$代入式$(2.3)$即可得到式$(2.2)$的对偶问题
+现在将$(2.4)-(2.6)$代入式$(2.3)$即可得到式$(2.2)$的对偶问题，具体的：
+\begin{equation}
+\begin{aligned}
+L(\mathbf{w},b,\boldsymbol{\alpha},\boldsymbol{\xi},\boldsymbol{\mu}) =& \frac{1}{2} \lVert \mathbf{w} \rVert^2 + C\sum_{i \in \mathbf{P}}^m\xi_i + Ck\sum_{i \in \mathbf{N}}^m\xi_i\\
+& + \sum_{i=1}^{m}\alpha_i(1-\xi_i-y_i(\mathbf{w}^\mathrm{T}\mathbf{x}_i + b)) - \sum_{i=1}^{m}\mu_i\xi_i \\
+=& \frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j + C\sum_{i \in \mathbf{P}}^m\xi_i + Ck\sum_{i \in \mathbf{N}}^m\xi_i\\
+& + \sum_{i=1}^{m}\alpha_i - \sum_{i=1}^{m}\alpha_i\xi_i - \sum_{i=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j - \sum_{i=1}^{m}\alpha_iy_ib - \sum_{i=1}^{m}\mu_i\xi_i\\
+=& \frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j + \sum_{i \in \mathbf{P}}^m(\alpha_i + \mu_i)\xi_i + \sum_{i \in \mathbf{N}}^m(\alpha_i + \mu_i)\xi_i\\
+& + \sum_{i=1}^{m}\alpha_i - \sum_{i=1}^{m}\alpha_i\xi_i - \sum_{i=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j- \sum_{i=1}^{m}\mu_i\xi_i\\
+=& \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j
+\end{aligned}
+\end{equation}
+由KKT条件中的
+\begin{equation}
+\begin{aligned}
+\alpha_i \geq 0\\
+\mu_i \geq 0
+\end{aligned}
+\end{equation}
+可得约束条件
+\begin{equation}
+ 0 \leq \alpha_i \leq C(\mathbb{I}(i\in \mathbf{P}) + k\mathbb{I}(i\in \mathbf{N}) )
+\end{equation}
+综上可得，对偶问题为：
 \begin{equation}
 \begin{split}
 \max_{\alpha_i}& \quad \sum_{i=1}^{m}\alpha_i-\frac{1}{2}\sum_{i=1}^{m}\sum_{j=1}^{m}\alpha_i\alpha_jy_iy_j\mathbf{x}_i^\mathrm{T}\mathbf{x}_j\\
@@ -320,7 +343,8 @@ Pr(d^* \leq t) = 1 - Pr(d^* > t) = 1 - (1-t^p)^n
 在p固定的情况下，n越大，t就越小。\\
 在n固定的情况下，p越大，t就越大。\\
 在$Pr(d^*\leq t)$和t的值都确定的情况下，可以得到：\\
-p越大，n就越大。
+p越大，n就越大。\\
+总体而言，n越大，p越小，性能越好。
 \end{enumerate}
 \end{mySol}
 \newpage
@@ -378,7 +402,28 @@ B. 将$\mathbf{x}$投影在由$U_k$的列向量张成的空间中.
 \Leftrightarrow\ &\mathbf{w}_i = U_k^\mathrm{T}\mathbf{x}_i
 \end{aligned}
 \end{equation}
-根据以上可得对于$\mathbf{x}_i$，通过方法A得到的重构向量$\mathbf{w}_i$就是$U_k^\mathrm{T}\mathbf{x}_i$。所以得证通过方法A得到的重构向量就是$U_k^\mathrm{T}\mathbf{x}$，也就是$\mathbf{x}$在$U_k$列向量空间中的投影 (通过方法B得到的重构向量)。
+根据以上可得对于$\mathbf{x}_i$，通过方法A得到的重构向量$\mathbf{w}_i$就是$U_k^\mathrm{T}\mathbf{x}_i$。\\
+假设$U_k$写成列向量组合的形式为
+\begin{equation}
+U_k = \left[
+\begin{array}{cccc}
+\mathbf{v}_1&\mathbf{v}_2&\cdots&\mathbf{v}_k 
+\end{array}
+\right]
+\end{equation}
+其中$\mathbf{v}_i$为d维向量。那么对于$\mathbf{x}_i$投射在$U_k$列向量空间中的投影$\mathbf{w}_i$，有
+\begin{equation}
+\mathbf{w}_i = \left[    
+\begin{array}{c}   
+\mathbf{v}_1^\mathrm{T}\mathbf{x}_i\\  
+\mathbf{v}_2^\mathrm{T}\mathbf{x}_i\\   
+\cdots\\
+\mathbf{v}_k^\mathrm{T}\mathbf{x}_i
+\end{array}
+\right]
+\end{equation}
+所以投影向量为$\mathbf{w}_i=U_k^\mathrm{T}\mathbf{x}$。\\
+综上可得，通过方法A得到的重构向量就是$U_k^\mathrm{T}\mathbf{x}$，也就是$\mathbf{x}$在$U_k$列向量空间中的投影 (通过方法B得到的重构向量)。
 \end{enumerate}
 \end{mySol}
 
