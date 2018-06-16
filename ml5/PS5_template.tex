@@ -84,37 +84,66 @@
 \maketitle
 \section{[30pts] Conditional Independence in Bayesian Network}
 \begin{enumerate}[(1)]
-\item \textbf{[5pts]} 请给出图中贝叶斯网结构的联合概率分布的分解表达式。
-
-\label{structure1}
-\includegraphics[width=7cm]{structure1.png}
-\item \textbf{[5pts]} 请给出下图中按照道德化方法可以找到的所有条件独立的组合(即哪些变量关于哪些变量或者变量集条件独立)，独立也算做条件独立的一种特例。
-
-\includegraphics[width=9cm]{structure2.png}
-
-
-\item \textbf{[10pts]} 在这里，首先我们将给出关于“阻塞”的概念，然后我们根据“阻塞”的概念给出条件独立的充要条件。
-\begin{def-box}[阻塞]
-设$X,Y,Z$分别是一个有向无环图$G$里互没有交集的结点集，$Z$阻塞$X$中的任一个结点到Y中的任一个结点的通路，当且仅当结点集$Z$满足如下条件：
-如果$G$中有顺序结构$x\rightarrow z\rightarrow y$或同父结构$x\leftarrow z\rightarrow y$，则结点$z$包含在集合$Z$中；
-如果$G$中有V型结构$x\rightarrow z \leftarrow y$，则结点$z$及其孩子结点一定不包含在集合Z中。
-\end{def-box}
-\begin{theorem}[条件独立]
-\label{theorem}
-设$X$和$Y$是{\rm DAG}中的两个结点变量集，$Z$是有向无环图$G$中的不包含$X$和$Y$的结点集合，如果集合$Z$阻塞$X$到$Y$的任何一条道路，则$X$和$Y$在给定$Z$时条件独立，即$X\indep Y|Z$。
-\end{theorem}
-请根据定理\ref{theorem}，判断第一问中有哪些条件独立的组合（独立也算条件独立的一种特例）。
-
-\item \textbf{[10pts]} 由以上两问我们可知，道德化方法中的“除去集合$z$后，$x$和$y$分属两个连通分支”并不构成条件独立性的充要条件。如果对道德化方法稍加修改，在连接V型结构父结点前，我们只保留图中$X,Y,Z$及他们的非孩子结点，之后的步骤则相同。请问你认为用修改后的方法可以保证得到{\color{red}{全部的}}正确的条件独立集合吗？如果可以，请说明理由；如果不能，请给出反例。
-
+	\item \textbf{[5pts]} 请给出图中贝叶斯网结构的联合概率分布的分解表达式。
+	
+	\label{structure1}
+	\includegraphics[width=7cm]{structure1.png}
+	\item \textbf{[5pts]} 请给出下图中按照道德化方法可以找到的所有条件独立的组合(即哪些变量关于哪些变量或者变量集条件独立)，独立也算做条件独立的一种特例。
+	
+	\includegraphics[width=9cm]{structure2.png}
+	
+	
+	\item \textbf{[10pts]} 在这里，首先我们将给出关于“阻塞”的概念，然后我们根据“阻塞”的概念给出条件独立的充要条件。（大家也可以参考\href{http://www.andrew.cmu.edu/user/scheines/tutor/d-sep.html#formaldef}{这个网站}）
+	\begin{def-box}[阻塞]
+		设$X,Y,Z$分别是一个有向无环图$G$里互没有交集的结点集，$Z$阻塞$X$中的一结点到Y中一结点的通路$P$(关于“通路”，在这里只要连通就算一条通路，对路中每条边的方向无任何要求)，当且仅当满足以下条件之一：
+		
+		1. $P$中存在顺序结构$x\rightarrow z\rightarrow y$或同父结构$x\leftarrow z\rightarrow y$，结点$z$包含在集合$Z$中；
+		
+		2. $P$中存在V型结构$x\rightarrow z \leftarrow y$，结点$z$及其孩子结点不包含在集合Z中。
+		
+	\end{def-box}
+	\begin{theorem}[条件独立]
+		\label{theorem}
+		设$X,Y,Z$分别是一个有向无环图$G$里互没有交集的结点集，如果集合$Z$阻塞$X$到$Y$的任何一条道路，则$X$和$Y$在给定$Z$时条件独立，即$X\indep Y|Z$。
+	\end{theorem}
+	请根据定理\ref{theorem}，判断第一问中有哪些条件独立的组合（独立也算条件独立的一种特例）。
+	
+	\item \textbf{[10pts]} 由以上两问我们可知，道德化方法中的“除去集合$z$后，$x$和$y$分属两个连通分支”并不构成条件独立性的充要条件。如果对道德化方法稍加修改，在连接V型结构父结点前，我们只保留图中$X,Y,Z$及他们的非孩子结点，之后的步骤则相同。请问你认为用修改后的方法可以保证得到{\color{red}{全部的}}正确的条件独立集合吗？如果可以，请说明理由；如果不能，请给出反例。
+	
 \end{enumerate}
 \begin{myProof}
 	此处用于写证明(中英文均可)
 	~\\
-	~\\
-	~\\
-	~\\
-
+\begin{enumerate}[(1)]
+\item 
+定义$x_A$表示A结点的属性值，$x_B,x_C,x_D,x_E$同理。\\
+\begin{equation}
+\begin{aligned}
+&P(x_A,x_B,x_C,x_D,x_E)\\ 
+=& P(x_A)P(x_B|x_A)P(x_C|x_B,x_D,x_E)P(x_D|x_E)P(x_E|x_A)
+\end{aligned}
+\end{equation}
+\item 
+条件独立的组合：\\
+\begin{equation}
+\begin{aligned}
+&x_E \perp x_A | x_C\\
+&x_E \perp x_B | x_C\\
+&x_E \perp x_D | x_C\\
+&x_A \perp x_D | x_B, x_C
+\end{aligned}
+\end{equation}
+\item 
+条件独立的组合：\\
+\begin{equation}
+\begin{aligned}
+&x_A \indep x_C | x_B,x_E\\
+&x_A \indep x_D | x_B,x_E\\
+&x_B \indep x_D | x_A,x_E\\
+&x_B \indep x_E | x_A,x_D
+\end{aligned}
+\end{equation}
+\end{enumerate}
 \end{myProof}
 \newpage
 \section{[20pts] Naive Bayes Classifier}
