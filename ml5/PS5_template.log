@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  13 JUN 2018 08:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  17 JUN 2018 09:49
 entering extended mode
 **./PS5_template.tex
 (PS5_template.tex
@@ -1687,30 +1687,67 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count313
 )
-\c@thm-box=\count314
-\c@prop-box=\count315
-\c@def-box=\count316
-\c@theorem=\count317
+("D:\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
 
-("D:\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count318
-\lst@gtempboxa=\box68
-\lst@token=\toks48
-\lst@length=\count319
+("D:\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count314
+\float@exts=\toks48
+\float@box=\box68
+\@float@everytoks=\toks49
+\@floatcapt=\box69
+)
+("D:\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks50
+\c@algorithm=\count315
+)
+("D:\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+Package: algpseudocode 
+
+("D:\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count316
+\c@ALG@rem=\count317
+\c@ALG@nested=\count318
+\ALG@tlm=\skip127
+\ALG@thistlm=\skip128
+\c@ALG@Lnr=\count319
+\c@ALG@blocknr=\count320
+\c@ALG@storecount=\count321
+\c@ALG@tmpcounter=\count322
+\ALG@tmplength=\skip129
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+\c@thm-box=\count323
+\c@prop-box=\count324
+\c@def-box=\count325
+\c@theorem=\count326
+ ("D:\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count327
+\lst@gtempboxa=\box70
+\lst@token=\toks51
+\lst@length=\count328
 \lst@currlwidth=\dimen284
-\lst@column=\count320
-\lst@pos=\count321
+\lst@column=\count329
+\lst@pos=\count330
 \lst@lostspace=\dimen285
 \lst@width=\dimen286
-\lst@newlines=\count322
-\lst@lineno=\count323
+\lst@newlines=\count331
+\lst@lineno=\count332
 \lst@maxwidth=\dimen287
 
 ("D:\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count324
-\lst@skipnumbers=\count325
-\lst@framebox=\box69
+\c@lstnumber=\count333
+\lst@skipnumbers=\count334
+\lst@framebox=\box71
 )
 ("D:\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1720,60 +1757,60 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 ("D:\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip127
-\f@nch@O@elh=\skip128
-\f@nch@O@erh=\skip129
-\f@nch@O@olh=\skip130
-\f@nch@O@orh=\skip131
-\f@nch@O@elf=\skip132
-\f@nch@O@erf=\skip133
-\f@nch@O@olf=\skip134
-\f@nch@O@orf=\skip135
+\f@nch@headwidth=\skip130
+\f@nch@O@elh=\skip131
+\f@nch@O@erh=\skip132
+\f@nch@O@olh=\skip133
+\f@nch@O@orh=\skip134
+\f@nch@O@elf=\skip135
+\f@nch@O@erf=\skip136
+\f@nch@O@olf=\skip137
+\f@nch@O@orf=\skip138
 )
 ("D:\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
 ("D:\MiKTeX 2.9\tex\latex\tools\layout.sty"
 Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count326
-\cnt@paperwidth=\count327
-\cnt@paperheight=\count328
-\cnt@hoffset=\count329
-\cnt@voffset=\count330
-\cnt@textheight=\count331
-\cnt@textwidth=\count332
-\cnt@topmargin=\count333
-\cnt@oddsidemargin=\count334
-\cnt@evensidemargin=\count335
-\cnt@headheight=\count336
-\cnt@headsep=\count337
-\cnt@marginparsep=\count338
-\cnt@marginparwidth=\count339
-\cnt@marginparpush=\count340
-\cnt@footskip=\count341
-\fheight=\count342
-\ref@top=\count343
-\ref@hoffset=\count344
-\ref@voffset=\count345
-\ref@head=\count346
-\ref@body=\count347
-\ref@foot=\count348
-\ref@margin=\count349
-\ref@marginwidth=\count350
-\ref@marginpar=\count351
-\Interval=\count352
-\ExtraYPos=\count353
-\PositionX=\count354
-\PositionY=\count355
-\ArrowLength=\count356
+\oneinch=\count335
+\cnt@paperwidth=\count336
+\cnt@paperheight=\count337
+\cnt@hoffset=\count338
+\cnt@voffset=\count339
+\cnt@textheight=\count340
+\cnt@textwidth=\count341
+\cnt@topmargin=\count342
+\cnt@oddsidemargin=\count343
+\cnt@evensidemargin=\count344
+\cnt@headheight=\count345
+\cnt@headsep=\count346
+\cnt@marginparsep=\count347
+\cnt@marginparwidth=\count348
+\cnt@marginparpush=\count349
+\cnt@footskip=\count350
+\fheight=\count351
+\ref@top=\count352
+\ref@hoffset=\count353
+\ref@voffset=\count354
+\ref@head=\count355
+\ref@body=\count356
+\ref@foot=\count357
+\ref@margin=\count358
+\ref@marginwidth=\count359
+\ref@marginpar=\count360
+\Interval=\count361
+\ExtraYPos=\count362
+\PositionX=\count363
+\PositionY=\count364
+\ArrowLength=\count365
 )
-\c@myThm=\count357
+\c@myThm=\count366
 
 ("D:\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip136
-\multirow@cntb=\count358
-\multirow@dima=\skip137
+\multirow@colwidth=\skip139
+\multirow@cntb=\count367
+\multirow@dima=\skip140
 \bigstrutjot=\dimen288
 )
 ("D:\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.bdg"
@@ -1787,91 +1824,91 @@ File: UTF8.chr 2015/04/18 4.8.4
 ) (PS5_template.aux)
 \openout1 = `PS5_template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 80.
+LaTeX Info: Redefining \selectfont on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1909,17 +1946,17 @@ LaTeX Info: Redefining \selectfont on input line 80.
 
 ("D:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count359
+\scratchcounter=\count368
 \scratchdimen=\dimen289
-\scratchbox=\box70
-\nofMPsegments=\count360
-\nofMParguments=\count361
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count362
+\scratchbox=\box72
+\nofMPsegments=\count369
+\nofMParguments=\count370
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count371
 \MPscratchDim=\dimen290
-\MPnumerator=\count363
-\makeMPintoPDFobject=\count364
-\everyMPtoPDFconversion=\toks50
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
+\everyMPtoPDFconversion=\toks53
 ) ("D:\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1933,8 +1970,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 80.
+\AtBeginShipoutBox=\box73
+Package hyperref Info: Link coloring OFF on input line 82.
 
 ("D:\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1942,11 +1979,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("D:\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count365
+\c@section@level=\count374
 )
-LaTeX Info: Redefining \ref on input line 80.
-LaTeX Info: Redefining \pageref on input line 80.
-LaTeX Info: Redefining \nameref on input line 80.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
  (PS5_template.out)
 (PS5_template.out)
 \@outlinefile=\write4
@@ -1957,39 +1994,39 @@ LaTeX Info: Redefining \nameref on input line 80.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 80.
+ on input line 82.
 
-\c@lstlisting=\count366
+\c@lstlisting=\count375
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 80.
-LaTeX Font Info:    Try loading font information for C70+rm on input line 85.
+(lastpage)             ! on input line 82.
+LaTeX Font Info:    Try loading font information for C70+rm on input line 87.
 ("D:\MiKTeX 2.9\tex\latex\ctex\fd\c70rm.fd"
 File: c70rm.fd 2017/04/01 v2.4.9 Chinese font definition (CTEX)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
 
 ("D:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 85.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 ("D:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
-quanjiao) on input line 85.
+quanjiao) on input line 87.
 
 <structure1.png, id=43, 204.765pt x 191.21437pt>
 File: structure1.png Graphic file (type png)
  <use structure1.png>
-Package pdftex.def Info: structure1.png used on input line 90.
+Package pdftex.def Info: structure1.png used on input line 92.
 (pdftex.def)             Requested size: 199.16928pt x 185.99997pt.
 
 <structure2.png, id=57, 249.93375pt x 173.64874pt>
 File: structure2.png Graphic file (type png)
  <use structure2.png>
-Package pdftex.def Info: structure2.png used on input line 93.
+Package pdftex.def Info: structure2.png used on input line 95.
 (pdftex.def)             Requested size: 256.0748pt x 177.93282pt.
 
 ("D:\MiKTeX 2.9\tex\generic\ctex\zhwindowsfonts.tex"
@@ -2000,39 +2037,45 @@ nd DVIPDFMx (CTEX)
  <./structure1.png> <./structure2.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 97.
+(mdframed)              on input line 99.
 Package CJKpunct Info: use punctuation spaces for family 'zhkai' with punctstyl
-e (quanjiao) on input line 98.
+e (quanjiao) on input line 100.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 105.
+(mdframed)              on input line 107.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[3] [4] [5]
-Overfull \hbox (32.32793pt too wide) in paragraph at lines 289--290
+[3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.220 \end{equation}
+                    ] [4] [5]
+Overfull \hbox (32.32793pt too wide) in paragraph at lines 291--292
 []\OT1/cmr/bx/n/10.53937 [5pts] \C70/rm/m/n/10.53937/67 , \C70/rm/m/n/10.53937/
 6b ! \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/8
 9 Å \C70/rm/m/n/10.53937/6c B \C70/rm/m/n/10.53937/4f  \C70/rm/m/n/10.53937/75
@@ -2045,15 +2088,15 @@ Overfull \hbox (32.32793pt too wide) in paragraph at lines 289--290
 3937 BoostMain.py|\C70/rm/m/n/10.53937/30 |
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 294.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 296.
 
 ("D:\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.53937> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 294.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 296.
 
-Overfull \hbox (41.2738pt too wide) in paragraph at lines 296--297
+Overfull \hbox (41.2738pt too wide) in paragraph at lines 298--299
 \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/7e ” \
 C70/rm/m/n/10.53937/67 ú|\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/62 ò \
 C70/rm/m/n/10.53937/7e ø \C70/rm/m/n/10.53937/56 ˛ \C70/rm/m/n/10.53937/6a * \C
@@ -2069,43 +2112,112 @@ m/n/10.53937/5e î\OT1/cmr/m/n/10.53937 AdaBoost\C70/rm/m/n/10.53937/54 å
  []
 
 
-AED: lastpage setting LastPage
+Underfull \hbox (badness 10000) in paragraph at lines 306--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 308--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
+
+ []
+
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 306.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 306.
+Overfull \hbox (18.0851pt too wide) in paragraph at lines 348--350
+\C70/rm/m/n/10.53937/57 ( \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/73 ∞ \
+C70/rm/m/n/10.53937/57 ˙ \C70/rm/m/n/10.53937/52  \C70/rm/m/n/10.53937/7c { \C
+70/rm/m/n/10.53937/56 h \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/7b Ä \C7
+0/rm/m/n/10.53937/53 U \C70/rm/m/n/10.53937/51 ≥ \C70/rm/m/n/10.53937/7b V \C70
+/rm/m/n/10.53937/68  \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/65 ˆ \C70/
+rm/m/n/10.53937/50 |\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/8c  \C70/
+rm/m/n/10.53937/75 ( \C70/rm/m/n/10.53937/4e Ü\OT1/cmr/m/n/10.53937 sklearn\C70
+/rm/m/n/10.53937/53  \C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 sklearn.tr
+ee.DecisionTreeClassifier|\C70/rm/m/n/10.53937/30 |
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--350
+
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 356.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+Overfull \hbox (33.65997pt too wide) in paragraph at lines 392--394
+\C70/rm/m/n/10.53937/57 ( \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/73 ∞ \
+C70/rm/m/n/10.53937/57 ˙ \C70/rm/m/n/10.53937/52  \C70/rm/m/n/10.53937/7c { \C
+70/rm/m/n/10.53937/56 h \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/96 è \C7
+0/rm/m/n/10.53937/67 : \C70/rm/m/n/10.53937/51 ≥ \C70/rm/m/n/10.53937/7b V \C70
+/rm/m/n/10.53937/68  \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/65 ˆ \C70/
+rm/m/n/10.53937/50 |\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/8c  \C70/
+rm/m/n/10.53937/75 ( \C70/rm/m/n/10.53937/4e Ü\OT1/cmr/m/n/10.53937 sklearn\C70
+/rm/m/n/10.53937/53  \C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 sklearn.en
+semble.ExtraTreesClassifier|\C70/rm/m/n/10.53937/30 |
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+
+ []
+
+
+AED: lastpage setting LastPage
+[8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
  (PS5_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 306.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 306.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
 Package rerunfilecheck Info: File `PS5_template.out' has not changed.
 (rerunfilecheck)             Checksum: 816CF26A24B1D6FFC3FF1299402420FF;758.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 306.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
- 45409 strings out of 493333
- 966300 string characters out of 3145216
- 1195506 words of memory out of 3000000
- 47928 multiletter control sequences out of 15000+200000
- 583814 words of font info for 220 fonts, out of 3000000 for 9000
+ 46180 strings out of 493333
+ 976960 string characters out of 3145216
+ 1208665 words of memory out of 3000000
+ 48649 multiletter control sequences out of 15000+200000
+ 585974 words of font info for 228 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,96p,10456b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/s
-imhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
-/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
-s/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIND
-OWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc>
-<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/sim
-kai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
-onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/W
-INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.t
-tc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/
-simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C
-:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simka
-i.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fon
-ts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
-DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf
+ 62i,12n,96p,10456b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
+imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
+/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
+/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei
+.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
+OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
+<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
+sun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
+onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/W
+INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.t
+tf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
+simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
+S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
+:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
+n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
+ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
+DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf
 ><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
 mkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
 Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/
@@ -2116,10 +2228,10 @@ WS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><
 C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simk
 ai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fo
 nts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WI
-NDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.tt
-f><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
-imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
-/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
+NDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.tt
+f><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/s
+imkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
+/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
 /WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
 .ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
 s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
@@ -2133,16 +2245,20 @@ simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOW
 S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
 :/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
 n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PS5_template.pdf (6 pages, 747122 bytes).
+ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
+DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
+><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
+msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on PS5_template.pdf (8 pages, 813345 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 771 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 335 words of extra memory for PDF output out of 10000 (max. 10000000)
 

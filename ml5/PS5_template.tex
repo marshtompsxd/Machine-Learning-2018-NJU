@@ -14,6 +14,8 @@
 \usepackage{color}
 \usepackage{mdframed}
 \usepackage{lipsum}
+\usepackage{algorithm}  
+\usepackage{algpseudocode}  
 \newmdtheoremenv{thm-box}{myThm}
 \newmdtheoremenv{prop-box}{Proposition}
 \newmdtheoremenv{def-box}{定义}
@@ -301,6 +303,95 @@
 	
 \end{enumerate}
 
-\noindent{\textbf{实验报告.}}
+\noindent{\textbf{实验报告.}}\\
+\begin{enumerate}[1.]
+\item\textbf{实验说明}
+本次实验环境为：\\
+OS：Windows10\\
+编程语言：python 3.6\\
+实验的输入文件放在$/adult\_dataset/$文件夹中。\\
+\item\textbf{实验目的}
+本次实验的主要工作在于实现集成学习的经典算法--AdaBoost算法和随机森林算法。在实现算法之后通过交叉验证的手段来探究基分类器数目和算法性能之间的关系，寻找最优的基分类器数目。在这个过程中，加深对于AdaBoost算法和随机森林算法的理解，同时掌握参数调试的技巧和思想。\\
+\item\textbf{实验过程}
+\begin{enumerate}[a.]
+\item AdaBoost算法的实现使用python 3.6，借助了sklearn包。\\
+具体的，首先要定义class AdaBoost：\\
+关键的成员变量为$\alpha$和$h$。其中$\alpha$是不同的基分类器对应的权重，$h$是所有的基分类器组成的列表。\\
+关键的成员函数为$fit$和$predict$。其中$fit$函数负责了分类器的训练工作，$predict$则负责了测试样例的预测工作。\\
+$fit$函数根据参数$Xtrain, yTrain, T$来执行。函数会进行分类器数目$T$次迭代。在第$t$次迭代时，根据训练样例$XTrain,yTrain$，样例权重$D_t$来训练一个新的基分类器$h_t$，根据预测结果$yPred = h_t(XTrain, D_t)$和$yTrain$来计算误差$\epsilon$：
+\begin{equation}
+incorrect_i = 
+\begin{cases}
+1 & yPred_i = yTrain_i;\\
+0 & yPred_i \neq yTrain_i;
+\end{cases}
+\end{equation}
+\begin{equation}
+\epsilon = average(incorrect, weights=D_t)
+\end{equation}
+其中$average$是计算加权平均的函数。得到误差之后就可以得到该分类器的权重$\alpha_t$，即：
+\begin{equation}
+\alpha_t = \frac{1}{2}\ln \frac{1-\epsilon}{\epsilon}
+\end{equation}
+保存$h_t$和$\alpha_t$，然后更新样例权重：
+\begin{equation}
+D_{t+1}(X_i) = \frac{D_t(X_i)\exp(-\alpha_ty_ih(X_i))}{Z_t}
+\end{equation}
+其中
+\begin{equation}
+Z_t = \sum_{i=1}^{n}D_t(X_i)\exp(-\alpha_ty_ih(X_i))
+\end{equation}
+注意到$D_1$设置每一项为$\frac{1}{m}$。\\
+$predict$函数接受测试数据$XTest$之后，使用$\alpha$和$h_t$来进行预测
+\begin{equation}
+H(XTest) = sign(\sum_{t=1}^{T}\alpha_th_t(XTest))
+\end{equation}
+在实现基分类器的简单决策树的时候，调用了sklearn包的sklearn.tree.DecisionTreeClassifier。\\
+\item 随机森林算法的实现使用python 3.6，借助了sklearn包。\\
+类似的，也要定义class RandomForest：\\
+关键的成员变量为$h$，即所有基分类器组成的列表。\\
+关键的成员函数为$fit$和$predict$。\\
+随机森林算法伪代码如下：
+\begin{algorithm}[h]  
+	\caption{RandomForestFit}  
+	\begin{algorithmic}[1]  
+		\Require\\  
+		$X$：训练集属性\\
+		$y$：训练集类别\\
+		$T$：基分类器数目\\
+		$k$：随机决策树每次划分时随机选择的属性个数
+		\Ensure  
+		$h$：基分类器列表 
+		\For{t from 1 to T}  
+		\State $Xs, ys = Sample(X, y)$
+		\State $f = ExtraTreesFit(Xs, ys, k)$
+		\State $h.append(f)$
+		\EndFor
+		\label{code:End1}  
+	\end{algorithmic}  
+\end{algorithm}\\
+\begin{algorithm}[h]  
+	\caption{RandomForestPredict}  
+	\begin{algorithmic}[1]  
+		\Require
+		$X$：测试集属性
+		\Ensure  
+		$pred$：预测的类别
+		\State $pred = 0$ 
+		\For{t from 1 to T}  
+		\State $pred = pred + h_t(X)$
+		\EndFor
+		\State $pred = sign(pred)$
+		\label{code:End2}  
+	\end{algorithmic}  
+\end{algorithm}\\
+$fit$函数进行T次迭代，每次迭代对训练集进行$bootstrap$采样，然后用采样到的样本训练一个随机决策树模型并保存。随机决策树模型在每次划分的时候会先随机挑选k个属性，然后在其中寻找最优的划分属性。\\
+$predict$函数用T个随机决策树的模型对测试样例进预测，然后将预测结果相加取符号作为输出的预测结果：
+\begin{equation}
+H(XTest) = sign(\sum_{t=1}^{T}h_t(XTest))
+\end{equation}
+在实现基分类器的随机决策树的时候，调用了sklearn包的sklearn.ensemble.ExtraTreesClassifier。\\
+\end{enumerate}
+\end{enumerate}
 	
 \end{document}
