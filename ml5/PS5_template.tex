@@ -145,6 +145,19 @@
 &x_B \indep x_E | x_A,x_D
 \end{aligned}
 \end{equation}
+\item 
+修改后的方法不能得到全部的正确的条件独立的集合，比如图一所示。\\
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.3]{bayes.png}
+	\caption{反例}
+	\label{fig:label2}
+\end{figure}\\
+反例中由于$x \rightarrow p \rightarrow z \rightarrow q \leftarrow y$，所以按照充要条件可以得到
+\begin{equation}
+x \indep y | z
+\end{equation}
+但是如果在连接V型结构父结点前，只保留图中$X,Y,Z$及他们的非孩子结点，那么$x$和$y$直接独立，不会得到$x$和$y$关于$z$条件独立。
 \end{enumerate}
 \end{myProof}
 \newpage
@@ -346,13 +359,13 @@ $predict$函数接受测试数据$XTest$之后，使用$\alpha$和$h_t$来进行
 \begin{equation}
 H(XTest) = sign(\sum_{t=1}^{T}\alpha_th_t(XTest))
 \end{equation}
-在实现基分类器的简单决策树的时候，调用了sklearn包的sklearn.tree.DecisionTreeClassifier。\\
+在实现基分类器的简单决策树的时候，调用了sklearn包的sklearn.tree.DecisionTreeClassifier。
 \item 随机森林算法的实现使用python 3.6，借助了sklearn包。\\
 类似的，也要定义class RandomForest：\\
 关键的成员变量为$h$，即所有基分类器组成的列表。\\
 关键的成员函数为$fit$和$predict$。\\
-随机森林算法伪代码如下：
-\begin{algorithm}[h]  
+随机森林算法伪代码如下：\\
+\begin{algorithm}[!h]  
 	\caption{RandomForestFit}  
 	\begin{algorithmic}[1]  
 		\Require\\  
@@ -370,7 +383,7 @@ H(XTest) = sign(\sum_{t=1}^{T}\alpha_th_t(XTest))
 		\label{code:End1}  
 	\end{algorithmic}  
 \end{algorithm}\\
-\begin{algorithm}[h]  
+\begin{algorithm}[!h]  
 	\caption{RandomForestPredict}  
 	\begin{algorithmic}[1]  
 		\Require
@@ -384,14 +397,63 @@ H(XTest) = sign(\sum_{t=1}^{T}\alpha_th_t(XTest))
 		\State $pred = sign(pred)$
 		\label{code:End2}  
 	\end{algorithmic}  
-\end{algorithm}\\
+\end{algorithm}
 $fit$函数进行T次迭代，每次迭代对训练集进行$bootstrap$采样，然后用采样到的样本训练一个随机决策树模型并保存。随机决策树模型在每次划分的时候会先随机挑选k个属性，然后在其中寻找最优的划分属性。\\
 $predict$函数用T个随机决策树的模型对测试样例进预测，然后将预测结果相加取符号作为输出的预测结果：
 \begin{equation}
 H(XTest) = sign(\sum_{t=1}^{T}h_t(XTest))
 \end{equation}
-在实现基分类器的随机决策树的时候，调用了sklearn包的sklearn.ensemble.ExtraTreesClassifier。\\
+在实现基分类器的随机决策树的时候，调用了sklearn包的sklearn.ensemble.ExtraTreesClassifier。
+\item 对AdaBoost和随机森林算法使用5折交叉验证来寻找最优的基分类器数目。5折交叉验证的做法为：首先将初始训练集随机划分成等分的5份，选择其中的四份作为新的训练集$XTr$和$yTr$，剩下一份作为新的验证集$XCV$和$yCV$。用$XTr$和$yTr$来训练AbaBoost模型或者随机森林模型，训练好模型之后在$XCV$上进行预测，预测得到的结果$yPred$和$yCV$计算AUC指标。事先确定基分类器范围，然后在范围内进行上述交叉验证AUC评价，统计所有AUC指标，找到最大的AUC对应的基分类器数目t，作为AdaBoost预测测试集所用的基分类器数目。注意到划分时为了防止类别不平衡，所以采用了StratifiedSplit，即在划分的子集中各个类别仍然保持和原来一样的比例。\\
+过程伪代码如下：
+\begin{algorithm}[!h]  
+	\caption{CrossValidationForAuc}  
+	\begin{algorithmic}[1]  
+		\Require
+		$XTrain$：训练集属性\\
+		$yTrain$：训练集标签\\
+		$N$：基分类器范围
+		\Ensure  
+		$T$：最优基分类器数目
+		\State $maxAuc = 0, T = 1$
+		\For{t from 1 to N} 
+		\State $Auc = 0$
+		\For{TrIdx, CVIdx in StratifiedSplit(XTrain, yTrain)} 
+		\State $XTr, yTr = XTrain[TrIdx], yTrain[TrIdx]$
+		\State $XCV, yCV = XTrain[CVIdx], yTrain[CVIdx]$
+		\State $f = model.fit(XTr, yTr)$
+		\State $yPred = f.predict(XCV)$
+		\State $Auc = Auc + ComputeAuc(yCV,yPred)$
+		\EndFor
+		\If{$Auc \geq maxAuc$}
+		\State $T = t$
+		\EndIf
+		\EndFor
+		\label{code:End3}  
+	\end{algorithmic}  
+\end{algorithm}\\
+对于AdaBoost和随机森林模型使用交叉验证得到的结果如下：
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.5]{auc.png}
+	\caption{AdaBoost和随机森林在不同基分类器数目时的AUC指标}
+	\label{fig:label}
+\end{figure}
+\item 选取最优的基分类器数目，即AdaBoost选取25个基分类器，随机森林选取49个基分类器。在测试集上测试得到的结果如下：
+\begin{table}[!ht]
+	\centering
+	\caption{AdaBoost和随机森林在测试集上的AUC指标}
+	\label{my-label}
+	\begin{tabular}{|l|l|}
+		\hline
+	算法	& AUC指标 \\ \hline
+	AdaBoost	& 0.8223965975124728 \\ \hline
+	随机森林	&  0.8942615694173404\\ \hline
+	\end{tabular}
+\end{table}\\
 \end{enumerate}
+\item 实验结果
+本次实验完成了题目的所有要求：包括AdaBoost和随机森林算法的实现，使用交叉验证方法调整参数，在测试集上完成预测并且得到AUC性能指标。
 \end{enumerate}
 	
 \end{document}

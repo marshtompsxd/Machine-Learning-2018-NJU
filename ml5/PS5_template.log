@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  17 JUN 2018 09:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.7.12)  17 JUN 2018 20:26
 entering extended mode
 **./PS5_template.tex
 (PS5_template.tex
@@ -2063,19 +2063,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+<bayes.png, id=131, 655.85025pt x 408.3255pt>
+File: bayes.png Graphic file (type png)
+ <use bayes.png>
+Package pdftex.def Info: bayes.png used on input line 152.
+(pdftex.def)             Requested size: 196.75659pt x 122.49858pt.
+ [2] [3pdfTeX warning (ext4): destination with the same identifier (name{figure
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.163 \newpage
+               <./bayes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[3pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.220 \end{equation}
-                    ] [4] [5]
-Overfull \hbox (32.32793pt too wide) in paragraph at lines 291--292
+l.233 \end{equation}
+                    ] [5] [6]
+Overfull \hbox (32.32793pt too wide) in paragraph at lines 304--305
 []\OT1/cmr/bx/n/10.53937 [5pts] \C70/rm/m/n/10.53937/67 , \C70/rm/m/n/10.53937/
 6b ! \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/8
 9 Å \C70/rm/m/n/10.53937/6c B \C70/rm/m/n/10.53937/4f  \C70/rm/m/n/10.53937/75
@@ -2088,15 +2099,15 @@ Overfull \hbox (32.32793pt too wide) in paragraph at lines 291--292
 3937 BoostMain.py|\C70/rm/m/n/10.53937/30 |
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 296.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 309.
 
 ("D:\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.53937> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 296.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 309.
 
-Overfull \hbox (41.2738pt too wide) in paragraph at lines 298--299
+Overfull \hbox (41.2738pt too wide) in paragraph at lines 311--312
 \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/7e ” \
 C70/rm/m/n/10.53937/67 ú|\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/62 ò \
 C70/rm/m/n/10.53937/7e ø \C70/rm/m/n/10.53937/56 ˛ \C70/rm/m/n/10.53937/6a * \C
@@ -2112,22 +2123,22 @@ m/n/10.53937/5e î\OT1/cmr/m/n/10.53937 AdaBoost\C70/rm/m/n/10.53937/54 å
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--313
+Underfull \hbox (badness 10000) in paragraph at lines 321--326
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
+Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
-[6]
-Overfull \hbox (18.0851pt too wide) in paragraph at lines 348--350
+[7]
+Overfull \hbox (18.0851pt too wide) in paragraph at lines 361--363
 \C70/rm/m/n/10.53937/57 ( \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/73 ∞ \
 C70/rm/m/n/10.53937/57 ˙ \C70/rm/m/n/10.53937/52  \C70/rm/m/n/10.53937/7c { \C
 70/rm/m/n/10.53937/56 h \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/7b Ä \C7
@@ -2140,25 +2151,20 @@ ee.DecisionTreeClassifier|\C70/rm/m/n/10.53937/30 |
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 356.
+put line 369.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7]
-Overfull \hbox (33.65997pt too wide) in paragraph at lines 392--394
+[8]
+Overfull \hbox (33.65997pt too wide) in paragraph at lines 405--407
 \C70/rm/m/n/10.53937/57 ( \C70/rm/m/n/10.53937/5b û \C70/rm/m/n/10.53937/73 ∞ \
 C70/rm/m/n/10.53937/57 ˙ \C70/rm/m/n/10.53937/52  \C70/rm/m/n/10.53937/7c { \C
 70/rm/m/n/10.53937/56 h \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/96 è \C7
@@ -2171,35 +2177,103 @@ semble.ExtraTreesClassifier|\C70/rm/m/n/10.53937/30 |
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
 
  []
 
+<auc.png, id=333, 526.96875pt x 395.22656pt>
+File: auc.png Graphic file (type png)
+ <use auc.png>
+Package pdftex.def Info: auc.png used on input line 438.
+(pdftex.def)             Requested size: 263.48372pt x 197.6128pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
-
+Overfull \hbox (41.51451pt too wide) in paragraph at lines 407--442
+\C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/50 Z \C70/rm/m/n/10.53937/6c ’ \
+C70/rm/m/n/10.53937/4e :|\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/99 ñ \
+C70/rm/m/n/10.53937/51 H \C70/rm/m/n/10.53937/5c  \C70/rm/m/n/10.53937/52  \C
+70/rm/m/n/10.53937/59 À \C70/rm/m/n/10.53937/8b ≠ \C70/rm/m/n/10.53937/7e √ \C7
+0/rm/m/n/10.53937/96 ∆ è \C70/rm/m/n/10.53937/67 : \C70/rm/m/n/10.53937/52   
+\C70/rm/m/n/10.53937/62  \C70/rm/m/n/10.53937/7b I \C70/rm/m/n/10.53937/52  \
+C70/rm/m/n/10.53937/76 Ñ\OT1/cmr/m/n/10.53937 5\C70/rm/m/n/10.53937/4e ˝|\C70/r
+m/m/n/10.53937/ff | \C70/rm/m/n/10.53937/90 	 \C70/rm/m/n/10.53937/62 È \C70/r
+m/m/n/10.53937/51 v \C70/rm/m/n/10.53937/4e - \C70/rm/m/n/10.53937/76 Ñ \C70/rm
+/m/n/10.53937/56 € \C70/rm/m/n/10.53937/4e ˝ \C70/rm/m/n/10.53937/4f \ \C70/rm/
+m/n/10.53937/4e : \C70/rm/m/n/10.53937/65 ∞ \C70/rm/m/n/10.53937/76 Ñ \C70/rm/m
+/n/10.53937/8b ≠ \C70/rm/m/n/10.53937/7e √ \C70/rm/m/n/10.53937/96 ∆$\OML/cmm/m
+/it/10.53937 XTr$\C70/rm/m/n/10.53937/54 å$\OML/cmm/m/it/10.53937 yTr$|\C70/rm/
+m/n/10.53937/ff |
  []
 
 
+Overfull \hbox (0.42908pt too wide) in paragraph at lines 407--442
+\C70/rm/m/n/10.53937/52 i \C70/rm/m/n/10.53937/4e    ˝ \C70/rm/m/n/10.53937/4f
+ \ \C70/rm/m/n/10.53937/4e : \C70/rm/m/n/10.53937/65 ∞ \C70/rm/m/n/10.53937/76 
+Ñ \C70/rm/m/n/10.53937/9a å \C70/rm/m/n/10.53937/8b ¡ \C70/rm/m/n/10.53937/96 ∆
+$\OML/cmm/m/it/10.53937 XCV$\C70/rm/m/n/10.53937/54 å$\OML/cmm/m/it/10.53937 yC
+V$|\C70/rm/m/n/10.53937/30 | \C70/rm/m/n/10.53937/75 ($\OML/cmm/m/it/10.53937 
+XTr$\C70/rm/m/n/10.53937/54 å$\OML/cmm/m/it/10.53937 yTr$\C70/rm/m/n/10.53937/6
+7 e \C70/rm/m/n/10.53937/8b ≠ \C70/rm/m/n/10.53937/7e √\OT1/cmr/m/n/10.53937 Ab
+aBoost\C70/rm/m/n/10.53937/6a ! \C70/rm/m/n/10.53937/57 ã \C70/rm/m/n/10.53937/
+62  \C70/rm/m/n/10.53937/80  \C70/rm/m/n/10.53937/96 è \C70/rm/m/n/10.53937/6
+7 : \C70/rm/m/n/10.53937/68 Ó \C70/rm/m/n/10.53937/67 ó
+ []
+
+
+Overfull \hbox (2.68489pt too wide) in paragraph at lines 407--442
+\C70/rm/m/n/10.53937/6a ! \C70/rm/m/n/10.53937/57 ã|\C70/rm/m/n/10.53937/ff | 
+\C70/rm/m/n/10.53937/8b ≠ \C70/rm/m/n/10.53937/7e √ \C70/rm/m/n/10.53937/59 } \
+C70/rm/m/n/10.53937/6a ! \C70/rm/m/n/10.53937/57 ã \C70/rm/m/n/10.53937/4e K \C
+70/rm/m/n/10.53937/54  \C70/rm/m/n/10.53937/57 ($\OML/cmm/m/it/10.53937 XCV$\C
+70/rm/m/n/10.53937/4e 
+ \C70/rm/m/n/10.53937/8f € \C70/rm/m/n/10.53937/88 L \C70/rm/m/n/10.53937/98 Ñ 
+\C70/rm/m/n/10.53937/6d K|\C70/rm/m/n/10.53937/ff | \C70/rm/m/n/10.53937/98 Ñ 
+\C70/rm/m/n/10.53937/6d K \C70/rm/m/n/10.53937/5f ó \C70/rm/m/n/10.53937/52 0 \
+C70/rm/m/n/10.53937/76 Ñ \C70/rm/m/n/10.53937/7e ” \C70/rm/m/n/10.53937/67 ú$\O
+ML/cmm/m/it/10.53937 yPred$\C70/rm/m/n/10.53937/54 å$\OML/cmm/m/it/10.53937 yCV
+$\C70/rm/m/n/10.53937/8b ° \C70/rm/m/n/10.53937/7b ó\OT1/cmr/m/n/10.53937 AUC\C
+70/rm/m/n/10.53937/63  \C70/rm/m/n/10.53937/68 |\C70/rm/m/n/10.53937/30 |
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 442--454
+
+ []
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.457 \end{enumerate}
+                      <./auc.png (PNG copy)>] 
 AED: lastpage setting LastPage
-[8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+[11pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.459 \end{document}
+                    ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 459.
  (PS5_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 459.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 459.
 Package rerunfilecheck Info: File `PS5_template.out' has not changed.
 (rerunfilecheck)             Checksum: 816CF26A24B1D6FFC3FF1299402420FF;758.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 459.
  ) 
 Here is how much of TeX's memory you used:
- 46180 strings out of 493333
- 976960 string characters out of 3145216
- 1208665 words of memory out of 3000000
- 48649 multiletter control sequences out of 15000+200000
- 585974 words of font info for 228 fonts, out of 3000000 for 9000
+ 46290 strings out of 493333
+ 978487 string characters out of 3145216
+ 1208920 words of memory out of 3000000
+ 48737 multiletter control sequences out of 15000+200000
+ 587054 words of font info for 232 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,96p,10456b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,96p,10456b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
 imhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS
 /Fonts/simsun.ttc><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
@@ -2209,17 +2283,17 @@ s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
 OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
 sun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/F
-onts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/W
-INDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.t
+onts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/W
+INDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.t
 tf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/
 simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOW
-S/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C
-:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
+S/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C
+:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsu
 n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
-ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simkai.ttf><C:/WIN
-DOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simkai.ttf
+ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
+DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
 ><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/si
-mkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
+mhei.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/
 Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/
 WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.
 ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts
@@ -2231,9 +2305,9 @@ nts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WI
 NDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.tt
 f><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/s
 imkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS
-/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:
-/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
-.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:
+/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simkai.ttf><C:/WINDOWS/Fonts/simhei
+.ttf><C:/WINDOWS/Fonts/simhei.ttf><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
 s/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIND
 OWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc>
 <C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sim
@@ -2248,17 +2322,19 @@ n.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fon
 ts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WIN
 DOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc
 ><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PS5_template.pdf (8 pages, 813345 bytes).
+msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
+Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><D:/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on PS5_template.pdf (11 pages, 907415 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 62 named destinations out of 1000 (max. 500000)
- 335 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 814 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 345 words of extra memory for PDF output out of 10000 (max. 10000000)
 
