@@ -125,7 +125,7 @@
 \end{aligned}
 \end{equation}
 \item 
-条件独立的组合：\\
+条件独立的组合：
 \begin{equation}
 \begin{aligned}
 &E \perp A | C\\
@@ -134,7 +134,7 @@
 &A \perp D | B, C\\
 \end{aligned}
 \end{equation}
-还有一些冗余的条件独立组合，也属于合法的条件独立组合
+还有一些冗余的条件独立组合，也属于合法的条件独立组合：
 \begin{equation}
 \begin{aligned}
 &E \perp A | C, B\\
@@ -150,41 +150,32 @@
 \end{aligned}
 \end{equation}
 \item 
-条件独立的组合：\\
+条件独立的组合：
 \begin{equation}
 \begin{aligned}
 &A \indep C | B,E\\
-&A \indep C | B,E,D\\
 &A \indep D | E\\
-&A \indep D | B,E\\
 &B \indep D | A\\
 &B \indep D | E\\
-&B \indep D | A,E\\
 &B \indep E | A\\
+\end{aligned}
+\end{equation}
+还有一些冗余的条件独立组合，也属于合法的条件独立组合：
+\begin{equation}
+\begin{aligned}
+&A \indep C | B,E,D\\
+&A \indep D | B,E\\
+&B \indep D | A,E\\
 &B \indep E | A,D
 \end{aligned}
 \end{equation}
 \item 
-不可以得到全部的正确的条件独立的组合，反例如下：
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[scale=0.5]{bayes.png}
-	\caption{反例}
-	\label{fig:label2}
-\end{figure}\\\\
-按照充要条件，有：
-\begin{equation}
-x \indep y | z
-\end{equation}
-\\
-但是根据题意，a作为x的子节点会被删除，那么x和y不再连通：\\
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[scale=0.5]{bayes2.png}
-	\caption{反例}
-	\label{fig:label3}
-\end{figure}\\
-就有x和y直接独立，不能得到上述条件独立的组合。\\
+修改后的方法可以得到全部的正确的条件独立的集合。令X和Y为单一节点x和y，考虑x，y和z之间的不同情况。\\
+情况一：x和y本来是连通的，z不存在于x和y之间的任何通路，那么根据充要条件，x和y并不会关于z条件独立。根据修改后的算法，道德化之后，删除掉z之后，x和y仍然是连通的。所以得到了相同的结果。\\
+情况二：V型结构，即$x\rightarrow z \leftarrow y$，那么根据充要条件，假如有$x \indep y | Z$，z一定不在Z中。如果采用修改后的算法，道德化过程中x和y之间连通，那么删除z并不会阻断x和y在同一分支。所以得到了相同的结果。\\
+情况三：顺序结构或者同父结构，即$x\rightarrow z\rightarrow y$或者$x\leftarrow z\rightarrow y$，那么根据充要条件，存在某个$x \indep y | Z$，使得z在Z中。根据修改后的算法，删除z之后会阻塞$x-z-y$这条通路。如果$Z = \{z\}$，那么修改后的算法仍然可以得到$x \indep y | Z$，如果$Z = \{z, a_1,...a_n\}$，那么z仍然会处于这样的集合Z中，即仍然可以得到$x \indep y | Z$。所以会得到相同的结果。\\
+情况四：x和y本来是不连通的，根据充要条件x和y是独立，使用修改后的算法删除z之后仍然是不连通的，所以得到相同的结果。\\
+综上可得，可以得到全部的正确的条件独立的集合。
 \end{enumerate}
 \end{myProof}
 \newpage
@@ -232,15 +223,6 @@ x \indep y | z
 =& 0
 \end{aligned}
 \end{equation}
-以及
-\begin{equation}
-\begin{aligned}
-&\Pr\{\mathbf{x}=(1,1,0,1)\}\\ 
-=& \Pr\{x_1 = 1\}\Pr\{x_2 = 1\}\Pr\{x_3 = 0\}\Pr\{x_4 = 1\}\\
-=& \frac{3}{5}\times\frac{2}{5}\times\frac{1}{5}\times\frac{3}{5}\\
-=& \frac{18}{625}
-\end{aligned}
-\end{equation}
 所以可得：
 \begin{equation}
 \Pr\{ y=1 | \mathbf{x}=(1,1,0,1) \} = 0
@@ -260,10 +242,6 @@ x \indep y | z
 \end{equation}
 以及
 \begin{equation}
-\Pr\{\mathbf{x}=(1,1,0,1)\} = \frac{18}{625}
-\end{equation}
-又因为
-\begin{equation}
 \Pr\{y=0\} = \frac{2}{5}
 \end{equation}
 综上可得
@@ -271,16 +249,21 @@ x \indep y | z
 \begin{aligned}
 &\Pr\{ y=0 | \mathbf{x}=(1,1,0,1) \}\\ 
 =& \frac{\Pr\{\mathbf{x}=(1,1,0,1) | y=0  \} \Pr\{y=0\}}{\Pr\{\mathbf{x}=(1,1,0,1) \}}\\
-=& \frac{\frac{1}{16}\times\frac{2}{5}}{\frac{18}{625}}\\ 
-=& \frac{125}{144} 
+=& \frac{\frac{1}{40}}{\Pr\{\mathbf{x}=(1,1,0,1)\}}
 \end{aligned}
 \end{equation}
-
-\item 
-首先有：
+因为$\Pr\{ y=1 | \mathbf{x}=(1,1,0,1) \} = 0$所以可得
 \begin{equation}
-\Pr\{\mathbf{x}=(1,1,0,1)\} = \frac{18}{625}
+\Pr\{ y=0 | \mathbf{x}=(1,1,0,1) \} = 1
 \end{equation}
+综上可得
+\begin{equation}
+\begin{aligned}
+&\Pr\{ y=1 | \mathbf{x}=(1,1,0,1) \} = 0\\
+&\Pr\{ y=0 | \mathbf{x}=(1,1,0,1) \} = \frac{\frac{1}{40}}{\Pr\{\mathbf{x}=(1,1,0,1)\}}
+\end{aligned}
+\end{equation}
+\item 
 根据上题，结合“拉普拉斯修正”，可得：
 \begin{equation}
 \begin{aligned}
@@ -296,7 +279,11 @@ x \indep y | z
 \end{equation}
 所以得到：
 \begin{equation}
-\Pr\{ y=1 | \mathbf{x}=(1,1,0,1) \} = \frac{4}{7}
+\begin{aligned}
+&\Pr\{ y=1 | \mathbf{x}=(1,1,0,1) \}\\ 
+=& \frac{\Pr\{\mathbf{x}=(1,1,0,1) | y=1  \} \Pr\{y=1\}}{\Pr\{\mathbf{x}=(1,1,0,1) \}}\\
+=& \frac{\frac{72}{4375}}{\Pr\{\mathbf{x}=(1,1,0,1)\}}
+\end{aligned}
 \end{equation}
 类似的，根据"拉普拉斯修正"，可得：
 \begin{equation}
@@ -313,7 +300,18 @@ x \indep y | z
 \end{equation}
 所以得到：
 \begin{equation}
-\Pr\{ y=0 | \mathbf{x}=(1,1,0,1) \} = \frac{625}{672}
+\begin{aligned}
+&\Pr\{ y=0 | \mathbf{x}=(1,1,0,1) \}\\ 
+=& \frac{\Pr\{\mathbf{x}=(1,1,0,1) | y=0  \} \Pr\{y=0\}}{\Pr\{\mathbf{x}=(1,1,0,1) \}}\\
+=& \frac{\frac{3}{112}}{\Pr\{\mathbf{x}=(1,1,0,1)\}}
+\end{aligned}
+\end{equation}
+综上可得
+\begin{equation}
+\begin{aligned}
+&\Pr\{ y=1 | \mathbf{x}=(1,1,0,1) \} = \frac{\frac{72}{4375}}{\Pr\{\mathbf{x}=(1,1,0,1)\}}\\
+&\Pr\{ y=0 | \mathbf{x}=(1,1,0,1) \} = \frac{\frac{3}{112}}{\Pr\{\mathbf{x}=(1,1,0,1)\}}
+\end{aligned}
 \end{equation}
 \end{enumerate}	
 
@@ -455,21 +453,22 @@ H(XTest) = sign(\sum_{t=1}^{T}h_t(XTest))
 		\State $yPred = f.predict(XCV)$
 		\State $Auc = Auc + ComputeAuc(yCV,yPred)$
 		\EndFor
-		\If{$Auc \geq maxAuc$}
+		\If{$Auc > maxAuc$}
 		\State $T = t$
+		\State $maxAuc = Auc$
 		\EndIf
 		\EndFor
 		\label{code:End3}  
 	\end{algorithmic}  
 \end{algorithm}\\
-对于AdaBoost和随机森林模型使用交叉验证得到的结果如下：
+对于AdaBoost和随机森林模型使用交叉验证得到的结果如下：\\
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.5]{auc.png}
 	\caption{AdaBoost和随机森林在不同基分类器数目时的AUC指标}
 	\label{fig:label}
 \end{figure}
-从图中可以看到对于随机森林来说，基分类器在1到15的区间中，AUC上升较快，当基分类器超过40以后，AUC上升就变得十分缓慢。对于AdaBoost来说，基分类器在1到10的区间中，AUC上升较快，超过10之后，AUC的上升十分缓慢。
+从图中可以看到对于随机森林来说，基分类器在1到15的区间中，AUC上升较快，当基分类器超过40以后，AUC上升就变得十分缓慢。对于AdaBoost来说，基分类器在1到10的区间中，AUC上升较快，超过10之后，AUC的上升十分缓慢。考虑到基分类器数目大于50之后效果提升微弱，同时基分类器数目过多也会造成训练开销过大，所以控制范围在1到50之间。
 \item 选取最优的基分类器数目，即选取在交叉验证时AdaBoost和随机森林取得最好AUC的数目，即AdaBoost选取25个基分类器，随机森林选取49个基分类器。在测试集上测试得到的结果如下：
 \begin{table}[!ht]
 	\centering

@@ -102,7 +102,7 @@ if __name__ == '__main__':
     #T = crossValidation(XTrain, yTrain)
     #print(T)
 
-    print('training...')
+    print('training(T=25)...')
     adaboost = AdaBoost(n_estimators=T)
     adaboost.fit(XTrain, yTrain)
     yPred, yProb = adaboost.predict(XTest)

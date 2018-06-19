@@ -89,7 +89,7 @@ if __name__ == '__main__':
     #T = crossValidation(XTrain, yTrain)
     #print(T)
 
-    print('training...')
+    print('training(T=49)...')
     randomforest = RandomForest(n_estimators=T)
     randomforest.fit(XTrain, yTrain)
     yPred, yProb = randomforest.predict(XTest)
