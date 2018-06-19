@@ -1,6 +1,6 @@
 from sklearn import tree
 from sklearn import metrics
-from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 import numpy as np
 
 class AdaBoost:
@@ -20,7 +20,7 @@ class AdaBoost:
             f = clf.fit(XTrain, yTrain, sample_weight=D)
             pred = f.predict(XTrain)
 
-            error = np.mean(np.average(pred != yTrain, weights=D))
+            error = np.average(pred != yTrain, weights=D)
 
             #print(error)
 
@@ -67,7 +67,7 @@ def loadData():
     return XTrain, XTest, yTrain, yTest
 
 def crossValidation(XTrain, yTrain):
-    skf = KFold(n_splits=5)
+    skf = StratifiedKFold(n_splits=5)
     maxT = 2
     maxAuc = 0.0
 
@@ -91,21 +91,24 @@ def crossValidation(XTrain, yTrain):
 
 if __name__ == '__main__':
 
+    print('AdaBoost algorithm start...')
+    print('loading data...')
     XTrain, XTest, yTrain, yTest = loadData()
 
     yTrain = (yTrain - 0.5)*2
     yTest = (yTest - 0.5)*2
 
-    T = crossValidation(XTrain, yTrain)
-    print(T)
+    T = 25
+    #T = crossValidation(XTrain, yTrain)
+    #print(T)
 
-
+    print('training...')
     adaboost = AdaBoost()
     adaboost.fit(XTrain, yTrain)
     yPred, yProb = adaboost.predict(XTest)
 
 
-    print("AdaBoost: ", metrics.roc_auc_score(yTest, yProb))
+    print("AdaBoost AUC: ", metrics.roc_auc_score(yTest, yProb))
 
 
 

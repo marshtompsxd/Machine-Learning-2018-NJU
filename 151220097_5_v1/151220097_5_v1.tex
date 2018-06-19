@@ -118,46 +118,54 @@
 	~\\
 \begin{enumerate}[(1)]
 \item 
-定义$x_A$表示A结点的属性值，$x_B,x_C,x_D,x_E$同理。\\
 \begin{equation}
 \begin{aligned}
-&P(x_A,x_B,x_C,x_D,x_E)\\ 
-=& P(x_A)P(x_B|x_A)P(x_C|x_B,x_D,x_E)P(x_D|x_E)P(x_E|x_A)
+&P(A,B,C,D,E)\\ 
+=& P(A)P(B|A)P(C|B,D,E)P(D|E)P(E|A)
 \end{aligned}
 \end{equation}
 \item 
 条件独立的组合：\\
 \begin{equation}
 \begin{aligned}
-&x_E \perp x_A | x_C\\
-&x_E \perp x_B | x_C\\
-&x_E \perp x_D | x_C\\
-&x_A \perp x_D | x_B, x_C
+&E \perp A | C\\
+&E \perp B | C\\
+&E \perp D | C\\
+&A \perp D | B, C\\
+\end{aligned}
+\end{equation}
+还有一些冗余的条件独立组合，也属于合法的条件独立组合
+\begin{equation}
+\begin{aligned}
+&E \perp A | C, B\\
+&E \perp A | C, D\\
+&E \perp A | C, B, D\\
+&E \perp B | C, A\\
+&E \perp B | C, D\\
+&E \perp B | C, A, D\\
+&E \perp D | C, A\\
+&E \perp D | C, B\\
+&E \perp D | C, A, B\\
+&A \perp D | B, C, E
 \end{aligned}
 \end{equation}
 \item 
 条件独立的组合：\\
 \begin{equation}
 \begin{aligned}
-&x_A \indep x_C | x_B,x_E\\
-&x_A \indep x_D | x_B,x_E\\
-&x_B \indep x_D | x_A,x_E\\
-&x_B \indep x_E | x_A,x_D
+&A \indep C | B,E\\
+&A \indep C | B,E,D\\
+&A \indep D | E\\
+&A \indep D | B,E\\
+&B \indep D | A\\
+&B \indep D | E\\
+&B \indep D | A,E\\
+&B \indep E | A\\
+&B \indep E | A,D
 \end{aligned}
 \end{equation}
 \item 
-修改后的方法不能得到全部的正确的条件独立的集合，比如图一所示。\\
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[scale=0.3]{bayes.png}
-	\caption{反例}
-	\label{fig:label2}
-\end{figure}\\
-反例中由于$x \rightarrow p \rightarrow z \rightarrow q \leftarrow y$，所以按照充要条件可以得到
-\begin{equation}
-x \indep y | z
-\end{equation}
-但是如果在连接V型结构父结点前，只保留图中$X,Y,Z$及他们的非孩子结点，那么$x$和$y$直接独立，不会得到$x$和$y$关于$z$条件独立。
+可以得到全部的正确的条件独立的集合。根据题意可得，在考虑$X, Y, Z$的时候，如果删除
 \end{enumerate}
 \end{myProof}
 \newpage
@@ -323,6 +331,9 @@ x \indep y | z
 OS：Windows10\\
 编程语言：python 3.6\\
 实验的输入文件放在$/adult\_dataset/$文件夹中。\\
+运行方法：\\
+python BoostMain.py\\
+python RandomForestMain.py\\
 \item\textbf{实验目的}
 本次实验的主要工作在于实现集成学习的经典算法--AdaBoost算法和随机森林算法。在实现算法之后通过交叉验证的手段来探究基分类器数目和算法性能之间的关系，寻找最优的基分类器数目。在这个过程中，加深对于AdaBoost算法和随机森林算法的理解，同时掌握参数调试的技巧和思想。\\
 \item\textbf{实验过程}
@@ -403,7 +414,7 @@ $predict$函数用T个随机决策树的模型对测试样例进预测，然后�
 \begin{equation}
 H(XTest) = sign(\sum_{t=1}^{T}h_t(XTest))
 \end{equation}
-在实现基分类器的随机决策树的时候，调用了sklearn包的sklearn.ensemble.ExtraTreesClassifier。
+在实现基分类器的随机决策树的时候，调用了sklearn包的sklearn.tree.ExtraTreeClassifier。
 \item 对AdaBoost和随机森林算法使用5折交叉验证来寻找最优的基分类器数目。5折交叉验证的做法为：首先将初始训练集随机划分成等分的5份，选择其中的四份作为新的训练集$XTr$和$yTr$，剩下一份作为新的验证集$XCV$和$yCV$。用$XTr$和$yTr$来训练AbaBoost模型或者随机森林模型，训练好模型之后在$XCV$上进行预测，预测得到的结果$yPred$和$yCV$计算AUC指标。事先确定基分类器范围，然后在范围内进行上述交叉验证AUC评价，统计所有AUC指标，找到最大的AUC对应的基分类器数目t，作为AdaBoost预测测试集所用的基分类器数目。注意到划分时为了防止类别不平衡，所以采用了StratifiedSplit，即在划分的子集中各个类别仍然保持和原来一样的比例。\\
 过程伪代码如下：
 \begin{algorithm}[!h]  

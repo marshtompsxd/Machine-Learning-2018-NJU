@@ -2,7 +2,7 @@ from sklearn import tree
 from sklearn import metrics
 import numpy as np
 from random import randrange
-from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 
 class RandomForest:
 
@@ -19,7 +19,7 @@ class RandomForest:
 
     def fit(self, XTrain, yTrain):
         for t in range(self.n_estimators):
-            clf = tree.ExtraTreeClassifier(max_features=4)
+            clf = tree.ExtraTreeClassifier(max_features="log2")
             index = self.sample(XTrain.shape[0])
             #print(index)
             XSub = XTrain[index]
@@ -55,7 +55,7 @@ def loadData():
 
 
 def crossValidation(XTrain, yTrain):
-    skf = KFold(n_splits=5)
+    skf = StratifiedKFold(n_splits=5)
     maxT = 2
     maxAuc = 0.0
 
@@ -79,18 +79,22 @@ def crossValidation(XTrain, yTrain):
 
 
 if __name__ == '__main__':
+    print('RandomForest algorithm start...')
+    print('loading data...')
     XTrain, XTest, yTrain, yTest = loadData()
     yTrain = (yTrain - 0.5)*2
     yTest = (yTest - 0.5)*2
 
-    T = crossValidation(XTrain, yTrain)
-    print(T)
+    T = 49
+    #T = crossValidation(XTrain, yTrain)
+    #print(T)
 
+    print('training...')
     randomforest = RandomForest(n_estimators=T)
     randomforest.fit(XTrain, yTrain)
     yPred, yProb = randomforest.predict(XTest)
 
-    print("Random Forest: ", metrics.roc_auc_score(yTest, yProb))
+    print("Random Forest AUC: ", metrics.roc_auc_score(yTest, yProb))
 
 
 
