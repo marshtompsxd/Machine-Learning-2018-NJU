@@ -102,12 +102,12 @@ if __name__ == '__main__':
     #T = crossValidation(XTrain, yTrain)
     #print(T)
 
-    print('training...')
-    adaboost = AdaBoost()
+    print('training(T=25)...')
+    adaboost = AdaBoost(n_estimators=T)
     adaboost.fit(XTrain, yTrain)
     yPred, yProb = adaboost.predict(XTest)
 
-
+    print(metrics.classification_report(y_true=yTest, y_pred=yPred))
     print("AdaBoost AUC: ", metrics.roc_auc_score(yTest, yProb))
 
 
